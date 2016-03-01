@@ -1,2 +1,4 @@
 *.class
 *.md
+project/
+target/
