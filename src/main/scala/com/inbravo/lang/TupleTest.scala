@@ -1,4 +1,4 @@
-package com.inbravo.sc.lang
+package com.inbravo.lang
 
 object TupleTest {
 
