@@ -4,10 +4,7 @@ package com.inbravo.concurrency
  */
 object thread {
 
-  def main(args: Array[String]): Unit = {
-
-    createThreads()
-  }
+  def main(args: Array[String]): Unit = createThreads()
 
   def createThreads() {
 
