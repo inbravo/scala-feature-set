@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicInteger
 /**
  * FORM: Front at 0 and Rear at Minus 1 (-1)
  */
-final class Queue {
+final class CircularQueue {
 
   /* Array for local storage */
   private var storage = Array[Long](0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
@@ -28,6 +28,13 @@ final class Queue {
     /* Check if full */
     if (!isFull()) {
 
+      /* If Rear = Max Size; Make the queue circular */
+      if (this.rear.get() == (this.maxSize - 1)) {
+
+        /* Reset the rear */
+        this.rear.set(-1);
+      }
+
       this.storage(this.rear.incrementAndGet()) = value
 
       /* Increment the current items count */
@@ -44,6 +51,13 @@ final class Queue {
 
     /* Check if empty */
     if (!isEmpty()) {
+
+      /* If Front = Max Size; Make the queue circular */
+      if (this.front.get() == this.maxSize) {
+
+        /* Reset the rear */
+        this.rear.set(-1);
+      }
 
       /* Take value from front */
       var removedValue = this.storage(this.front.get())
