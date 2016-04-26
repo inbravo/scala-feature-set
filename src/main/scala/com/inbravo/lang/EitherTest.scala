@@ -13,7 +13,7 @@ object EitherTest extends App {
     else { Right(x / y) }
   }
 
-  // a few different ways to use Either, Left, and Right
+  /* Many ways to use Either, Left, and Right */
   println(divide(1, 0))
   println(divide(1, 1))
 
