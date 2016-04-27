@@ -8,7 +8,7 @@ final object ReverseTheWord {
   def reverse(inputString: String): String = {
 
     /* Using stack */
-    var stack = new Stack()
+    var stack = new Stack
 
     /* Push the char in stack */
     for (i <- 0 to inputString.length() - 1) {
