@@ -1,6 +1,7 @@
 package com.inbravo.lang
 
 /**
+ * amit.dixit
  * Behaves like singleton object but keep a class with same name
  */
 object CompanionObjectTest {

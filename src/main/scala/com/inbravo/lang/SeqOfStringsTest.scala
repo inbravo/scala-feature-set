@@ -2,7 +2,7 @@ package com
 package inbravo
 package lang
 /**
- *
+ * amit.dixit
  */
 object SeqOfStringsTest {
 

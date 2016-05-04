@@ -1,5 +1,7 @@
 package com.inbravo.lang
-
+/**
+ * amit.dixit
+ */
 object LoopTest extends App {
 
   var i = 0
@@ -21,8 +23,5 @@ object LoopTest extends App {
   /* For each */
   (0 until max).foreach(doStuff)
 
-  def doStuff(value: Int) {
-
-    println(value)
-  }
+  def doStuff(value: Int) = println(value)
 }

@@ -1,6 +1,8 @@
 package com.inbravo.lang
 
 /**
+ * amit.dixit
+ * 
  * Sealed Trait is like Java ENUM
  *
  *  Case classes/object differ from regular classes/object in that they get:
