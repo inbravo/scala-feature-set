@@ -1,6 +1,6 @@
 package com.inbravo.lang
 /**
- *amit.dixit
+ * amit.dixit
  */
 object InstanceOfTest extends App {
 
