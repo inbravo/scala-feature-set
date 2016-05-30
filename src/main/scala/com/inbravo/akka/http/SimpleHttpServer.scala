@@ -1,4 +1,4 @@
-package com.inbravo.akka
+package com.inbravo.akka.http
 
 import akka.actor.ActorSystem
 import akka.stream.ActorMaterializer
@@ -8,7 +8,7 @@ import akka.http.scaladsl.server.Directives._
 /**
  *
  */
-object HelloWorldServer {
+object SimpleHttpServer {
 
   def main(args: Array[String]) {
 
@@ -19,7 +19,7 @@ object HelloWorldServer {
       pathSingleSlash {
         get {
           complete {
-            "Hello world from HelloWorldServer"
+            "Hello world from SimpleHttpServer...."
           }
         }
       }
