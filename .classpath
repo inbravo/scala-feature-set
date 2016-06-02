@@ -5,20 +5,57 @@
   <classpathentry kind="src" path="src\test\scala"/>
   <classpathentry kind="src" path="src\test\java"/>
   <classpathentry kind="src" path="src\test\resources"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.4.6.jar"/>
   <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
-  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-http-experimental_2.11\jars\akka-http-experimental_2.11-1.0.jar"/>
-  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-http-core-experimental_2.11\jars\akka-http-core-experimental_2.11-1.0.jar"/>
-  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-parsing-experimental_2.11\jars\akka-parsing-experimental_2.11-1.0.jar"/>
-  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-stream-experimental_2.11\jars\akka-stream-experimental_2.11-1.0.jar"/>
-  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.12.jar"/>
-  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar"/>
+  <classpathentry kind="lib" path="D:\opensource\scala\typesafe-activator-1.3.7\repository\com.typesafe\config\1.3.0\bundles\config.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.scala-lang.modules\scala-java8-compat_2.11\bundles\scala-java8-compat_2.11-0.7.0.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-agent_2.11\jars\akka-agent_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-camel_2.11\jars\akka-camel_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.16.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.apache.camel\camel-core\bundles\camel-core-2.13.4.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.sun.xml.bind\jaxb-impl\jars\jaxb-impl-2.2.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-cluster_2.11\jars\akka-cluster_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-remote_2.11\jars\akka-remote_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-protobuf_2.11\jars\akka-protobuf_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\io.netty\netty\bundles\netty-3.10.3.Final.jar"/>
+  <classpathentry kind="lib" path="D:\opensource\scala\typesafe-activator-1.3.7\repository\org.uncommons.maths\uncommons-maths\1.2.2a\jars\uncommons-maths.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-cluster-metrics_2.11\jars\akka-cluster-metrics_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-cluster-sharding_2.11\jars\akka-cluster-sharding_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-persistence_2.11\jars\akka-persistence_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-cluster-tools_2.11\jars\akka-cluster-tools_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-contrib_2.11\jars\akka-contrib_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-http-core_2.11\jars\akka-http-core_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-stream_2.11\jars\akka-stream_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe\ssl-config-akka_2.11\bundles\ssl-config-akka_2.11-0.2.1.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe\ssl-config-core_2.11\bundles\ssl-config-core_2.11-0.2.1.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar"/>
   <classpathentry kind="lib" path="D:\opensource\scala\typesafe-activator-1.3.7\repository\org.reactivestreams\reactive-streams\1.0.0\jars\reactive-streams.jar"/>
-  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-http-spray-json-experimental_2.11\jars\akka-http-spray-json-experimental_2.11-1.0.jar"/>
-  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\io.spray\spray-json_2.11\bundles\spray-json_2.11-1.3.1.jar"/>
-  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-http-testkit-experimental_2.11\jars\akka-http-testkit-experimental_2.11-1.0.jar"/>
-  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-testkit_2.11\jars\akka-testkit_2.11-2.3.12.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-parsing_2.11\jars\akka-parsing_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-http-testkit_2.11\jars\akka-http-testkit_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-http-experimental_2.11\jars\akka-http-experimental_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-stream-testkit_2.11\jars\akka-stream-testkit_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-testkit_2.11\jars\akka-testkit_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-multi-node-testkit_2.11\jars\akka-multi-node-testkit_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-osgi_2.11\jars\akka-osgi_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.osgi\org.osgi.core\jars\org.osgi.core-4.3.1.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.osgi\org.osgi.compendium\jars\org.osgi.compendium-4.3.1.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-persistence-tck_2.11\jars\akka-persistence-tck_2.11-2.4.6.jar"/>
   <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.scalatest\scalatest_2.11\bundles\scalatest_2.11-2.2.5.jar"/>
-  <classpathentry kind="lib" path="D:\opensource\scala\typesafe-activator-1.3.7\repository\org.scala-lang.modules\scala-xml_2.11\1.0.2\bundles\scala-xml_2.11.jar"/>
+  <classpathentry kind="lib" path="D:\opensource\scala\typesafe-activator-1.3.7\repository\junit\junit\4.12\jars\junit.jar"/>
+  <classpathentry kind="lib" path="D:\opensource\scala\typesafe-activator-1.3.7\repository\org.hamcrest\hamcrest-core\1.3\jars\hamcrest-core.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-distributed-data-experimental_2.11\jars\akka-distributed-data-experimental_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-typed-experimental_2.11\jars\akka-typed-experimental_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-http-spray-json-experimental_2.11\jars\akka-http-spray-json-experimental_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\io.spray\spray-json_2.11\bundles\spray-json_2.11-1.3.2.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-http-jackson-experimental_2.11\jars\akka-http-jackson-experimental_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.7.4.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.7.0.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.7.4.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-http-xml-experimental_2.11\jars\akka-http-xml-experimental_2.11-2.4.6.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.5.jar"/>
+  <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\com.typesafe.akka\akka-persistence-query-experimental_2.11\jars\akka-persistence-query-experimental_2.11-2.4.6.jar"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="output" path="bin"/>
 </classpath>

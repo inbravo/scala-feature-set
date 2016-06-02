@@ -1,12 +1,12 @@
 package com.inbravo.akka.http.models
 
-import spray.json.DefaultJsonProtocol
+import spray.json._
+import akka.http.scaladsl.model.StatusCodes
+import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport
 
 /* Customer case */
 case class Customer(name: String)
 
-/* Create JSON protocol for customer using spray.io */
-object CustomerServiceJsonProtocol extends DefaultJsonProtocol {
-
-  implicit val customerProtocol = jsonFormat1(Customer)
+trait CustomerServiceJsonSupport extends SprayJsonSupport with DefaultJsonProtocol {
+  implicit val customerFormat = jsonFormat1(Customer)
 }
