@@ -25,7 +25,10 @@ object CustomerRestService extends App with Config {
   /* Create new sample route */
   val routes = new BasicRoutes()
 
-  val banner = s"| This Service is capable to create/read/update/delete customers |".stripMargin
+  /* Strip margin is used adding new lines in string */
+  val banner = s"""| This Service is capable to,
+                 | create/read/update/delete 
+                 | customers """.stripMargin
 
   /* Print the banner */
   println(banner)

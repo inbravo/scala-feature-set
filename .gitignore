@@ -5,3 +5,6 @@ target/
 /bin/
 
 *.cache-main
+.settings/org.eclipse.core.resources.prefs
+*.cache-tests
+.cache-main

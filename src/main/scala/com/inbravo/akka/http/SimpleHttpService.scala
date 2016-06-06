@@ -9,7 +9,7 @@ import akka.http.scaladsl.server.Directives._
 import akka.event.{ Logging, LoggingAdapter }
 
 /**
- *
+ * 	amit.dixit
  */
 object JsonServer extends App with Config {
 
@@ -22,6 +22,9 @@ object JsonServer extends App with Config {
 
   /* Create new sample route */
   val routes = new BasicRoutes()
+
+  println(interface)
+  println(port)
 
   /* Bind and handle */
   Http().bindAndHandle(routes.testRoute, "localhost", 8080)
