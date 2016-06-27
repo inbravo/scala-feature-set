@@ -19,7 +19,7 @@ object InterpolatorTest {
     /* Usage of 'f' */
     println(f"$name%s is $height%2.2f meters tall")
 
-    /* Usage of 'f' */
+    /* Usage of 'raw' */
     printf(raw"a\nb\r")
   }
 }
