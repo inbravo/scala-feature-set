@@ -2,7 +2,7 @@ package com.inbravo.concurrency
 /**
  *
  */
-object thread {
+object ThreadTest {
 
   def main(args: Array[String]): Unit = createThreads()
 
@@ -19,6 +19,7 @@ object thread {
         }
       }
       thread.start
+
       Thread.sleep(50)
     }
   }
