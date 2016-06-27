@@ -4,12 +4,19 @@ import java.util.concurrent.atomic.AtomicInteger
 import scala.collection.mutable.ArrayBuffer
 
 /**
- *
+ * Stack class with primary constructor
  */
-final class Stack {
+final class Stack(maxSize: Int) {
+
+  /* Dummy auxiliary constructor */
+  def this(maxSize: Int, currentIndex: Int) {
+
+    /* Compilation error if call to primary constructor is not present */
+    this(maxSize)
+  }
 
   /* Array for local storage */
-  private var storage = Array[Long](0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+  private var storage = new Array[Long](maxSize)
 
   /* Current index stack */
   private var currentIndex = new AtomicInteger(-1)

@@ -7,5 +7,5 @@ import com.inbravo.ds.stack.Stack
  */
 object ObjectFactoryTest extends App {
 
-  println(() => new Stack())
+  println(() => new Stack(10))
 }

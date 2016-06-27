@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicInteger
 object StackTest extends App {
 
   /* Create new stack */
-  var stack = new com.inbravo.ds.stack.Stack()
+  var stack = new com.inbravo.ds.stack.Stack(10)
 
   /* Check for full */
   println("Stack is full ? " + stack.isFull())
