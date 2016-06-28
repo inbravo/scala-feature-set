@@ -15,7 +15,7 @@ final class NetworkService(port: Int, poolSize: Int) extends Runnable {
   /* Create new pool based executor service */
   val pool: ExecutorService = Executors.newFixedThreadPool(poolSize)
 
-  def run() {
+  override def run() {
 
     /* Run infinite */
     while (true) {

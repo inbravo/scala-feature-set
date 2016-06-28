@@ -6,19 +6,35 @@ package com.inbravo.lang
  */
 object CompanionObjectTest {
 
-  val SpiderLegs = 8
-  def humanLegs = 2
-
   def main(args: Array[String]): Unit = {
 
-    println(CompanionObjectTest.SpiderLegs)
+    /* Create new employee */
+    var emp = new Employee(123, "InBravo", "Noida")
+
+    /* Call toString on class */
+    println(emp)
+
+    /* Call save on object */
+    Employee.save(emp)
   }
 }
 
-/*	Class with same name */
-/*  There is no such thing as static in Scala */
-/*	You can define a top-level object with the same name as your class; this is called a “companion object”, and so you can get the same static access syntax as Java */
-/*	There are only two namespaces, values and types. The object is a value, the class is a type; that’s why they can have the same name */
-/*	The object can extend classes and apply mixins, so you can abstract and reuse the functionality much better */
+/*
+ * Companion class
+ */
+class Employee(id: Int, n: String, p: String) {
 
-class CompanionObjectTest
+  val empId = id
+  val name = n
+  val place = p
+
+  override def toString() = this.empId + " " + this.name + ", " + this.place
+}
+
+/*
+ * Companion object
+ */
+object Employee {
+
+  def save(emp: Employee) = println("Saving: " + emp.name + " ......")
+}
