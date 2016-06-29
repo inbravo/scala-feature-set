@@ -36,12 +36,13 @@ object SeqOfStringsTest {
 
     val mutableBuffer: scala.collection.mutable.Buffer[String] = scala.collection.mutable.ArrayBuffer("hello", "world")
 
-    /* Override the value at index */
+    /* Override the value at index; it will work */
     mutableBuffer(0) = "4"
 
-    /* Update value at index */
+    /* Try to update value at index; it wont work */
     mutableBuffer.updated(1, "5")
 
+    /* Changes from last line wont print */
     println(mutableBuffer)
   }
 }

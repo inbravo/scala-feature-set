@@ -8,13 +8,17 @@ case object StartMessage
 case object StopMessage
 
 /**
- *
+ * Ping actor
  */
 class Ping(pong: ActorRef) extends Actor {
 
+  /* its a var because it can change */
   var count = 0
+
+  /* Method without any parameter */
   def incrementAndPrint { count += 1; println("ping") }
 
+  /* If a message is received */
   def receive = {
 
     case StartMessage =>
@@ -37,8 +41,12 @@ class Ping(pong: ActorRef) extends Actor {
   }
 }
 
+/**
+ * Pong actor
+ */
 class Pong extends Actor {
 
+  /* If a message is received */
   def receive = {
 
     case PingMessage =>
@@ -51,6 +59,9 @@ class Pong extends Actor {
   }
 }
 
+/**
+ * Test object
+ */
 object PingPongTest extends App {
 
   /* Create new actor system */
@@ -62,6 +73,6 @@ object PingPongTest extends App {
   /* Create a ping actor */
   val ping = system.actorOf(Props(new Ping(pong)), name = "ping")
 
-  /* Start using '|' operator of akka */
+  /* Start using '!' operator of akka */
   ping ! StartMessage
 }
