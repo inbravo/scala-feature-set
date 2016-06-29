@@ -5,11 +5,16 @@ package com.inbravo.lang
  */
 class Mutator {
 
+  /* '_' initialized to default value ('0') of type */
   var x: Int = _
 }
 
+/**
+ * VerboseMutator is functionally equivalant to
+ */
 class VerboseMutator {
 
+  /* '_' initialized to default value ('0') of type */
   private[this] var internal: Int = _
 
   /* Accessor */
@@ -30,12 +35,14 @@ object MutatorTest {
     println(mutator.x)
 
     /* Mutate */
-    println(mutator.x = 1)
+    mutator.x = 1
+    println(mutator.x)
 
     /* Access */
     println(vMutator.x)
 
     /* Mutate */
-    println(vMutator.x = 1)
+    vMutator.x = 2
+    println(vMutator.x)
   }
 }
