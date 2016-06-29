@@ -13,5 +13,7 @@ class MyClass {}
 object AnnotationTest {
 
   val myClass = new MyClass
-  def main(args: Array[String]) = println(myClass.hashCode())
+  def main(args: Array[String]) = {
+    println(myClass.hashCode())
+  }
 }  
