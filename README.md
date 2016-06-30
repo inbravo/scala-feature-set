@@ -1,10 +1,9 @@
-# scala-src
-Experiements in scala
+# scala-src : experiements in scala
 
-# To compile and run. In sbt type:
+## To compile and run. In sbt console type:
 	
 	run
-# To solve library dependencies in eclipse. In sbt type:
+## To solve library dependencies in eclipse. In sbt console type:
 
     reload
     eclipse with-source=true
