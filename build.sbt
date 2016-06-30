@@ -37,5 +37,6 @@ libraryDependencies ++= Seq(
 	"com.typesafe.akka" %% "akka-persistence-query-experimental" % "2.4.6",
 	"com.typesafe.akka" %% "akka-typed-experimental" % "2.4.6",
   	"org.scalatest" %% "scalatest" % "2.2.5" % "test",
-  	"io.spray" %%  "spray-json" % "1.3.2"
+  	"io.spray" %%  "spray-json" % "1.3.2",
+  	"org.apache.spark" %% "spark-core" % "1.6.2"
 )

@@ -8,9 +8,9 @@ import org.apache.spark.SparkContext
  */
 class ScalaWordCount {
 
-  def main(args: Array[String]): Unit = countWords
+  def main(args: Array[String]): Unit = countWords(args)
 
-  def countWords = {
+  def countWords(args: Array[String]) = {
 
     var sparkConf = new SparkConf().setAppName("ScalaWordCount")
 
@@ -18,12 +18,12 @@ class ScalaWordCount {
     var sc = new SparkContext(sparkConf)
 
     /* Get text file  */
-    val textFile = sc.textFile("hdfs://...")
+    val textFile = sc.textFile(args(0))
 
-    /* Evaluate text file */
+    /* Process text file */
     val counts = textFile.flatMap(line => line.split(" ")).map(word => (word, 1)).reduceByKey(_ + _)
 
     /* Save result as text file */
-    counts.saveAsTextFile("hdfs://...")
+    counts.saveAsTextFile(args(1))
   }
 }
