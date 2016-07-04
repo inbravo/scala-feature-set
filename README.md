@@ -1,4 +1,4 @@
-# scala-src : experiements in scala
+# scala-src : experiments in scala
 
 ## To compile and run. In sbt console type:
 	
