@@ -10,8 +10,11 @@ object SparkKeyValueEx {
 
   def main(args: Array[String]) {
 
-    /* Spark context for java */
-    var sc = new SparkContext(new SparkConf().setAppName("SparkKeyValueEx").setMaster("local"));
+    /* New spark configuration object */
+    var sparkConf = new SparkConf().setAppName("SparkKeyValueEx")
+
+    /* Create new spark context */
+    var sc = new SparkContext(sparkConf)
 
     /* Create RDDs of integer array */
     var rddOne = sc.parallelize(Array(1, 2, 3, 3, 4));
