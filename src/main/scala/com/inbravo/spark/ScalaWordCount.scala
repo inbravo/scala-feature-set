@@ -1,6 +1,7 @@
 package com.inbravo.spark
 
 import org.apache.spark.{ SparkContext, SparkConf }
+import com.inbravo.hdfs.HdfsUtils
 
 /**
  * amit.dixit
@@ -11,6 +12,7 @@ object ScalaWordCount {
 
   def countWords(args: Array[String]) = {
 
+    /* New spark configuration object */
     var sparkConf = new SparkConf().setAppName("ScalaWordCount")
 
     /* Create new spark context */
@@ -18,8 +20,10 @@ object ScalaWordCount {
 
     try {
 
+      println("word count process is started...")
+
       /* First cleanup the last created result files */
-      setup(args(1))
+      HdfsUtils.delete(args(1), "hdfs://localhost:9000")
 
       /* Get text file  */
       val textFile = sc.textFile(args(0))
@@ -37,16 +41,5 @@ object ScalaWordCount {
       /* Stop the spark context */
       sc.stop()
     }
-  }
-
-  /**
-   * Clean all previous files
-   */
-  def setup(hdfsFile: String) = {
-
-    /* Get Hadoop configuration */
-    val hadoopConf = new org.apache.hadoop.conf.Configuration()
-    val hdfs = org.apache.hadoop.fs.FileSystem.get(new java.net.URI("hdfs://localhost:9000"), hadoopConf)
-    try { hdfs.delete(new org.apache.hadoop.fs.Path(hdfsFile), true) } catch { case _: Throwable => { println("Error while deleting Hadoop file") } }
   }
 }
