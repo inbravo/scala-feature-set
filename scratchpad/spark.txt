@@ -1,0 +1,17 @@
+=====================================================================================================================================================
+#	Spark 
+=====================================================================================================================================================
+#.	Running on yarn : http://spark.apache.org/docs/latest/running-on-yarn.html
+#.	To submit a spark job : 
+./bin/spark-submit --class com.inbravo.spark.ScalaWordCount --master yarn-client --driver-memory 1g --executor-memory 1g --executor-cores 1 --queue default ../../work/mygithub/scala-src/target/scala-2.11/scal-src_2.11-1.0.jar /user/input.txt /user/spark/
+
+=====================================================================================================================================================
+#	HDFS Commands
+=====================================================================================================================================================
+#.	Create new directory on hdfs : hdfs dfs -mkdir /user
+#.	List the contents of a directory : hdfs dfs -ls /user
+#.	File copy :  hadoop fs -copyFromLocal /root/amit/hadoop-book/input/docs/quangle.txt hdfs://localhost:9000/user/amit/quangle.txt
+#.	File put : hadoop fs -put input/ncdc/sample.txt /user/test
+#.	File print : hadoop fs -cat /user/root/output/part-r-00000
+#.	hadoop fs -rmr /user/impadmin
+
