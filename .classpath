@@ -162,6 +162,7 @@
   <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\org.tachyonproject\tachyon-underfs-local\srcs\tachyon-underfs-local-0.8.2-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.tachyonproject\tachyon-underfs-local\jars\tachyon-underfs-local-0.8.2.jar"/>
   <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\net.razorvine\pyrolite\srcs\pyrolite-4.9-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\net.razorvine\pyrolite\jars\pyrolite-4.9.jar"/>
   <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\net.sf.py4j\py4j\srcs\py4j-0.9-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\net.sf.py4j\py4j\jars\py4j-0.9.jar"/>
+  <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\org.apache.spark\spark-streaming_2.11\srcs\spark-streaming_2.11-1.6.2-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.apache.spark\spark-streaming_2.11\jars\spark-streaming_2.11-1.6.2.jar"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="output" path="bin"/>
 </classpath>

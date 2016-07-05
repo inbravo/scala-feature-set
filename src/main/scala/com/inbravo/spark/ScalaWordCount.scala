@@ -18,6 +18,9 @@ object ScalaWordCount {
 
     try {
 
+      /* First cleanup the last created result files */
+      setup(args(1))
+
       /* Get text file  */
       val textFile = sc.textFile(args(0))
 
@@ -28,11 +31,22 @@ object ScalaWordCount {
       counts.saveAsTextFile(args(1))
 
     } finally {
-      
+
       println("word count process is completed...");
 
       /* Stop the spark context */
       sc.stop()
     }
+  }
+
+  /**
+   * Clean all previous files
+   */
+  def setup(hdfsFile: String) = {
+
+    /* Get Hadoop configuration */
+    val hadoopConf = new org.apache.hadoop.conf.Configuration()
+    val hdfs = org.apache.hadoop.fs.FileSystem.get(new java.net.URI("hdfs://localhost:9000"), hadoopConf)
+    try { hdfs.delete(new org.apache.hadoop.fs.Path(hdfsFile), true) } catch { case _: Throwable => { println("Error while deleting Hadoop file") } }
   }
 }
