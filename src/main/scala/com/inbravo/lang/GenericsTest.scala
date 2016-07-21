@@ -1,7 +1,7 @@
 package com.inbravo.lang
 
 /**
- * amit.dixit
+ *
  */
 class GenericsTest[Edible, Drinkable] {
 

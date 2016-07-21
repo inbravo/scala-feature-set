@@ -1,7 +1,5 @@
 package com.inbravo.lang
-/**
- * amit.dixit
- */
+
 object TupleTest {
 
   def main(args: Array[String]) {

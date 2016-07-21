@@ -8,9 +8,7 @@ import java.util.concurrent.atomic.{ AtomicInteger, AtomicLong }
 
 /* Import all class of a package */
 import java.util.concurrent.atomic._
-/**
- * amit.dixit
- */
+
 object ImportTest {
 
 }

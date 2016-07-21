@@ -2,7 +2,7 @@ package com.inbravo.lang
 
 import scala.collection.mutable.HashMap
 /**
- * amit.dixit
+ *
  */
 object MapTest {
 
@@ -17,7 +17,7 @@ object MapTest {
     /* Get value on key '1' */
     println(map(1))
 
-    /* Add another key-value in map; this wont work */
+    /* Add another key-value in map */
     map + (4 -> "d")
 
     /* println is defined in scala.Predef, which automatically gets imported */

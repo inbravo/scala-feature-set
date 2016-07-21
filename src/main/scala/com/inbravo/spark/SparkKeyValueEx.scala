@@ -21,7 +21,7 @@ object SparkKeyValueEx {
     var rddTwo = sc.parallelize(Array(3, 4, 4, 5, 6));
 
     println("=========================================================================================================");
-    println("---------Various Trans/actions on RDD " + rddOne.collect() + "} & RDD {" + rddTwo.collect() + "}---------");
+    println("---------Various transactions on RDD " + rddOne.collect() + "} & RDD {" + rddTwo.collect() + "}---------");
 
     /* Collect all elements */
     println("-------Collect : " + rddOne.collect());

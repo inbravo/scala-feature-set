@@ -2,7 +2,7 @@ package com
 package inbravo
 package lang
 /**
- * amit.dixit
+ *	amit.dixit
  */
 object SeqOfStringsTest {
 
@@ -36,13 +36,12 @@ object SeqOfStringsTest {
 
     val mutableBuffer: scala.collection.mutable.Buffer[String] = scala.collection.mutable.ArrayBuffer("hello", "world")
 
-    /* Override the value at index; it will work */
+    /* Override the value at index */
     mutableBuffer(0) = "4"
 
-    /* Try to update value at index; it wont work */
+    /* Update value at index */
     mutableBuffer.updated(1, "5")
 
-    /* Changes from last line wont print */
     println(mutableBuffer)
   }
 }

@@ -1,6 +1,6 @@
 package com.inbravo.lang
 /**
- * amit.dixit
+ *
  */
 object ForEachTest extends App {
 

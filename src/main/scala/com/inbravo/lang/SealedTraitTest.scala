@@ -1,8 +1,6 @@
 package com.inbravo.lang
 
 /**
- * amit.dixit
- *
  * Sealed Trait is like Java ENUM
  *
  *  Case classes/object differ from regular classes/object in that they get:
@@ -15,7 +13,6 @@ package com.inbravo.lang
  */
 object SealedTraitTest {
 
-  /* Sealed trait are like enum in  Java*/
   sealed trait Answer
   case object Yes extends Answer
   case object No extends Answer
