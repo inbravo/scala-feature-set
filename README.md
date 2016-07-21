@@ -1,6 +1,9 @@
 # scala-src : experiments in scala
 
-## To compile and run. In sbt console type:
+## To build and generate jar. In sbt console type:
+	
+	package
+## To run. In sbt console type:
 	
 	run
 ## To solve library dependencies in eclipse. In sbt console type:
