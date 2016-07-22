@@ -2,7 +2,7 @@ package com
 package inbravo
 package lang
 /**
- *	amit.dixit
+ * 	amit.dixit
  */
 object SeqOfStringsTest {
 
@@ -43,5 +43,25 @@ object SeqOfStringsTest {
     mutableBuffer.updated(1, "5")
 
     println(mutableBuffer)
+
+    val listVal = 1 :: 2 :: 3 :: 4 :: 5 :: Nil
+
+    println(listVal)
+
+    val anotherListVal = 6 :: 7 :: 8 :: Nil
+
+    /* ':::' operator used for merging */
+    println(listVal ::: anotherListVal)
+
+    /* Use custom method for merging */
+    println(append(listVal, anotherListVal))
+  }
+
+  /* Implementation of list concatenation */
+  def append[T](firstList: List[T], secondList: List[T]): List[T] = firstList match {
+
+    /* If first list is empty */
+    case List()    => secondList
+    case x :: rest => x :: append(rest, secondList)
   }
 }
