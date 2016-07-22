@@ -53,8 +53,34 @@ object SeqOfStringsTest {
     /* ':::' operator used for merging */
     println(listVal ::: anotherListVal)
 
-    /* Use custom method for merging */
-    println(append(listVal, anotherListVal))
+    /* Sort the list in reverse order */
+    println(append(listVal, anotherListVal).sortWith(_ > _))
+
+    /*  List(1, 2, 3) */
+    println(List.range(1, 4))
+
+    /* List(1, 3, 5) */
+    println(List.range(1, 7, 2))
+
+    /* List(9, 6, 3) */
+    println(List.range(9, 1, -3))
+
+    /* Use currying when invoking it */
+    /* List(a, a, a) */
+    println(List.fill(3)('a'))
+
+    /* List(India, India) */
+    println(List.fill(2)("India"))
+
+    /* With more than one argument in the first argument list, it'll make multidimensional list */
+    /* List(List(b, b, b), List(b, b, b)) */
+    println(List.fill(2, 3)('b'))
+
+    /*  One list with 5 elements */
+    println(List.tabulate(5)(n => n * n))
+
+    /* List(0, 1, 4, 9, 16) : 3 lists with 4 elements */
+    println(List.tabulate(3, 4)(_ * _)) 
   }
 
   /* Implementation of list concatenation */
