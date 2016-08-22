@@ -8,3 +8,5 @@ target/
 .settings/org.eclipse.core.resources.prefs
 *.cache-tests
 .cache-main
+.settings/org.eclipse.core.resources.prefs
+*.classpath
