@@ -10,3 +10,7 @@ target/
 .cache-main
 .settings/org.eclipse.core.resources.prefs
 *.classpath
+*.cache-main
+.cache-tests
+.settings/org.eclipse.core.resources.prefs
+.worksheet/src/com.inbravo.ws.Addhoc.scala

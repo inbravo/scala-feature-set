@@ -22,7 +22,6 @@ object ImplicitFuncTest {
   /* Create new Greeter */
   val greeter = new Greeter(name)
 
-  /* Square will implicitly take value from previously defined statement */
   def main(args: Array[String]): Unit = {
 
     /* Say hello using simple method call */
