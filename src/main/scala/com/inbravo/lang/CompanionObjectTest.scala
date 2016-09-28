@@ -8,8 +8,11 @@ object CompanionObjectTest {
 
   def main(args: Array[String]): Unit = {
 
-    /* Create new employee */
+    /* Create new valid employee */
     var emp = new Employee(123, "InBravo", "Noida")
+
+    /* Create new invalid employee */
+    // var invalidEmp = new Employee(0, "InBravo", "Noida")
 
     /* Call toString on class */
     println(emp)
@@ -23,6 +26,9 @@ object CompanionObjectTest {
  * Companion class
  */
 class Employee(id: Int, n: String, p: String) {
+
+  /* Require method will ensure that employee id is always valid */
+  require(id <= 0, "Invalid Employee Id")
 
   val empId = id
   val name = n
