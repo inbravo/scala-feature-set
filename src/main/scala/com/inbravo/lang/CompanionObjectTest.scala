@@ -17,11 +17,11 @@ object CompanionObjectTest {
     /* Call toString on class */
     println(emp)
 
-    /* Call save on object */
+    /* Call save on 'Object' */
     Employee.save(emp)
 
-    /* Call save on object */
-    Employee.update(emp)
+    /* Call save on 'object' */
+    emp.update(emp)
   }
 }
 
@@ -38,6 +38,9 @@ class Employee(id: Int, n: String, p: String) {
   val place = p
 
   override def toString() = this.empId + " " + this.name + ", " + this.place
+
+  /* Will throw 'scala.NotImplementedError' */
+  def update(emp: Employee) = ???
 }
 
 /*
@@ -46,7 +49,4 @@ class Employee(id: Int, n: String, p: String) {
 object Employee {
 
   def save(emp: Employee) = println("Saving: " + emp.name + " ......")
-
-  /* Will throw 'scala.NotImplementedError' */
-  def update(emp: Employee) = ???
 }
