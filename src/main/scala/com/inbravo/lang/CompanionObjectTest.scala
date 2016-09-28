@@ -11,14 +11,17 @@ object CompanionObjectTest {
     /* Create new valid employee */
     var emp = new Employee(123, "InBravo", "Noida")
 
-    /* Create new invalid employee */
-    // var invalidEmp = new Employee(0, "InBravo", "Noida")
+    /* Create new invalid employee: will throw 'java.lang.IllegalArgumentException' */
+    var invalidEmp = new Employee(0, "InBravo", "Noida")
 
     /* Call toString on class */
     println(emp)
 
     /* Call save on object */
     Employee.save(emp)
+
+    /* Call save on object */
+    Employee.update(emp)
   }
 }
 
@@ -28,7 +31,7 @@ object CompanionObjectTest {
 class Employee(id: Int, n: String, p: String) {
 
   /* Require method will ensure that employee id is always valid */
-  require(id <= 0, "Invalid Employee Id")
+  require(id > 0, "Invalid Employee Id")
 
   val empId = id
   val name = n
@@ -43,4 +46,7 @@ class Employee(id: Int, n: String, p: String) {
 object Employee {
 
   def save(emp: Employee) = println("Saving: " + emp.name + " ......")
+
+  /* Will throw 'scala.NotImplementedError' */
+  def update(emp: Employee) = ???
 }
