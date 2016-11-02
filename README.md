@@ -1,6 +1,5 @@
 # scala-src : experiments in scala
 
-##
 -  [How to create custom annotations using 'scala.annotation.StaticAnnotation'] [AnnotationTest.md]
 -  [How value '_' initializes to default value. Default accessor and mutator in an object] [MutatorTest.md]
 -  [How to declare a method returns an 'Either'] [EitherTest.md]
