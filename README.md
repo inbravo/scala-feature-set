@@ -1,4 +1,4 @@
-# scala-src : experiments in scala
+# For me the the easiest way to learn Scala is by writing Classes for every Scala functionality
 
 -  [How to create custom annotations using 'scala.annotation.StaticAnnotation'] [AnnotationTest.md]
 -  [How value '_' initializes to default value of variable. Default accessor and mutator methods in an object] [MutatorTest.md]
