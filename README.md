@@ -53,14 +53,3 @@
 [ThreadTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/ThreadTest.scala
 [CountDownLatchTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/CountDownLatchTest.scala
 [CyclicBarrierTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/CyclicBarrierTest.scala
-
-## To build and generate jar. In sbt console type:
-	
-	package
-## To run. In sbt console type:
-	
-	run
-## To solve library dependencies in eclipse. In sbt console type:
-
-    reload
-    eclipse with-source=true
