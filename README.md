@@ -23,14 +23,19 @@
 -  [How 'require' can be used to enforce restrictions before creating instance of a Scala class] [RequireTest.md]
 -  [How a simple thread can be created in Scala][ThreadTest.md]
 -  [How thread pool based concurrency works in Scala][NetworkService.md]
--  [How 'ServerSocket' can be used in Scala][NetworkService.md]
--  [How 'CountDownLatch' can be used in Scala][CountDownLatchTest.md]
--  [How 'CyclicBarrier' can be used in Scala][CyclicBarrierTest.md]
+-  [How 'ServerSocket' is used in Scala][NetworkService.md]
+-  [How 'CountDownLatch' is used in Scala][CountDownLatchTest.md]
+-  [How 'CyclicBarrier' is used in Scala][CyclicBarrierTest.md]
+-  [How 'tailrec' based recursion is used in Scala][FactorialTest.md]
 -  [A Stack implemented in Scala][Stack.md]
 -  [Reverse a word using a stack in Scala][ReverseTheWord.md]
 -  [A Queue implemented in Scala][Queue.md]
 -  [A Circular Queue implemented in Scala][CircularQueue.md]
 -  [Program to give runtime size of all primitive variables in Scala][PrimitiveVarsSizeTest.md]
+-  [A simple Akka Actor Scala][HelloActor.md]
+-  [A Ping Pong program using Akka Actors][PingPongTest.md]
+-  [A simple HTTP service in Scala using Akka][SimpleHttpService.md]
+-  [A simple REST web service in Scala using Akka][CustomerRestService.md]
 
 [AnnotationTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AnnotationTest.scala
 [MutatorTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MutatorTest.scala
@@ -58,10 +63,15 @@
 [ThreadTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/ThreadTest.scala
 [CountDownLatchTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/CountDownLatchTest.scala
 [CyclicBarrierTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/CyclicBarrierTest.scala
+[FactorialTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/number/FactorialTest.scala
 [Stack.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/ds/stack/Stack.scala
 [ReverseTheWord.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/ds/stack/ReverseTheWord.scala
 [Queue.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/ds/queue/Queue.scala
 [CircularQueue.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/ds/queue/CircularQueue.scala
 [PrimitiveVarsSizeTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/memory/PrimitiveVarsSizeTest.scala
+[HelloActor.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/akka/basic/HelloActor.scala
+[PingPongTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/akka/basic/PingPongTest.scala
+[SimpleHttpService.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/http/akka/SimpleHttpService.scala
+[CustomerRestService.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/http/akka/CustomerRestService.scala
 
 ### Please message me, if you seek any specific example, which is not listed here.
