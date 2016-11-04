@@ -1,4 +1,4 @@
-### For me the the easiest way to learn Scala is by writing Classes for every Scala functionality
+### Its easier to learn Scala by writing Classes for every Scala functionality
 
 -  [How to create custom annotations using 'scala.annotation.StaticAnnotation'] [AnnotationTest.md]
 -  [How value '_' initializes to default value of variable. Default accessor and mutator methods in an object] [MutatorTest.md]
@@ -63,3 +63,5 @@
 [Queue.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/ds/queue/Queue.scala
 [CircularQueue.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/ds/queue/CircularQueue.scala
 [PrimitiveVarsSizeTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/memory/PrimitiveVarsSizeTest.scala
+
+### Please message me, if you seek any specific example, which is not listed here.
