@@ -6,6 +6,7 @@
 -  [How generics works in Scala] [GenericsTest.md]
 -  [Enviornment variables in Scala] [EnvironmentVarTest.md]
 -  [First class functions in Scala] [FirstClassFuncTest.md]
+-  [How strip margin is used to add new lines in a Scala string][CustomerRestService.md]
 -  [How to use 'Either'] [EitherTest.md]
 -  [Different types of looping techniques in Scala] [LoopTest.md]
 -  [How 'for each' works as loop] [ForEachTest.md]
