@@ -26,6 +26,11 @@
 -  [How 'ServerSocket' can be used in Scala][NetworkService.md]
 -  [How 'CountDownLatch' can be used in Scala][CountDownLatchTest.md]
 -  [How 'CyclicBarrier' can be used in Scala][CyclicBarrierTest.md]
+-  [A Stack implemented in Scala][Stack.md]
+-  [Reverse a word using a stack in Scala][ReverseTheWord.md]
+-  [A Queue implemented in Scala][Queue.md]
+-  [A Circular Queue implemented in Scala][CircularQueue.md]
+-  [Program to give runtime size of all primitive variables in Scala][PrimitiveVarsSizeTest.md]
 
 [AnnotationTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AnnotationTest.scala
 [MutatorTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MutatorTest.scala
@@ -53,3 +58,8 @@
 [ThreadTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/ThreadTest.scala
 [CountDownLatchTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/CountDownLatchTest.scala
 [CyclicBarrierTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/CyclicBarrierTest.scala
+[Stack.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/ds/stack/Stack.scala
+[ReverseTheWord.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/ds/stack/ReverseTheWord.scala
+[Queue.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/ds/queue/Queue.scala
+[CircularQueue.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/ds/queue/CircularQueue.scala
+[PrimitiveVarsSizeTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/memory/PrimitiveVarsSizeTest.scala
