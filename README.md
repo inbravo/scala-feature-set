@@ -1,6 +1,6 @@
 ### Its easier to learn Scala by writing Classes for every Scala functionality
 
--  [How to create custom annotations using 'scala.annotation.StaticAnnotation'] [AnnotationTest.md]
+1.  [How to create custom annotations using 'scala.annotation.StaticAnnotation'] [AnnotationTest.md]
 -  [How value '_' initializes to default value of variable. Default accessor and mutator methods in an object] [MutatorTest.md]
 -  [Usage of companion object in Scala] [CompanionObjectTest.md]
 -  [How generics works in Scala] [GenericsTest.md]
