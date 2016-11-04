@@ -71,7 +71,7 @@
 [PrimitiveVarsSizeTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/memory/PrimitiveVarsSizeTest.scala
 [HelloActor.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/akka/basic/HelloActor.scala
 [PingPongTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/akka/basic/PingPongTest.scala
-[SimpleHttpService.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/http/akka/SimpleHttpService.scala
-[CustomerRestService.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/http/akka/CustomerRestService.scala
+[SimpleHttpService.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/akka/http/SimpleHttpService.scala
+[CustomerRestService.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/akka/http/CustomerRestService.scala
 
 ### Please message me, if you seek any specific example, which is not listed here.
