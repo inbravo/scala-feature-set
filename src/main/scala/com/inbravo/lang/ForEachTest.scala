@@ -1,6 +1,8 @@
 package com.inbravo.lang
 /**
- *
+ * amit.dixit
+ * How 'foreach' and 'for' loop works
+ * How 'yield' is used in loops
  */
 object ForEachTest extends App {
 
@@ -13,6 +15,6 @@ object ForEachTest extends App {
   /* Print the elements of list */
   for (n <- reverseNameList) println(n)
 
-  /* Also */
+  /* Example of 'foreach' */
   nameList.foreach(n => println("Hi, " + n))
 }
