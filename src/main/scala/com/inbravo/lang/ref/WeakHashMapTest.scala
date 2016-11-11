@@ -17,6 +17,7 @@ object WeakHashMapTest extends App {
 
   for (a <- 0 to 100) {
 
+    /* Usage of 'cache' object is thread safe now */
     cache.synchronized {
 
       /* Put a new string in cache */
