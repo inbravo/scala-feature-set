@@ -37,6 +37,7 @@
 35.  [A Ping Pong program using Akka Actors][PingPongTest.md]
 36.  [A simple HTTP service in Scala using Akka][SimpleHttpService.md]
 37.  [A simple REST web service in Scala using Akka][CustomerRestService.md]
+38.  [Usage of WeakHashMap in Scala][WeakHashMapTest.md]
 
 [AnnotationTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AnnotationTest.scala
 [MutatorTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MutatorTest.scala
@@ -74,3 +75,4 @@
 [PingPongTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/akka/basic/PingPongTest.scala
 [SimpleHttpService.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/akka/http/SimpleHttpService.scala
 [CustomerRestService.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/akka/http/CustomerRestService.scala
+[WeakHashMapTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ref/WeakHashMapTest.scala
