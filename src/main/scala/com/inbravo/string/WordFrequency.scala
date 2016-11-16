@@ -3,7 +3,8 @@ package com.inbravo.string
 import java.util.concurrent.atomic.AtomicInteger
 
 /**
- *
+ * amit.dixit
+ * First object
  */
 object WordFrequency {
 
