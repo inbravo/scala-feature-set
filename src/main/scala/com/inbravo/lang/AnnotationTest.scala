@@ -3,7 +3,7 @@ package com.inbravo.lang
 import scala.annotation.StaticAnnotation
 
 /**
- *
+ * amit.dixit
  */
 class MyAnnotation(val p: String) extends StaticAnnotation {}
 

@@ -3,6 +3,7 @@ package com.inbravo.ds.queue
 import java.util.concurrent.atomic.AtomicInteger
 
 /**
+ * amit.dixit
  * FORM: Front at 0 and Rear at Minus 1 (-1)
  */
 final class Queue {

@@ -1,5 +1,8 @@
 package com.inbravo.ds.stack
 
+/**
+ * amit.dixit
+ */
 final object ReverseTheWord {
 
   def main(args: Array[String]): Unit = println(reverse("AMITDIXIT"))

@@ -7,6 +7,7 @@ import _root_.scala._
 import _root_.scala.Predef._
 
 /**
+ * amit.dixit
  * Find the last element in list
  */
 object LastElementInList {

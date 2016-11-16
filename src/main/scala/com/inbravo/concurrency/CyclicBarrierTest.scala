@@ -3,7 +3,8 @@ package com.inbravo.concurrency
 import java.util.concurrent.{ CyclicBarrier, BrokenBarrierException }
 
 /**
- * 	Test Java concurrency class CyclicBarrier
+ * Test Java concurrency class CyclicBarrier
+ * amit.dixit
  */
 object CyclicBarrierTest {
 

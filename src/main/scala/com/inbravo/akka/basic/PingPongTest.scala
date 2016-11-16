@@ -8,6 +8,7 @@ case object StartMessage
 case object StopMessage
 
 /**
+ * amit.dixit
  * Ping actor
  */
 class Ping(pong: ActorRef) extends Actor {

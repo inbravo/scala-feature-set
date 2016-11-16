@@ -1,5 +1,8 @@
 package com.inbravo.lang
 
+/**
+ * amit.dixit
+ */
 object FirstClassFuncTest {
 
   /* Anonymous First-class function as a variable */

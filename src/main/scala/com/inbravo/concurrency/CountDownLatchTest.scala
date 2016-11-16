@@ -3,7 +3,7 @@ package com.inbravo.concurrency
 import java.util.concurrent.CountDownLatch
 
 /**
- *
+ * amit.dixit
  */
 object CountDownLatchTest {
 

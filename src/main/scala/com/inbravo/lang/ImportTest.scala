@@ -1,6 +1,9 @@
 package com.inbravo.lang
 
-/* Import a class only */
+/**
+ * amit.dixit
+ * Import a class only
+ */
 import java.util.concurrent.atomic.AtomicInteger
 
 /* Import some classes */

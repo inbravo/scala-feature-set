@@ -4,6 +4,7 @@ import java.util.concurrent.atomic.AtomicInteger
 import scala.collection.mutable.ArrayBuffer
 
 /**
+ * amit.dixit
  * Stack class with primary constructor
  */
 final class Stack(maxSize: Int) {

@@ -28,6 +28,8 @@
 -  [Usage of 'CountDownLatch' in Scala][CountDownLatchTest.md]
 -  [Usage of 'CyclicBarrier' is in Scala][CyclicBarrierTest.md]
 -  [Usage of 'tailrec' during recursions in Scala][FactorialTest.md]
+-  [Test for Anagram String in Scala][Anagram.md]
+-  [Counter number of words per String in Scala][WordFrequency.md]
 -  [A Stack implemented in Scala][Stack.md]
 -  [Reverse a word using a stack in Scala][ReverseTheWord.md]
 -  [A Queue implemented in Scala][Queue.md]
@@ -39,6 +41,8 @@
 -  [A simple REST web service in Scala using Akka][CustomerRestService.md]
 -  [Usage of WeakHashMap in Scala][WeakHashMapTest.md]
 -  [Object synchronization in Scala][WeakHashMapTest.md]
+-  [Program to count words per statement in Scala using Spark][ScalaWordCount.md]
+-  [Program to show case RDD operation in Scala using Spark][SparkKeyValueEx.md]
 
 [AnnotationTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AnnotationTest.scala
 [MutatorTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MutatorTest.scala
@@ -67,6 +71,8 @@
 [CountDownLatchTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/CountDownLatchTest.scala
 [CyclicBarrierTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/CyclicBarrierTest.scala
 [FactorialTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/number/FactorialTest.scala
+[Anagram.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/string/Anagram.scala
+[WordFrequency.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/string/WordFrequency.scala
 [Stack.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/ds/stack/Stack.scala
 [ReverseTheWord.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/ds/stack/ReverseTheWord.scala
 [Queue.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/ds/queue/Queue.scala
@@ -77,3 +83,5 @@
 [SimpleHttpService.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/akka/http/SimpleHttpService.scala
 [CustomerRestService.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/akka/http/CustomerRestService.scala
 [WeakHashMapTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ref/WeakHashMapTest.scala
+[ScalaWordCount.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/ScalaWordCount.scala
+[ScalaWordCount.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SparkKeyValueEx.scala
