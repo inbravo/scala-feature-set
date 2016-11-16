@@ -84,4 +84,4 @@
 [CustomerRestService.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/akka/http/CustomerRestService.scala
 [WeakHashMapTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ref/WeakHashMapTest.scala
 [ScalaWordCount.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/ScalaWordCount.scala
-[ScalaWordCount.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SparkKeyValueEx.scala
+[SparkKeyValueEx.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SparkKeyValueEx.scala
