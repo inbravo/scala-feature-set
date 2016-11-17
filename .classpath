@@ -81,7 +81,6 @@
   <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\org.apache.commons\commons-math\srcs\commons-math-2.1-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.apache.commons\commons-math\jars\commons-math-2.1.jar"/>
   <classpathentry kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\xmlenc\xmlenc\jars\xmlenc-0.52.jar"/>
   <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\commons-httpclient\commons-httpclient\srcs\commons-httpclient-3.1-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\commons-httpclient\commons-httpclient\jars\commons-httpclient-3.1.jar"/>
-  <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\commons-codec\commons-codec\srcs\commons-codec-1.4-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.4.jar"/>
   <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\commons-net\commons-net\srcs\commons-net-2.2-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\commons-net\commons-net\jars\commons-net-2.2.jar"/>
   <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\log4j\log4j\srcs\log4j-1.2.17-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\log4j\log4j\bundles\log4j-1.2.17.jar"/>
   <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\commons-lang\commons-lang\srcs\commons-lang-2.5-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\commons-lang\commons-lang\jars\commons-lang-2.5.jar"/>
@@ -163,6 +162,18 @@
   <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\net.razorvine\pyrolite\srcs\pyrolite-4.9-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\net.razorvine\pyrolite\jars\pyrolite-4.9.jar"/>
   <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\net.sf.py4j\py4j\srcs\py4j-0.9-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\net.sf.py4j\py4j\jars\py4j-0.9.jar"/>
   <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\org.apache.spark\spark-streaming_2.11\srcs\spark-streaming_2.11-1.6.2-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.apache.spark\spark-streaming_2.11\jars\spark-streaming_2.11-1.6.2.jar"/>
+  <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\org.apache.spark\spark-sql_2.11\srcs\spark-sql_2.11-1.6.2-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.apache.spark\spark-sql_2.11\jars\spark-sql_2.11-1.6.2.jar"/>
+  <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\org.apache.spark\spark-catalyst_2.11\srcs\spark-catalyst_2.11-1.6.2-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.apache.spark\spark-catalyst_2.11\jars\spark-catalyst_2.11-1.6.2.jar"/>
+  <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\org.codehaus.janino\janino\srcs\janino-2.7.8-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.codehaus.janino\janino\jars\janino-2.7.8.jar"/>
+  <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\org.codehaus.janino\commons-compiler\srcs\commons-compiler-2.7.8-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.codehaus.janino\commons-compiler\jars\commons-compiler-2.7.8.jar"/>
+  <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\org.apache.parquet\parquet-column\srcs\parquet-column-1.7.0-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.apache.parquet\parquet-column\jars\parquet-column-1.7.0.jar"/>
+  <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\org.apache.parquet\parquet-common\srcs\parquet-common-1.7.0-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.apache.parquet\parquet-common\jars\parquet-common-1.7.0.jar"/>
+  <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\org.apache.parquet\parquet-encoding\srcs\parquet-encoding-1.7.0-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.apache.parquet\parquet-encoding\jars\parquet-encoding-1.7.0.jar"/>
+  <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\org.apache.parquet\parquet-generator\srcs\parquet-generator-1.7.0-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.apache.parquet\parquet-generator\jars\parquet-generator-1.7.0.jar"/>
+  <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\commons-codec\commons-codec\srcs\commons-codec-1.5-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.5.jar"/>
+  <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\org.apache.parquet\parquet-hadoop\srcs\parquet-hadoop-1.7.0-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.apache.parquet\parquet-hadoop\jars\parquet-hadoop-1.7.0.jar"/>
+  <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\org.apache.parquet\parquet-format\srcs\parquet-format-2.3.0-incubating-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.apache.parquet\parquet-format\jars\parquet-format-2.3.0-incubating.jar"/>
+  <classpathentry sourcepath="C:\Users\amit.dixit\.ivy2\cache\org.apache.parquet\parquet-jackson\srcs\parquet-jackson-1.7.0-sources.jar" kind="lib" path="C:\Users\amit.dixit\.ivy2\cache\org.apache.parquet\parquet-jackson\jars\parquet-jackson-1.7.0.jar"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="output" path="bin"/>
 </classpath>
