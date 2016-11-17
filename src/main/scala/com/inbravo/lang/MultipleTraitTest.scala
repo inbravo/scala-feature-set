@@ -5,24 +5,24 @@ package com.inbravo.lang
 object MultipleTraitTest {
 
   trait Car {
-    val brand: String
+    def getBrand(): String
   }
 
   trait Shiny {
-    val shineRefraction: Int
+    def getShineRefraction(): Int
   }
 
   /* Class with multiple traits using 'with' keyword */
-  final class BMW(b: String, s: Int) extends Car with Shiny {
+  final class BMW(brand: String, shineRefraction: Int) extends Car with Shiny {
 
-    val brand = b;
-    val shineRefraction = s;
+    def getBrand(): String = brand
+    def getShineRefraction(): Int = shineRefraction
 
     def print() {
-      println("brand: " + brand + ", shineRefraction: " + shineRefraction)
+      println("brand: " + getBrand + ", shineRefraction: " + getShineRefraction)
     }
   }
 
-  /* Main method for execution */
-  def main(args: Array[String]): Unit = new BMW(b = "BMW Sport", s = 11).print()
+  /* Main method as execution entry point */
+  def main(args: Array[String]): Unit = new BMW(brand = "BMW Sport", shineRefraction = 11).print()
 }
