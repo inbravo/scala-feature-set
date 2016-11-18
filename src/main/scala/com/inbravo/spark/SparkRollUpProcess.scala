@@ -9,7 +9,10 @@ import org.apache.spark.{ SparkContext, SparkConf }
  *
  * amit.dixit
  */
-class SparkRollUpProcess(classVars: ClassVars) {
+class SparkRollUpProcess {
+
+  /* Variable for aggregation */
+  var sumTempZero: Long = 0L
 
   /* Create new Spark SQL context */
   val sqlContext = new SQLContext(new SparkContext(new SparkConf().setAppName("SparkRollUpProcess")))
@@ -37,10 +40,10 @@ class SparkRollUpProcess(classVars: ClassVars) {
       val count: Int = columnCount + output.dataFrame.col(countColumnName).asInstanceOf[Int]
 
       /* Get the aggregated sum */
-      this.classVars.sumTempZero = this.classVars.sumTempZero + count
+      this.sumTempZero = this.sumTempZero + count
 
       /* Print the output frame */
-      println("RollUp resulted : " + this.classVars.sumTempZero)
+      println("RollUp resulted : " + this.sumTempZero)
 
       /* Generate output reports */
       finalize(output, count)
@@ -94,7 +97,7 @@ class SparkRollUpProcess(classVars: ClassVars) {
   /**
    * Test for OLAP RollUp function
    */
-  def main(args: Array[String]): Unit = {
+  def start(): Unit = {
 
     /* Create RollUpVars */
     var rollUpVars: RollUpOutput = null;
@@ -105,20 +108,6 @@ class SparkRollUpProcess(classVars: ClassVars) {
     /* Print the output frame */
     println(rollUpVars)
   }
-}
-
-/**
- *  This is the core trait to withhold all RollUp program variables
- */
-trait ClassVars {
-
-  /* Variable for aggregation */
-  var sumTempZero: Long
-
-  /* Variable for final output table */
-  var tempDataFrame: DataFrame
-
-  def print() = { println(sumTempZero + " | " + tempDataFrame.printSchema()) }
 }
 
 /**
@@ -139,4 +128,11 @@ class RollUpOutput {
   var count: Long = 0L
 
   def print() = { println(dataFrame.printSchema()) }
+}
+
+object SparkRollUpTest extends App {
+
+  val rollup = new SparkRollUpProcess
+
+  rollup.start()
 }
