@@ -46,7 +46,7 @@ class SparkRollUpProcess {
       println("RollUp resulted : " + this.sumTempZero)
 
       /* Generate output reports */
-      finalize(output, count)
+      finalize(tableName, output, count)
 
     } finally {
 
@@ -59,7 +59,7 @@ class SparkRollUpProcess {
   /**
    * Following method is to build the RollUp output
    */
-  def finalize(output: RollUpOutput, count: Int): Array[RollUpOutput] = {
+  def finalize(tableName: String, output: RollUpOutput, count: Int): Array[RollUpOutput] = {
 
     /* Get all columns */
     val columns: Array[String] = output.dataFrame.columns
@@ -76,34 +76,37 @@ class SparkRollUpProcess {
     }
 
     /* Generate table */
-    this.generateTable(outputArray)
+    this.generateTable(tableName, outputArray)
 
     return outputArray
   }
 
-  /* Generate RollUp data in a table */
-  def generateTable(outputArray: Array[RollUpOutput]) {
+  /**
+   *
+   *  Generate RollUp data in a table
+   */
+  def generateTable(tableName: String, outputArray: Array[RollUpOutput]) {
 
     /* Create new output table */
-    sqlContext.sql("CREATE TABLE IF NOT EXISTS ROLLUP_OUT(COUNT INT, COLUMN_NAME STRING, COLUMN_VALUE STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'")
+    sqlContext.sql("CREATE TABLE IF NOT EXISTS " + tableName + "_OUT(COUNT INT, COLUMN_NAME STRING, COLUMN_VALUE STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'")
 
     for (n <- outputArray) {
 
       /* Insert data in output table */
-      sqlContext.sql("INSERT INTO ROLLUP_OUT(COUNT, COLUMN_NAME, COLUMN_VALUE) VALUES(" + n.count + "," + n.columnName + "," + n.columnValue + ")")
+      sqlContext.sql("INSERT INTO " + tableName + "_OUT(COUNT, COLUMN_NAME, COLUMN_VALUE) VALUES(" + n.count + "," + n.columnName + "," + n.columnValue + ")")
     }
   }
 
   /**
    * Test for OLAP RollUp function
    */
-  def start(): Unit = {
+  def start(args: Array[String]): Unit = {
 
     /* Create RollUpVars */
     var rollUpVars: RollUpOutput = null;
 
     /* Call RollUp */
-    rollUpVars = rollup("ROLLUP_IN", "COUNT")
+    rollUpVars = rollup(args(0), args(1))
 
     /* Print the output frame */
     println(rollUpVars)
@@ -130,9 +133,16 @@ class RollUpOutput {
   def print() = { println(dataFrame.printSchema()) }
 }
 
-object SparkRollUpTest extends App {
+object SparkRollUpTest {
 
-  val rollup = new SparkRollUpProcess
+  /**
+   * Test for OLAP RollUp function
+   */
+  def main(args: Array[String]): Unit = {
 
-  rollup.start()
+    val rollup = new SparkRollUpProcess
+
+    println("Usage: First parameter is table name and second parameter is column name")
+    rollup.start(args)
+  }
 }
