@@ -1,11 +1,10 @@
 package com.inbravo.spark
 
 import org.apache.spark.sql._
+import org.apache.spark.sql.hive.HiveContext
 import org.apache.spark.{ SparkContext, SparkConf }
 /**
  * This class is going to exhibit OLAP RollUp functionality
- *
- * It has a constructor which expects ClassVars variables
  *
  * amit.dixit
  */
@@ -15,7 +14,7 @@ class SparkRollUpProcess {
   var sumTempZero: Long = 0L
 
   /* Create new Spark SQL context */
-  val sqlContext = new SQLContext(new SparkContext(new SparkConf().setAppName("SparkRollUpProcess")))
+  val context = new HiveContext(new SparkContext(new SparkConf().setAppName("SparkRollUpProcess")))
 
   /**
    * Following method is the core of this class
@@ -28,7 +27,7 @@ class SparkRollUpProcess {
     try {
 
       /* DataFrame for RollUp operation */
-      val dataFrame = sqlContext.sql("SELECT * FROM " + tableName)
+      val dataFrame = context.sql("FROM " + tableName+" SELECT * ")
 
       /* Use this as output DataFrame */
       output.dataFrame = dataFrame.asInstanceOf
@@ -88,12 +87,12 @@ class SparkRollUpProcess {
   def generateTable(tableName: String, outputArray: Array[RollUpOutput]) {
 
     /* Create new output table */
-    sqlContext.sql("CREATE TABLE IF NOT EXISTS " + tableName + "_OUT(COUNT INT, COLUMN_NAME STRING, COLUMN_VALUE STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'")
+    context.sql("CREATE TABLE IF NOT EXISTS " + tableName + "_OUT(COUNT INT, COLUMN_NAME STRING, COLUMN_VALUE STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'")
 
     for (n <- outputArray) {
 
       /* Insert data in output table */
-      sqlContext.sql("INSERT INTO " + tableName + "_OUT(COUNT, COLUMN_NAME, COLUMN_VALUE) VALUES(" + n.count + "," + n.columnName + "," + n.columnValue + ")")
+      context.sql("INSERT INTO " + tableName + "_OUT(COUNT, COLUMN_NAME, COLUMN_VALUE) VALUES(" + n.count + "," + n.columnName + "," + n.columnValue + ")")
     }
   }
 
@@ -102,11 +101,8 @@ class SparkRollUpProcess {
    */
   def start(args: Array[String]): Unit = {
 
-    /* Create RollUpVars */
-    var rollUpVars: RollUpOutput = null;
-
-    /* Call RollUp */
-    rollUpVars = rollup(args(0), args(1))
+    /* Create RollUpVars and Call RollUp */
+    var rollUpVars: RollUpOutput = rollup(args(0), args(1))
 
     /* Print the output frame */
     println(rollUpVars)
@@ -142,7 +138,8 @@ object SparkRollUpTest {
 
     val rollup = new SparkRollUpProcess
 
-    println("Usage: First parameter is table name and second parameter is column name")
+    println("Usage: RollUp works around a Column of given Table")
+    println("Usage: First parameter is Table name and second parameter is Column name")
     rollup.start(args)
   }
 }
