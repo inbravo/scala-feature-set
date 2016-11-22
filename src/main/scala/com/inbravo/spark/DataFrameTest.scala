@@ -63,7 +63,8 @@ object DataFrameTest {
 
     /* Create new OutDataFrame for each employee */
     employeesDataFrame.foreach {
-      
+
+      /* Update list for each employee */
       employee => (outDataFrames = outDataFrames :+ new OutDataFrame(employee.getInt(0), employee.getString(1), employee.getInt(2)))
     }
 
@@ -71,7 +72,7 @@ object DataFrameTest {
     println("========================================")
     emptyDataFrame.printSchema()
     employeesDataFrame.printSchema()
-    outDataFrames.foreach { e => println(e) }
+    outDataFrames.foreach { employee => println(employee) }
     println("========================================")
   }
 }
