@@ -10,8 +10,9 @@ import org.apache.spark.{ SparkContext, SparkConf }
  */
 object DataFrameTest {
 
-  /* A case class to represent a business object  */
+  /* Case classes to represent a business object  */
   case class Employee(id: Int, name: String, dept: String, age: Int, Exp: Int)
+  case class OutDataFrame(colName: Int, col_value: String, count: Int)
 
   /* Schema of Employee object */
   val empSchema = StructType(Seq(
@@ -29,9 +30,6 @@ object DataFrameTest {
     Row(5, "Raju", "Engineering", 36, 5),
     Row(6, "Mani", "Engineering", 30, 5))
 
-  /* Rows of employees */
-  val empRow = Row.fromSeq(empSeq)
-
   def main(args: Array[String]): Unit = {
 
     createDataFrame()
@@ -43,7 +41,7 @@ object DataFrameTest {
   def createDataFrame() {
 
     /* Create new spark context */
-    val sparkContext = new SparkContext(new SparkConf().setAppName("SparkRollUp"))
+    val sparkContext = new SparkContext(new SparkConf().setAppName("DataFrameTest"))
 
     /* Create new Spark SQL context */
     val sqlContext = new SQLContext(sparkContext)
@@ -60,10 +58,24 @@ object DataFrameTest {
     /*  Example 2 : Create a employees data frame using RDD and Schema */
     val employeesDataFrame: DataFrame = sqlContext.createDataFrame(empRDD, empSchema)
 
+    /* List of OutDataFrame */
+    var outDataFrames: Seq[OutDataFrame] = List.empty
+
+    /* Print each Employee */
+    employeesDataFrame.foreach { e => println(e) }
+
+    /* Iterate over all Employees */
+    for (employeeDataFrame <- employeesDataFrame) {
+
+      /* Create new OutDataFrame for each employee */
+      outDataFrames = outDataFrames :+ new OutDataFrame(employeeDataFrame.getInt(0), employeeDataFrame.getString(1), employeeDataFrame.getInt(2))
+    }
+
     /* Print schema */
     println("========================================")
     emptyDataFrame.printSchema()
     employeesDataFrame.printSchema()
+    outDataFrames.foreach { e => println(e) }
     println("========================================")
   }
 }
