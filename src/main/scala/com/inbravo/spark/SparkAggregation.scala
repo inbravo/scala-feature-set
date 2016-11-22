@@ -17,27 +17,4 @@ class SparkAggregation {
     /* Step 3: Rename 'col_name' to 'count' */
     dataframe.groupBy($"col_name").sum("count").toDF("col_name", "total")
   }
-
-  /**
-   * Test for OLAP Aggregation function
-   */
-  def main(args: Array[String]): Unit = {
-
-    /* Create new SparkRollUp object */
-    val aggregation = new SparkAggregation
-
-    /* Create new Spark SQL context */
-    val context = new SQLContext(new SparkContext(new SparkConf().setAppName("SparkRollUp")))
-
-    /* Create new test data frame */
-    val dataFrame = context.createDataFrame(Seq((1, "Amit", "Engineering", 36), (2, "Sumit", "Engineering", 35), (3, "Hari", "Engineering", 36), (4, "Ravi", "Engineering", 36), (5, "Raju", "Engineering", 36), (6, "Mani", "Engineering", 30))).toDF("id", "name", "Department", "Age")
-
-    /* Transform the data frame */
-    aggregation.transform(dataFrame)
-
-    /* Print schema */
-    println("========================================")
-    dataFrame.printSchema()
-    println("========================================")
-  }
 }
