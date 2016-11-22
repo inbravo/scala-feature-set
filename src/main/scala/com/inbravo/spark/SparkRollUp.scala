@@ -19,7 +19,9 @@ class SparkRollUp {
 
       import dataframe.sqlContext.implicits._
 
-      /* DataFrame for RollUp operation */
+      /* Step 1: RollUp By 'col_name' */
+      /* Step 2: Sum of all 'count' column values  */
+      /* Step 3: Rename 'col_name' to 'count' */
       dataframe.rollup($"col_name").sum("count").toDF("col_name", "total")
 
     } finally {
