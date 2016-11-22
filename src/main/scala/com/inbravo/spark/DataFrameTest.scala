@@ -61,14 +61,10 @@ object DataFrameTest {
     /* List of OutDataFrame */
     var outDataFrames: Seq[OutDataFrame] = List.empty
 
-    /* Print each Employee */
-    employeesDataFrame.foreach { e => println(e) }
-
-    /* Iterate over all Employees */
-    for (employeeDataFrame <- employeesDataFrame) {
-
-      /* Create new OutDataFrame for each employee */
-      outDataFrames = outDataFrames :+ new OutDataFrame(employeeDataFrame.getInt(0), employeeDataFrame.getString(1), employeeDataFrame.getInt(2))
+    /* Create new OutDataFrame for each employee */
+    employeesDataFrame.foreach {
+      
+      employee => (outDataFrames = outDataFrames :+ new OutDataFrame(employee.getInt(0), employee.getString(1), employee.getInt(2)))
     }
 
     /* Print schema */
