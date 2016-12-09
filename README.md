@@ -28,6 +28,7 @@
 -  [Usage of 'CountDownLatch' in Scala][CountDownLatchTest.md]
 -  [Usage of 'CyclicBarrier' is in Scala][CyclicBarrierTest.md]
 -  [Usage of 'tailrec' during recursions in Scala][FactorialTest.md]
+-  [Usage of 'lazy val' in Scala][LazyValTest.md]
 -  [Test for Anagram String in Scala][Anagram.md]
 -  [Counter number of words per String in Scala][WordFrequency.md]
 -  [A Stack implemented in Scala][Stack.md]
@@ -71,6 +72,7 @@
 [CountDownLatchTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/CountDownLatchTest.scala
 [CyclicBarrierTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/CyclicBarrierTest.scala
 [FactorialTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/number/FactorialTest.scala
+[LazyValTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/LazyValTest.scala
 [Anagram.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/string/Anagram.scala
 [WordFrequency.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/string/WordFrequency.scala
 [Stack.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/ds/stack/Stack.scala
