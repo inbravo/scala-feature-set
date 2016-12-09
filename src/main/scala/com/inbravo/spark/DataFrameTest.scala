@@ -41,7 +41,7 @@ object DataFrameTest {
   def createDataFrame() {
 
     /* Create new spark context */
-    val sparkContext = new SparkContext(new SparkConf().setAppName("DataFrameTest"))
+    val sparkContext = new SparkContext(new SparkConf().setAppName("DataFrameTest").setMaster("local"))
 
     /* Create new Spark SQL context */
     val sqlContext = new SQLContext(sparkContext)
@@ -65,7 +65,7 @@ object DataFrameTest {
     employeesDataFrame.foreach {
 
       /* Update list for each employee */
-      employee => (outDataFrames = outDataFrames :+ new OutDataFrame(employee.getInt(0), employee.getString(1), employee.getInt(2)))
+      employee => (outDataFrames = outDataFrames :+ new OutDataFrame(employee.getInt(0), employee.getString(1), employee.getInt(3)))
     }
 
     /* Print schema */
