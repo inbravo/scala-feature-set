@@ -40,13 +40,13 @@ object DataFrameTest {
    */
   def createDataFrame() {
 
-    /* Create new spark context */
+    /* Create new spark context using spark local executor */
     val sparkContext = new SparkContext(new SparkConf().setAppName("DataFrameTest").setMaster("local"))
 
     /* Create new Spark SQL context */
     val sqlContext = new SQLContext(sparkContext)
 
-    /* This is used to implicitly convert an RDD to a DataFrame */
+    /* This import is needed to use the $-notation */
     import sqlContext.implicits._
 
     /* Create employee RDD */
@@ -61,18 +61,22 @@ object DataFrameTest {
     /* List of OutDataFrame */
     var outDataFrames: Seq[OutDataFrame] = List.empty
 
-    /* Create new OutDataFrame for each employee */
-    employeesDataFrame.foreach {
+    /* Create new OutDataFrame for each employee, and add in list */
+    employeesDataFrame.collect().foreach {
 
       /* Update list for each employee */
       employee => (outDataFrames = outDataFrames :+ new OutDataFrame(employee.getInt(0), employee.getString(1), employee.getInt(3)))
     }
 
-    /* Print schema */
     println("========================================")
-    emptyDataFrame.printSchema()
-    employeesDataFrame.printSchema()
-    outDataFrames.foreach { employee => println(employee) }
+    /* Sum(age) by reducing with anonymous function (_+_) or (_*_) */
+    println("Sum(age): " + employeesDataFrame.select($"age").rdd.map(_(0).asInstanceOf[Int]).reduce(_ + _))
     println("========================================")
+    
+    println("========================================")
+    /* Sum(age) by reducing with anonymous function (_+_) or (_*_) */
+    println(employeesDataFrame.rollup($"age").sum("age").groupBy($"sum(age)").max().show())
+    println("========================================")
+
   }
 }
