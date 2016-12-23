@@ -6,14 +6,14 @@ import com.inbravo.hdfs.HdfsUtils
 /**
  * amit.dixit
  */
-object ScalaWordCount {
+object SparkWordCount {
 
   def main(args: Array[String]): Unit = countWords(args)
 
   def countWords(args: Array[String]) = {
 
     /* New spark configuration object */
-    var sparkConf = new SparkConf().setAppName("ScalaWordCount")
+    var sparkConf = new SparkConf().setAppName("SparkWordCount")
 
     /* Create new spark context */
     var sc = new SparkContext(sparkConf)

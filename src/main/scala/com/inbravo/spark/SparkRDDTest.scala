@@ -6,7 +6,7 @@ import org.apache.spark.{ SparkContext, SparkConf }
 /**
  * amit.dixit
  */
-object SparkKeyValueEx {
+object SparkRDDTest {
 
   def main(args: Array[String]) {
 
