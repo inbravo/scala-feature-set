@@ -1,6 +1,7 @@
 ### Some useful Scala examples
 
-1.  [Create custom annotations using 'scala.annotation.StaticAnnotation'] [AnnotationTest.md]
+#### Language constructs
+-  [Create custom annotations using 'scala.annotation.StaticAnnotation'] [AnnotationTest.md]
 -  [Value '_' initializes to default value of variable. Default accessor and mutator methods in an object] [MutatorTest.md]
 -  [Usage of companion object in Scala] [CompanionObjectTest.md]
 -  [Generics in Scala] [GenericsTest.md]
@@ -17,31 +18,38 @@
 -  [Default object factory in Scala] [ObjectFactoryTest.md]
 -  [Usage of 'import' in Scala] [ImportTest.md]
 -  [Usage of 'isInstanceOf' in Scala] [InstanceOfTest.md]
+-  [Usage of 'try' 'catch' in Scala] [TryCatchTest.md]
+-  [Usage of 'require' to enforce restrictions before creating instance of a Scala class] [RequireTest.md]
+-  [Usage of 'tailrec' during recursions in Scala][FactorialTest.md]
+-  [Usage of 'lazy val' in Scala][LazyValTest.md]
+-  [Program to give runtime size of all primitive variables in Scala][PrimitiveVarsSizeTest.md]
+#### Collection
 -  [Usage of 'Seq[String]' in Scala] [SeqOfStringsTest.md]
 -  [Usage of 'List' and 'Vector' in Scala] [ListTest.md]
 -  [Usage of 'ArrayBuffer' in Scala] [ArrayBufferTest.md]
--  [Usage of 'try' 'catch' in Scala] [TryCatchTest.md]
--  [Usage of 'require' to enforce restrictions before creating instance of a Scala class] [RequireTest.md]
+-  [Usage of WeakHashMap in Scala][WeakHashMapTest.md]
+#### Socket
+-  [Usage of 'ServerSocket' in Scala][NetworkService.md]
+#### Concurrency
 -  [Creating a 'Thread' in Scala][ThreadTest.md]
 -  [Usage of thread pool based concurrency in Scala][NetworkService.md]
--  [Usage of 'ServerSocket' in Scala][NetworkService.md]
+-  [Object synchronization in Scala][WeakHashMapTest.md]
 -  [Usage of 'CountDownLatch' in Scala][CountDownLatchTest.md]
 -  [Usage of 'CyclicBarrier' is in Scala][CyclicBarrierTest.md]
--  [Usage of 'tailrec' during recursions in Scala][FactorialTest.md]
--  [Usage of 'lazy val' in Scala][LazyValTest.md]
+#### Useful programs
 -  [Test for Anagram String in Scala][Anagram.md]
 -  [Counter number of words per String in Scala][WordFrequency.md]
+#### Data structure
 -  [A Stack implemented in Scala][Stack.md]
 -  [Reverse a word using a stack in Scala][ReverseTheWord.md]
 -  [A Queue implemented in Scala][Queue.md]
 -  [A Circular Queue implemented in Scala][CircularQueue.md]
--  [Program to give runtime size of all primitive variables in Scala][PrimitiveVarsSizeTest.md]
+#### Akka
 -  [A simple Akka Actor][HelloActor.md]
 -  [A Ping Pong program using Akka Actors][PingPongTest.md]
 -  [A simple HTTP service in Scala using Akka][SimpleHttpService.md]
 -  [A simple REST web service in Scala using Akka][CustomerRestService.md]
--  [Usage of WeakHashMap in Scala][WeakHashMapTest.md]
--  [Object synchronization in Scala][WeakHashMapTest.md]
+#### Spark 
 -  [Program to count words per statement in Scala using Spark][SparkWordCount.md]
 -  [Program to show case RDD operations in Scala using Spark][SparkRDDTest.md]
 -  [Program to show case DataFrame operations in Scala using Spark][SparkDFTest.md]
