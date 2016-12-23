@@ -37,6 +37,7 @@ object SparkDFTest {
 
     runSchemaBasedBasicDataFramesExample(sparkSession)
     runJSONBasedBasicDataFramesExample(sparkSession)
+    runInferSchemaExample(sparkSession)
   }
 
   private def runSchemaBasedBasicDataFramesExample(sparkSession: SparkSession): Unit = {
@@ -70,44 +71,83 @@ object SparkDFTest {
     val df = sparkSession.read.json("src/main/resources/people.json")
 
     println("Complete Data Frame: ")
-    /* Displays the content of the DataFrame */
-    df.show()
+    /* Example 1 : Displays the content of the DataFrame */
+    df.show
     println("-----------------------------------------------------")
 
     /* Untyped DataSet Operations */
     println("Schema: ")
-    /* Print the schema in a tree format */
+    /* Example 2 : Print the schema in a tree format */
     df.printSchema()
     println("-----------------------------------------------------")
 
     println("Only column(name): ")
-    /* Select a column */
-    df.select("name").show()
+    /* Example 3 : Select a column */
+    df.select("name").show
     println("-----------------------------------------------------")
 
     println("Show all but increment the age: ")
-    /* Select everybody, but increment the age by 1 */
-    df.select($"name", $"age" + 1).show()
+    /* Example 4 : Select everybody, but increment the age by 1 */
+    df.select($"name", $"age" + 1).show
     println("-----------------------------------------------------")
 
     println("people older than 21: ")
-    /* Select people older than 21 */
+    /* Example 5 : Select people older than 21 */
     df.filter($"age" > 21).show()
     println("-----------------------------------------------------")
 
     println("People with valid name and age more than 21: ")
-    /* Select people with not null name, older than 21 */
-    df.filter($"age" > 21).filter($"name".isNotNull).show()
+    /* Example 6 : Select people with not null name, older than 21 */
+    df.filter($"age" > 21).filter($"name".isNotNull).show
     println("-----------------------------------------------------")
 
     println("Count all people in same age group: ")
-    /* Count people by age */
-    df.filter($"age".isNotNull).groupBy("age").count().show()
+    /* Example 7 : Count people by age */
+    df.filter($"age".isNotNull).groupBy("age").count.show
     println("-----------------------------------------------------")
 
-    /* Register the DataFrame as a SQL temporary view, valid only for current session */
+    /* Example 8 : Register the DataFrame as a SQL temporary view, valid only for current session */
     df.createOrReplaceTempView("people")
-    sparkSession.sql("SELECT * FROM people").show()
+    sparkSession.sql("SELECT * FROM people").show
+    println("-----------------------------------------------------")
+  }
+
+  private def runInferSchemaExample(sparkSession: SparkSession): Unit = {
+
+    /* This import is needed to use the $-notation, for implicit conversions like converting RDDs to DataFrames */
+    import sparkSession.implicits._
+
+    /* Create an RDD of Person objects from a text file, convert it to a DataFrame */
+    val peopleDF = sparkSession.sparkContext.textFile("src/main/resources/people.txt").map(_.split(",")).map(attributes => Person(attributes(0), attributes(1).trim.toInt)).toDF()
+
+    /* Register the DataFrame as a temporary view */
+    peopleDF.createOrReplaceTempView("people")
+
+    println("All persons: ")
+    /* Example 9 : Displays the content of the DataFrame */
+    peopleDF.show
+    println("-----------------------------------------------------")
+
+    /* SQL statements can be run by using the spark methods */
+    val teenagersDF = sparkSession.sql("SELECT name, age FROM people WHERE age BETWEEN 13 AND 29")
+
+    println("Person at first position: ")
+    /* Example 10 : The columns of a row in the result can be accessed by field index */
+    teenagersDF.map(teenager => "Name: " + teenager(0) + ", Age: " + teenager(1)).show
+    println("-----------------------------------------------------")
+
+    println("All persons: ")
+    /* Example 11 :  or by field name */
+    teenagersDF.map(teenager => "Name: " + teenager.getAs[String]("name") + ", Age: " + teenager.getAs[Long]("age")).show()
+    println("-----------------------------------------------------")
+
+    /* Define encoder for DataSet[Map[K,V]] */
+    implicit val mapEncoder = org.apache.spark.sql.Encoders.kryo[Map[String, Any]]
+
+    println("All persons: ")
+    /* Example 12 : row.getValuesMap[T] retrieves multiple columns at once into a Map[String, T] */
+    val selectedPersonsMap = teenagersDF.map(teenager => teenager.getValuesMap[Any](List("name", "age"))).collect()
+    selectedPersonsMap foreach (person => println(person))
     println("-----------------------------------------------------")
   }
 }
