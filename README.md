@@ -42,8 +42,10 @@
 -  [A simple REST web service in Scala using Akka][CustomerRestService.md]
 -  [Usage of WeakHashMap in Scala][WeakHashMapTest.md]
 -  [Object synchronization in Scala][WeakHashMapTest.md]
--  [Program to count words per statement in Scala using Spark][ScalaWordCount.md]
--  [Program to show case RDD operation in Scala using Spark][SparkKeyValueEx.md]
+-  [Program to count words per statement in Scala using Spark][SparkWordCount.md]
+-  [Program to show case RDD operations in Scala using Spark][SparkRDDTest.md]
+-  [Program to show case DataFrame operations in Scala using Spark][SparkDFTest.md]
+-  [Program to show case DataSet operations in Scala using Spark][SparkDSTest.md]
 
 [AnnotationTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AnnotationTest.scala
 [MutatorTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MutatorTest.scala
@@ -85,5 +87,7 @@
 [SimpleHttpService.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/akka/http/SimpleHttpService.scala
 [CustomerRestService.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/akka/http/CustomerRestService.scala
 [WeakHashMapTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ref/WeakHashMapTest.scala
-[ScalaWordCount.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/ScalaWordCount.scala
-[SparkKeyValueEx.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SparkKeyValueEx.scala
+[SparkWordCount.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SparkWordCount.scala
+[SparkRDDTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SparkRDDTest.scala
+[SparkDFTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SparkDFTest.scala
+[SparkDSTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SparkDSTest.scala
