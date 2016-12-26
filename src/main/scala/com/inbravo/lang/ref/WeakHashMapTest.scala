@@ -33,13 +33,13 @@ object WeakHashMapTest extends App {
   }
 
   println("Size of cache before garbage collection: " + cache.size)
-  
+
   /* Garbage collection cycle will flush all cache objects */
   System.gc()
   Thread.sleep(1000)
-  
+
   println("Size of cache a garbage collection: " + cache.size)
-  
+
   /* This loop will throw null pointer error */
   for (a <- 0 to 100) {
 

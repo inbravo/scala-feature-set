@@ -17,7 +17,7 @@ object FactorialTest {
 
       println(factorial.enhancedFactorial(500))
     } catch {
-      case e: Exception => e.printStackTrace()
+      case e: Exception => e.printStackTrace
     }
   }
 }
