@@ -8,7 +8,7 @@ import java.util.concurrent.{ CyclicBarrier, BrokenBarrierException }
  */
 object CyclicBarrierTest {
 
-  def main(args: Array[String]): Unit = cyclicBarrierTest()
+  def main(args: Array[String]): Unit = cyclicBarrierTest
 
   def cyclicBarrierTest() {
 
@@ -16,7 +16,7 @@ object CyclicBarrierTest {
     var CyclicBarrierOne: CyclicBarrier = new CyclicBarrier(2, new Runnable {
 
       override def run {
-        System.out.println("barrierOneAction executed ")
+        println("barrierOneAction executed ")
       }
     })
 
@@ -24,7 +24,7 @@ object CyclicBarrierTest {
     var CyclicBarrierTwo: CyclicBarrier = new CyclicBarrier(2, new Runnable {
 
       override def run {
-        System.out.println("barrierTwoAction executed ")
+        println("barrierTwoAction executed ")
       }
     })
 
@@ -32,8 +32,8 @@ object CyclicBarrierTest {
     var runnable = new CyclicBarrierDoubleRunnable(CyclicBarrierOne, CyclicBarrierTwo)
 
     /* Create two anonymous threads on CyclicBarrierRunnable */
-    new Thread(runnable).start()
-    new Thread(runnable).start()
+    new Thread(runnable).start
+    new Thread(runnable).start
 
     /*
      * Third thread will never pass from CyclicBarrier because of number of allowed parties is 2
@@ -50,14 +50,14 @@ final class CyclicBarrierDoubleRunnable(cyclicBarrierOne: CyclicBarrier, cyclicB
     try {
       Thread.sleep(1000);
 
-      System.out.println(Thread.currentThread().getName() + " waiting at barrier One");
-      this.cyclicBarrierOne.await();
+      println(Thread.currentThread.getName + " waiting at barrier One");
+      this.cyclicBarrierOne.await;
 
       Thread.sleep(1000);
-      System.out.println(Thread.currentThread().getName() + " waiting at barrier Two");
-      this.cyclicBarrierTwo.await();
+      println(Thread.currentThread.getName + " waiting at barrier Two");
+      this.cyclicBarrierTwo.await;
 
-      System.out.println(Thread.currentThread().getName() + " done!");
+      println(Thread.currentThread.getName + " done!");
 
     } catch {
 
