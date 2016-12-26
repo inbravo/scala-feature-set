@@ -14,3 +14,5 @@ target/
 .cache-tests
 .settings/org.eclipse.core.resources.prefs
 .worksheet/src/com.inbravo.ws.Addhoc.scala
+*.crc
+people.parquet/part-r-00000-cd34d6c8-ac06-446e-986f-aecbc7c44272.snappy.parquet

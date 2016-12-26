@@ -47,5 +47,13 @@ object SparkDSTest {
     println("Persons as data set: ")
     persons.toDS().show()
     println("-----------------------------------------------------")
+
+    val personDS = Seq(Person("Andy", 32)).toDS()
+    personDS.show()
+    println("-----------------------------------------------------")
+
+    /* DataFrames can be converted to a DataSet by providing a class. Mapping will be done by name */
+    sparkSession.read.json("src/main/resources/people.json").as[Person].show
+    println("-----------------------------------------------------")
   }
 }

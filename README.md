@@ -44,7 +44,7 @@
 -  [Test for Anagram String in Scala][Anagram.md]
 -  [Counter number of words per String in Scala][WordFrequency.md]
 
-#### Data structure
+#### Data structures
 -  [A Stack implemented in Scala][Stack.md]
 -  [Reverse a word using a stack in Scala][ReverseTheWord.md]
 -  [A Queue implemented in Scala][Queue.md]
@@ -57,11 +57,11 @@
 -  [A simple REST web service in Scala using Akka][CustomerRestService.md]
 
 #### Spark 
--  [Program to count words per statement in Scala using Spark][SparkWordCount.md]
--  [Program to show case RDD operations in Scala using Spark][SparkRDDTest.md]
--  [Program to show case DataFrame operations in Scala using Spark][SparkDFTest.md]
--  [Program to show case DataSet operations in Scala using Spark][SparkDSTest.md]
--  [Program to show various operations on Data retrieved from File in Scala using Spark][SparkTestFileTest.md]
+-  [Program to count 'words per statement'][SparkWordCount.md]
+-  [Program to show case RDD operations][SparkRDDTest.md]
+-  [Program to show case DataFrame operations][SparkDFTest.md]
+-  [Program to show case DataSet operations][SparkDSTest.md]
+-  [Program to show various operations on Data retrieved from File][SparkTestFileTest.md]
 
 [AnnotationTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AnnotationTest.scala
 [MutatorTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MutatorTest.scala

@@ -38,6 +38,7 @@ object SparkDFTest {
     runSchemaBasedBasicDataFramesExample(sparkSession)
     runJSONBasedBasicDataFramesExample(sparkSession)
     runInferSchemaExample(sparkSession)
+    runParquetExample(sparkSession)
   }
 
   private def runSchemaBasedBasicDataFramesExample(sparkSession: SparkSession): Unit = {
@@ -148,6 +149,27 @@ object SparkDFTest {
     /* Example 12 : row.getValuesMap[T] retrieves multiple columns at once into a Map[String, T] */
     val selectedPersonsMap = teenagersDF.map(teenager => teenager.getValuesMap[Any](List("name", "age"))).collect()
     selectedPersonsMap foreach (person => println(person))
+    println("-----------------------------------------------------")
+  }
+
+  private def runParquetExample(sparkSession: SparkSession): Unit = {
+
+    /* This import is needed to use the $-notation, for implicit conversions like converting RDDs to DataFrames */
+    import sparkSession.implicits._
+
+    /* Create an RDD of Person objects from a text file, convert it to a DataFrame */
+    val personDF = sparkSession.sparkContext.textFile("src/main/resources/people.txt").map(_.split(",")).map(attributes => Person(attributes(0), attributes(1).trim.toInt)).toDF()
+
+    /* DataFrames can be saved as 'PARQUET' files, maintaining the schema information */
+    personDF.write.parquet("people.parquet")
+
+    /* The result of loading a PARQUET file is also a DataFrame */
+    val parquetFileDF = sparkSession.read.parquet("people.parquet")
+
+    /* PARQUET files can also be used to create a temporary view and then used in SQL statements */
+    parquetFileDF.createOrReplaceTempView("parquetFile")
+    val namesDF = sparkSession.sql("SELECT name FROM parquetFile WHERE age BETWEEN 13 AND 19")
+    namesDF.map(attributes => "Name: " + attributes(0)).show()
     println("-----------------------------------------------------")
   }
 }
