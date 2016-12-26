@@ -26,7 +26,7 @@ object SparkDFTest {
     System.setProperty("hadoop.home.dir", "D:/opensource/hadoop-2.7.1/winutils");
 
     /* Create new local spark session */
-    val sparkSession = SparkSession.builder().config(new SparkConf().setAppName("DataFrameTest").setMaster("local"))
+    val sparkSession = SparkSession.builder().config(new SparkConf().setAppName("SparkDFTest").setMaster("local"))
       .getOrCreate()
 
     /* Change log level to avoid lots of log */
@@ -118,14 +118,14 @@ object SparkDFTest {
     import sparkSession.implicits._
 
     /* Create an RDD of Person objects from a text file, convert it to a DataFrame */
-    val peopleDF = sparkSession.sparkContext.textFile("src/main/resources/people.txt").map(_.split(",")).map(attributes => Person(attributes(0), attributes(1).trim.toInt)).toDF()
+    val personDF = sparkSession.sparkContext.textFile("src/main/resources/people.txt").map(_.split(",")).map(attributes => Person(attributes(0), attributes(1).trim.toInt)).toDF()
 
     /* Register the DataFrame as a temporary view */
-    peopleDF.createOrReplaceTempView("people")
+    personDF.createOrReplaceTempView("people")
 
     println("All persons: ")
     /* Example 9 : Displays the content of the DataFrame */
-    peopleDF.show
+    personDF.show
     println("-----------------------------------------------------")
 
     /* SQL statements can be run by using the spark methods */

@@ -11,7 +11,7 @@ object SparkRDDTest {
   def main(args: Array[String]) {
 
     /* New spark configuration object */
-    var sparkConf = new SparkConf().setAppName("SparkKeyValueEx")
+    var sparkConf = new SparkConf().setAppName("SparkRDDTest")
 
     /* Create new spark context */
     var sc = new SparkContext(sparkConf)

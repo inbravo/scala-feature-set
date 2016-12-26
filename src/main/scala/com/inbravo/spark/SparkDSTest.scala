@@ -27,7 +27,7 @@ object SparkDSTest {
     System.setProperty("hadoop.home.dir", "D:/opensource/hadoop-2.7.1/winutils");
 
     /* Create new local spark session */
-    val sparkSession = SparkSession.builder().config(new SparkConf().setAppName("DataFrameTest").setMaster("local"))
+    val sparkSession = SparkSession.builder().config(new SparkConf().setAppName("SparkDSTest").setMaster("local"))
       .getOrCreate()
 
     /* Change log level to avoid lots of log */
