@@ -61,6 +61,7 @@
 -  [Program to show case RDD operations in Scala using Spark][SparkRDDTest.md]
 -  [Program to show case DataFrame operations in Scala using Spark][SparkDFTest.md]
 -  [Program to show case DataSet operations in Scala using Spark][SparkDSTest.md]
+-  [Program to show various operations on Data retrieved from File in Scala using Spark][SparkTestFileTest.md]
 
 [AnnotationTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AnnotationTest.scala
 [MutatorTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MutatorTest.scala
@@ -106,3 +107,4 @@
 [SparkRDDTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SparkRDDTest.scala
 [SparkDFTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SparkDFTest.scala
 [SparkDSTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SparkDSTest.scala
+[SparkTestFileTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SparkTestFileTest.scala
