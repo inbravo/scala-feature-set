@@ -3,6 +3,9 @@ package com.inbravo.memory
 import java.util.concurrent.TimeUnit;
 
 /**
+ * Add VM arguments before running: -javaagent:lib/object-explorer.jar -XX:+UseG1GC
+ * -XX:ConcGCThreads=2 -XX:+UnlockExperimentalVMOptions -verbosegc -XX:G1LogLevel=finest
+ * 
  * amit.dixit
  */
 object PrimitiveVarsSizeTest {
