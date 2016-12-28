@@ -33,6 +33,7 @@ object SocketWordCount {
     startListening(streamingContext, args)
   }
 
+
   private def startListening(streamingContext: StreamingContext, args: Array[String]): Unit = {
     println("startListening....")
 
@@ -45,6 +46,7 @@ object SocketWordCount {
     /* Count the words */
     val wordCounts = words.map(x => (x, 1)).reduceByKey(_ + _)
 
+    /* Prints the first ten elements of every batch of data in DStream */
     wordCounts.print
     streamingContext.start
     streamingContext.awaitTermination

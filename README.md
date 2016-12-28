@@ -58,11 +58,11 @@
 
 #### Spark 
 -  [Program to count 'words per statement'][SparkWordCount.md]
+-  [Program to count 'words per statement', arrived on network socket][SocketWordCount.md]
 -  [Program to show case RDD operations][SparkRDDTest.md]
 -  [Program to show case DataFrame operations][SparkDFTest.md]
 -  [Program to show case DataSet operations][SparkDSTest.md]
 -  [Program to show various operations on Data retrieved from File][SparkTestFileTest.md]
--  [Program to count 'words per statement', arrived on network socket][SocketWordCount.md]
 
 [AnnotationTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AnnotationTest.scala
 [MutatorTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MutatorTest.scala
