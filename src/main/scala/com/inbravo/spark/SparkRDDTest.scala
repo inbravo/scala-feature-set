@@ -10,8 +10,8 @@ object SparkRDDTest {
 
   def main(args: Array[String]) {
 
-    /* New spark configuration object */
-    var sparkConf = new SparkConf().setAppName("SparkRDDTest")
+    /* New spark configuration object with Single threads per Core */
+    var sparkConf = new SparkConf().setAppName("SparkRDDTest").setMaster("local[*]")
 
     /* Create new spark context */
     var sc = new SparkContext(sparkConf)

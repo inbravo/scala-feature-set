@@ -20,8 +20,8 @@ object SocketWordCount {
     /* To avoid 'winutils.exe' error */
     System.setProperty("hadoop.home.dir", "D:/opensource/hadoop-2.7.1/winutils");
 
-    /* Create the context with a 1 second batch size */
-    val streamingContext = new StreamingContext(new SparkConf().setAppName("SparkDSTest").setMaster("local[3]"), Seconds(1))
+    /* Create the context with Single threads per Core listening per second batch interval */
+    val streamingContext = new StreamingContext(new SparkConf().setAppName("SparkDSTest").setMaster("local[*]"), Seconds(1))
 
     /* Print the spark version */
     println("Spark version: " + streamingContext.sparkContext.version)
@@ -39,7 +39,7 @@ object SocketWordCount {
   private def startListening(streamingContext: StreamingContext, args: Array[String]): Unit = {
     println("startListening....")
 
-    /* Create a ReceiverInputDStream on target ip:port */
+    /* Create a ReceiverInputDStream on target ip:port using TCP socket */
     val lines = streamingContext.socketTextStream(args(0), args(1).toInt, StorageLevel.MEMORY_ONLY)
 
     /* Split every line by space char */

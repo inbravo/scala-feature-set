@@ -12,8 +12,8 @@ object SparkWordCount {
 
   def countWords(args: Array[String]) = {
 
-    /* New spark configuration object */
-    var sparkConf = new SparkConf().setAppName("SparkWordCount")
+    /* New spark configuration object with Single threads per Core */
+    var sparkConf = new SparkConf().setAppName("SparkWordCount").setMaster("local[*]")
 
     /* Create new spark context */
     var sc = new SparkContext(sparkConf)

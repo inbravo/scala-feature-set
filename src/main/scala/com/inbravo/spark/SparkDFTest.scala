@@ -25,8 +25,8 @@ object SparkDFTest {
     /* To avoid 'winutils.exe' error */
     System.setProperty("hadoop.home.dir", "D:/opensource/hadoop-2.7.1/winutils");
 
-    /* Create new local spark session */
-    val sparkSession = SparkSession.builder().config(new SparkConf().setAppName("SparkDFTest").setMaster("local"))
+    /* Create new local spark session with Single threads per Core */
+    val sparkSession = SparkSession.builder().config(new SparkConf().setAppName("SparkDFTest").setMaster("local[*]"))
       .getOrCreate()
 
     /* Change log level to avoid lots of log */

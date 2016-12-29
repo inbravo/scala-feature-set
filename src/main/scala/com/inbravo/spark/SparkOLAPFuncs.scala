@@ -45,8 +45,8 @@ object TestOLAPFuncs {
     /* Create new SparkRollUp object */
     val rollup = new com.inbravo.spark.SparkRollUp
 
-    /* Create new spark context */
-    val sparkContext = new SparkContext(new SparkConf().setAppName("SparkRollUp"))
+    /* Create new spark context with Single threads per Core */
+    val sparkContext = new SparkContext(new SparkConf().setAppName("SparkRollUp").setMaster("local[*]"))
 
     /* Create new Spark SQL context */
     val sqlContext = new SQLContext(sparkContext)
