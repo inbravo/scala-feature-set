@@ -8,6 +8,9 @@ import org.apache.spark.streaming._
 /**
  * Program to count words, received on socket
  *
+ * On Unix: nc -lk 9090
+ * On window: nc -l -p 9090
+ *
  * amit.dixit
  */
 object SocketWordCount {
@@ -18,7 +21,7 @@ object SocketWordCount {
     System.setProperty("hadoop.home.dir", "D:/opensource/hadoop-2.7.1/winutils");
 
     /* Create the context with a 1 second batch size */
-    val streamingContext = new StreamingContext(new SparkConf().setAppName("SparkDSTest").setMaster("local"), Seconds(1))
+    val streamingContext = new StreamingContext(new SparkConf().setAppName("SparkDSTest").setMaster("local[3]"), Seconds(1))
 
     /* Print the spark version */
     println("Spark version: " + streamingContext.sparkContext.version)
@@ -32,7 +35,6 @@ object SocketWordCount {
     /* Start listening thread */
     startListening(streamingContext, args)
   }
-
 
   private def startListening(streamingContext: StreamingContext, args: Array[String]): Unit = {
     println("startListening....")
