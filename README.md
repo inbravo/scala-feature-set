@@ -24,6 +24,7 @@
 -  [Usage of 'lazy val' in Scala][LazyValTest.md]
 -  [Program to give runtime size of all primitive variables in Scala][PrimitiveVarsSizeTest.md]
 -  [Usage of keyword '++' in Scala] [StringsTest.md]
+-  [Operators are nothing just methods. Operator overloading example] [OperatorsAreMethods.md]
 
 #### Collection
 -  [Usage of 'Seq[String]' in Scala] [SeqOfStringsTest.md]
@@ -88,7 +89,8 @@
 [EnvironmentVarTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/EnvironmentVarTest.scala 
 [FirstClassFuncTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/FirstClassFuncTest.scala 
 [TryCatchTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TryCatchTest.scala 
-[RequireTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/CompanionObjectTest.scala 
+[RequireTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/CompanionObjectTest.scala
+[OperatorsAreMethods.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/OperatorsAreMethods.scala 
 [NetworkService.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/NetworkService.scala
 [ThreadTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/ThreadTest.scala
 [CountDownLatchTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/CountDownLatchTest.scala

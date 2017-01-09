@@ -18,14 +18,18 @@ object Addhoc {
 
   println(y)                                      //> y
                                                   //| 13
-  new X                                           //> res0: com.inbravo.ws.X = com.inbravo.ws.X@6e1ec318
-  new Y                                           //> res1: com.inbravo.ws.Y = com.inbravo.ws.Y@7e0b0338
+  new X                                           //> res0: com.inbravo.ws.X = com.inbravo.ws.X@3e9b1010
+  new Y                                           //> res1: com.inbravo.ws.Y = com.inbravo.ws.Y@6c3708b3
 
   val numbers = Array(1, 2, 3, 4, 5)              //> numbers  : Array[Int] = Array(1, 2, 3, 4, 5)
   val sum = numbers.reduce[Int](_ * _)            //> sum  : Int = 120
 
   println("The sum of the numbers one through five is " + sum)
                                                   //> The sum of the numbers one through five is 120
+          
+  val a = "a"                                     //> a  : String = a
+  val b = "b"                                     //> b  : String = b
+  println(a.+(b))                                 //> ab
 }
 
 /* Example for 'lazy val' */
