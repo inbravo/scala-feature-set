@@ -25,6 +25,9 @@
 -  [Program to give runtime size of all primitive variables in Scala][PrimitiveVarsSizeTest.md]
 -  [Usage of keyword '++' in Scala] [StringsTest.md]
 -  [Operators are nothing just methods. Operator overloading example] [OperatorsAreMethods.md]
+-  ["Hello"(4) is actually "Hello".apply(4)] [MathOpsTest.md]
+-  [BigInt("1234567890") is actually BigInt.apply("1234567890")] [MathOpsTest.md]
+-  [import scala.math._ and import math._ are same. Top package ('scala') can be ignored] [MathOpsTest.md]
 
 #### Collection
 -  [Usage of 'Seq[String]' in Scala] [SeqOfStringsTest.md]
@@ -82,7 +85,8 @@
 [GenericsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/GenericsTest.scala 
 [StringsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/StringsTest.scala 
 [SeqOfStringsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/SeqOfStringsTest.scala 
-[ListTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/SeqOfStringsTest.scala 
+[ListTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/SeqOfStringsTest.scala
+[MathOpsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MathOpsTest.scala  
 [ArrayBufferTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/SeqOfStringsTest.scala 
 [CompanionObjectTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/CompanionObjectTest.scala 
 [MapTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MapTest.scala 
