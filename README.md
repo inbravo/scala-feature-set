@@ -3,6 +3,10 @@
 #### Language constructs
 -  [Create custom annotations using 'scala.annotation.StaticAnnotation'] [AnnotationTest.md]
 -  [Value '_' initializes to default value of variable. Default accessor and mutator methods in an object] [MutatorTest.md]
+-  ["Hello"(4) is actually "Hello".apply(4)] [MathOpsTest.md]
+-  [BigInt("1234567890") is actually BigInt.apply("1234567890")] [MathOpsTest.md]
+-  [Statements 'import scala.math._' and 'import math._' are same. Top package ('scala') can be ignored] [MathOpsTest.md]
+-  [The 'void' type is 'Unit'. Technically 'void' has no value whereas 'Unit' has one value that signifies 'no value'] [MathOpsTest.md]
 -  [Usage of companion object in Scala] [CompanionObjectTest.md]
 -  [Generics in Scala] [GenericsTest.md]
 -  [Enviornment variables in Scala] [EnvironmentVarTest.md]
@@ -25,10 +29,7 @@
 -  [Program to give runtime size of all primitive variables in Scala][PrimitiveVarsSizeTest.md]
 -  [Usage of keyword '++' in Scala] [StringsTest.md]
 -  [Operators are nothing just methods. Operator overloading example] [OperatorsAreMethods.md]
--  ["Hello"(4) is actually "Hello".apply(4)] [MathOpsTest.md]
--  [BigInt("1234567890") is actually BigInt.apply("1234567890")] [MathOpsTest.md]
--  [import scala.math._ and import math._ are same. Top package ('scala') can be ignored] [MathOpsTest.md]
--  [The 'void' type is 'Unit'. Technically 'void' has no value whereas 'Unit' has one value that signifies 'no value'] [MathOpsTest.md]
+-  [Function that can take a variable number of arguments] [VarArgsTest.md]
 
 #### Collection
 -  [Usage of 'Seq[String]' in Scala] [SeqOfStringsTest.md]
@@ -71,6 +72,7 @@
 -  [Program to show various operations on Data retrieved from File][SparkTestFileTest.md]
 -  [Program to show Kryo based serialization][KryoEncodingTest.md]
 
+[VarArgsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarArgsTest.scala
 [AnnotationTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AnnotationTest.scala
 [MutatorTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MutatorTest.scala
 [EitherTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/EitherTest.scala  
