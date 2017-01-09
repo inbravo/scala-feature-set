@@ -21,4 +21,7 @@ object VarArgsTest extends App {
   echo(Array("arr", "of", "strings"): _*)
   echoInt(Array(1, 2, 3, 4, 5, 6, 7, 8, 9): _*)
   echoDouble(Array(1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0): _*)
+
+  /* Type cast to 'java.lang.object' can be handled by 'AnyRef' */
+  println(java.text.MessageFormat.format("The answer to {0} is {1}", "everything", 42.asInstanceOf[AnyRef]))
 }
