@@ -28,6 +28,7 @@
 -  ["Hello"(4) is actually "Hello".apply(4)] [MathOpsTest.md]
 -  [BigInt("1234567890") is actually BigInt.apply("1234567890")] [MathOpsTest.md]
 -  [import scala.math._ and import math._ are same. Top package ('scala') can be ignored] [MathOpsTest.md]
+-  [The 'void' type is 'Unit'. Technically 'void' has no value whereas 'Unit' has one value that signifies 'no value'] [MathOpsTest.md]
 
 #### Collection
 -  [Usage of 'Seq[String]' in Scala] [SeqOfStringsTest.md]
