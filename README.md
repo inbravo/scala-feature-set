@@ -29,7 +29,7 @@
 -  [Usage of keyword '++' in Scala] [StringsTest.md]
 -  [Operators are nothing just methods. Operator overloading example] [OperatorsAreMethods.md]
 -  [Example of a function that can take a variable number of arguments] [VarArgsTest.md]
--  [java 'Object' Class equivalent in Scala is 'AnyRef'] [VarArgsTest.md]
+-  [Equivalent of Java 'Object' Class in Scala is 'AnyRef'] [VarArgsTest.md]
 
 #### Collection
 -  [Usage of 'Seq[String]' in Scala] [SeqOfStringsTest.md]
