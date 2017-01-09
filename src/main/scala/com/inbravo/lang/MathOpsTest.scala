@@ -1,11 +1,12 @@
 package com.inbravo.lang
 /**
- * 
- * 
+ *
+ *
  * amit.dixit
  */
 object MathOpsTest {
 
+  /* The void type is Unit. Technically 'void' has no value whereas 'Unit' has one value that signifies 'no value' */
   def main(args: Array[String]): Unit = {
 
     /* Both imports are same. top package can be ignored */

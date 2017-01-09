@@ -5,7 +5,6 @@
 -  [Value '_' initializes to default value of variable. Default accessor and mutator methods in an object] [MutatorTest.md]
 -  ["Hello"(4) is actually "Hello".apply(4)] [MathOpsTest.md]
 -  [BigInt("1234567890") is actually BigInt.apply("1234567890")] [MathOpsTest.md]
--  [Statements 'import scala.math._' and 'import math._' are same. Top package ('scala') can be ignored] [MathOpsTest.md]
 -  [The 'void' type is 'Unit'. Technically 'void' has no value whereas 'Unit' has one value that signifies 'no value'] [MathOpsTest.md]
 -  [Usage of companion object in Scala] [CompanionObjectTest.md]
 -  [Generics in Scala] [GenericsTest.md]
