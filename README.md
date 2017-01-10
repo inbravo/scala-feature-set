@@ -26,6 +26,7 @@
 -  [A function without a return type is called Procedure in Scala] [ProcedureTest.md]
 -  [Example of a function that can take a variable number of arguments] [VarArgsTest.md]
 -  [Equivalent of Java 'Object' Class in Scala is 'AnyRef'] [VarArgsTest.md]
+-  [Equivalent of Java 'ArrayList' Class in Scala is 'ArrayBuffer'] [ArrayBufferTest.md]
 -  [Equivalent of Java 'void' in Scala is 'Unit'. Technically 'void' has no value whereas 'Unit' has one value that signifies 'no value'] [MathOpsTest.md]
 -  [Value '_' initializes to default value of variable. Default accessor and mutator methods in an object] [MutatorTest.md]
 
@@ -75,6 +76,7 @@
 -  [Program to show various operations on Data retrieved from File][SparkTestFileTest.md]
 -  [Program to show Kryo based serialization][KryoEncodingTest.md]
 
+[ArrayBufferTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ArrayBufferTest.scala
 [VarArgsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarArgsTest.scala
 [ProcedureTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ProcedureTest.scala
 [AnnotationTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AnnotationTest.scala
