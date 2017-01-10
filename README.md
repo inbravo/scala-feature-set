@@ -23,6 +23,7 @@
 -  [Program to give runtime size of all primitive variables in Scala][PrimitiveVarsSizeTest.md]
 -  [Usage of keyword '++' in Scala] [StringsTest.md]
 -  [Operators are nothing just methods. Operator overloading example] [OperatorsAreMethods.md]
+-  [A function without a return type is called Procedure in Scala] [ProcedureTest.md]
 -  [Example of a function that can take a variable number of arguments] [VarArgsTest.md]
 -  [Equivalent of Java 'Object' Class in Scala is 'AnyRef'] [VarArgsTest.md]
 -  [Equivalent of Java 'void' in Scala is 'Unit'. Technically 'void' has no value whereas 'Unit' has one value that signifies 'no value'] [MathOpsTest.md]
@@ -75,6 +76,7 @@
 -  [Program to show Kryo based serialization][KryoEncodingTest.md]
 
 [VarArgsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarArgsTest.scala
+[ProcedureTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ProcedureTest.scala
 [AnnotationTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AnnotationTest.scala
 [MutatorTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MutatorTest.scala
 [EitherTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/EitherTest.scala  
