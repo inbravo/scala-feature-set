@@ -25,7 +25,16 @@ object SealedTraitTest {
   /* Main method for execution */
   def main(args: Array[String]): Unit = {
 
+    /* hashCode is by default added in traits */
     println(Yes.hashCode())
     println(No.hashCode())
+    
+    /* equals is by default added in traits */
+    println(Yes.equals(No))
+    println(No.equals(Yes))
+    
+    /* toString is by default added in traits */
+    println(Yes.toString())
+    println(No.toString())
   }
 }
