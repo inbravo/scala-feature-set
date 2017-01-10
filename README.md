@@ -1,11 +1,6 @@
 ### Some useful Scala examples
 
 #### Language constructs
--  [Create custom annotations using 'scala.annotation.StaticAnnotation'] [AnnotationTest.md]
--  [Value '_' initializes to default value of variable. Default accessor and mutator methods in an object] [MutatorTest.md]
--  ["Hello"(4) is actually "Hello".apply(4)] [MathOpsTest.md]
--  [BigInt("1234567890") is actually BigInt.apply("1234567890")] [MathOpsTest.md]
--  [The 'void' type is 'Unit'. Technically 'void' has no value whereas 'Unit' has one value that signifies 'no value'] [MathOpsTest.md]
 -  [Usage of companion object in Scala] [CompanionObjectTest.md]
 -  [Generics in Scala] [GenericsTest.md]
 -  [Enviornment variables in Scala] [EnvironmentVarTest.md]
@@ -30,6 +25,13 @@
 -  [Operators are nothing just methods. Operator overloading example] [OperatorsAreMethods.md]
 -  [Example of a function that can take a variable number of arguments] [VarArgsTest.md]
 -  [Equivalent of Java 'Object' Class in Scala is 'AnyRef'] [VarArgsTest.md]
+-  [Equivalent of Java 'void' in Scala is 'Unit'. Technically 'void' has no value whereas 'Unit' has one value that signifies 'no value'] [MathOpsTest.md]
+-  [Value '_' initializes to default value of variable. Default accessor and mutator methods in an object] [MutatorTest.md]
+
+#### Class and Methods
+-  ["Hello"(4) is actually "Hello".apply(4)] [MathOpsTest.md]
+-  [BigInt("1234567890") is actually BigInt.apply("1234567890")] [MathOpsTest.md]
+-  [Create custom annotations using 'scala.annotation.StaticAnnotation'] [AnnotationTest.md]
 
 #### Collection
 -  [Usage of 'Seq[String]' in Scala] [SeqOfStringsTest.md]
