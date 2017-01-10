@@ -4,6 +4,13 @@ package com.inbravo.lang
  * amit.dixit
  * Import a class only
  */
+
+/* All automatic imports in every class/object */
+/* These imports are not required to be added explicitly */
+import _root_.java.lang._
+import _root_.scala._
+import _root_.scala.Predef._
+
 import java.util.concurrent.atomic.AtomicInteger
 
 /* Import some classes */
