@@ -8,14 +8,16 @@ object ProcedureTest {
 
   def main(args: Array[String]): Unit = {
 
-    box("I am a poor human")
+    hello; box("I am a poor human")
   }
 
-  /* A function without a Return Type is called Procedure */
+  /* A function without a Return Type is called Procedure. Look carefully: there is no '=' */
   def box(s: String) {
 
-    /* Look carefully: no '=' */
     val border = "-" * s.length + "--\n"
     println(border + "|" + s + "|\n" + border)
   }
+
+  /* A function without a Return Type is called Procedure. Just print a 'Hello' */
+  def hello = print("Hello")
 }
