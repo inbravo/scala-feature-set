@@ -1,48 +1,42 @@
 package com.inbravo.lang
 
 /**
+ * Scala does not follow the Java convention of prepending set/get to mutator and accessor methods
+ *
  * amit.dixit
  */
-class Mutator {
-
-  /* '_' initialized to default value ('0') of type */
-  var x: Int = _
-}
-
-/**
- * VerboseMutator is functionally equivalant to
- */
-class VerboseMutator {
-
-  /* '_' initialized to default value ('0') of type */
-  private[this] var internal: Int = _
-
-  /* Accessor */
-  def x: Int = internal
-
-  /* Mutator */
-  def x_=(x: Int): Unit = internal = x
-}
 
 object MutatorTest {
 
   def main(args: Array[String]) {
 
-    val mutator = new Mutator
-    val vMutator = new VerboseMutator
+    val employee = new CompilerGeneratedEmployee
 
-    /* Access */
-    println(mutator.x)
+    println(employee.name)
+    employee.name_=("amit")
+    println(employee.name)
+  }
 
-    /* Mutate */
-    mutator.x = 1
-    println(mutator.x)
+  /**
+   * This is the class, written by you
+   */
+  class Employee {
 
-    /* Access */
-    println(vMutator.x)
+    /* Private field */
+    private var name: String = _
+  }
 
-    /* Mutate */
-    vMutator.x = 2
-    println(vMutator.x)
+  /**
+   * This is the class, after compilation
+   */
+  class CompilerGeneratedEmployee {
+
+    private[this] var internal: String = _
+
+    /* Accessor or Getter: the name of the method should be the name of the property */
+    def name: String = internal
+
+    /* Mutator or Setter:  the name of the method should be the name of the property with "_=" appended */
+    def name_=(name: String): Unit = internal = name
   }
 }
