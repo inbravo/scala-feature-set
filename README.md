@@ -1,40 +1,40 @@
 ### Some useful Scala examples
 
 #### Language constructs
--  [Companion object] [CompanionObjectTest.md]
--  [Generics example] [GenericsTest.md]
--  [Enviornment variables example] [EnvironmentVarTest.md]
--  [First class functions and currying] [FirstClassFuncTest.md]
--  [Using 'strip margin' to add new lines in string][CustomerRestService.md]
--  [Use of 'Either' as return types] [EitherTest.md]
--  [Different types of looping techniques] [LoopTest.md]
--  [Usage of 'for each' as loop] [ForEachTest.md]
--  [Keyword 'trait' in Scala is like 'interface' in Java] [MultipleTraitTest.md]
--  [Keyword 'sealed trait' in Scala is like 'enum' in Java] [SealedTraitTest.md]
 -  [Equivalent of Java 'Object' Class in Scala is 'AnyRef'] [VarArgsTest.md]
 -  [Equivalent of Java 'ArrayList' Class in Scala is 'ArrayBuffer'] [ArrayBufferTest.md]
 -  [Equivalent of Java 'void' in Scala is 'Unit'] [MathOpsTest.md]
--  [Use 'tuple' to build abstractions over related values] [TupleTest.md]
+-  [Equivalent of Java 'interface' in Scala is 'trait'] [MultipleTraitTest.md]
+-  [Equivalent of Java 'sealed trait' in Scala is 'enum'] [SealedTraitTest.md]
+-  [Usage of 'tuple' to build abstractions over related values] [TupleTest.md]
 -  [Usage of 'yield' in extracting values during loops] [YieldTest.md]
--  [Default object factory in Scala] [ObjectFactoryTest.md]
 -  [Usage of 'import'] [ImportTest.md]
 -  [Usage of 'isInstanceOf'] [InstanceOfTest.md]
 -  [Usage of 'try' 'catch'] [TryCatchTest.md]
 -  [Usage of 'require' to enforce restrictions before creating instance of a Scala class] [RequireTest.md]
 -  [Usage of 'tailrec' during recursions in methods][FactorialTest.md]
 -  [Usage of 'lazy val'][LazyValTest.md]
--  [Program to give runtime size of all primitive variables][PrimitiveVarsSizeTest.md]
 -  [Usage of keyword '++' in collections] [StringsTest.md]
+-  [Usage of 'for each' as loop] [ForEachTest.md]
+-  [Usage of 'Either' as return types] [EitherTest.md]
 -  [Operators are nothing just methods. Operator overloading example] [OperatorsAreMethods.md]
 -  [A function without a return type is called Procedure in Scala] [ProcedureTest.md]
 -  [Example of a function that can take a variable number of arguments] [VarArgsTest.md]
 -  [Value '_' initializes to default value of variable] [MutatorTest.md]
 -  [Default accessor and mutator methods in an object] [MutatorTest.md]
+-  [Default object factory in Scala] [ObjectFactoryTest.md]
+-  [First class functions and currying] [FirstClassFuncTest.md]
+-  [Using 'strip margin' to add new lines in string][CustomerRestService.md]
+-  [Different types of looping techniques] [LoopTest.md]
+-  [Companion objects] [CompanionObjectTest.md]
+-  [Generics example] [GenericsTest.md]
+-  [Enviornment variables example] [EnvironmentVarTest.md]
 
 #### Class and Methods
 -  ["Hello"(4) is actually "Hello".apply(4)] [MathOpsTest.md]
 -  [BigInt("1234567890") is actually BigInt.apply("1234567890")] [MathOpsTest.md]
 -  [Create custom annotations using 'scala.annotation.StaticAnnotation'] [AnnotationTest.md]
+-  [The 'App' trait can be used to quickly turn objects into executable programs] [EitherTest.md]
 
 #### Collection
 -  [Usage of 'Seq[String]' in Scala] [SeqOfStringsTest.md]
@@ -55,6 +55,7 @@
 #### Useful programs
 -  [Test for Anagram String in Scala][Anagram.md]
 -  [Counter number of words per String in Scala][WordFrequency.md]
+-  [Program to give runtime size of all primitive variables][PrimitiveVarsSizeTest.md]
 
 #### Data structures
 -  [A Stack implemented in Scala][Stack.md]

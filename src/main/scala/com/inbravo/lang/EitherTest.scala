@@ -2,6 +2,7 @@ package com.inbravo.lang
 /**
  * amit.dixit
  */
+/* The 'App' trait can be used to quickly turn objects into executable programs */
 object EitherTest extends App {
 
   /**
