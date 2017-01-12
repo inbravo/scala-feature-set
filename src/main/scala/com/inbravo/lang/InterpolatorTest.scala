@@ -1,7 +1,9 @@
 package com.inbravo.lang
 
-/*
- * Usage of 's', 'f' and 'raw'
+/**
+ * Usage of 's', 'f' and 'raw' based string interpolation
+ * 
+ * amit.dixit
  */
 object InterpolatorTest {
 
