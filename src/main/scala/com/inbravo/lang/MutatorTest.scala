@@ -26,6 +26,8 @@ object MutatorTest {
     /* Calls cgEmployee.name=("amit")  */
     cgEmployee.name_=("amit")
     println(cgEmployee.name)
+
+    println(employee.timeStamp)
   }
 
   /**
@@ -35,6 +37,9 @@ object MutatorTest {
 
     /* For a private field, the getter and setter methods will be private, so make sure that its not private to get default getters/setters */
     var name: String = _
+
+    /* Scala makes a private final field and a getter method, but no setter */
+    val timeStamp = new java.util.Date
   }
 
   /**

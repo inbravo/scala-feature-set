@@ -21,7 +21,7 @@
 -  [A function without a return type is called Procedure in Scala] [ProcedureTest.md]
 -  [Example of a function that can take a variable number of arguments] [VarArgsTest.md]
 -  [Value '_' initializes to default value of variable] [MutatorTest.md]
--  [Default accessor and mutator methods in an object] [MutatorTest.md]
+-  [How getter/setter is automatically generated in a class] [MutatorTest.md]
 -  [Default object factory in Scala] [ObjectFactoryTest.md]
 -  [First class functions and currying] [FirstClassFuncTest.md]
 -  [Using 'strip margin' to add new lines in string][CustomerRestService.md]
