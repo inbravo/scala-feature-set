@@ -39,7 +39,10 @@ libraryDependencies ++= Seq(
 	"org.apache.spark" %% "spark-hive" % sparkVersion,
   	
 	/* Scalatest */
-  	"org.scalatest" %% "scalatest" % "2.2.5" % "test"
+  	"org.scalatest" %% "scalatest" % "2.2.5" % "test",
+  	
+  	/* MS SQL Server JDBC driver */
+  	"com.microsoft.sqlserver" % "mssql-jdbc" % "6.1.0.jre7"
 )
 
 dependencyOverrides ++= Set(

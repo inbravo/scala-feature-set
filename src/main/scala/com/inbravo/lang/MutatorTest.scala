@@ -10,11 +10,22 @@ object MutatorTest {
 
   def main(args: Array[String]) {
 
-    val employee = new CompilerGeneratedEmployee
+    val employee = new Employee
+    val cgEmployee = new CompilerGeneratedEmployee
 
+    /* Calls the method employee.name() */
     println(employee.name)
+
+    /* Calls employee.name=("amit")  */
     employee.name_=("amit")
     println(employee.name)
+
+    /* Calls the method cgEmployee.name() */
+    println(cgEmployee.name)
+
+    /* Calls cgEmployee.name=("amit")  */
+    cgEmployee.name_=("amit")
+    println(cgEmployee.name)
   }
 
   /**
@@ -22,8 +33,8 @@ object MutatorTest {
    */
   class Employee {
 
-    /* Private field */
-    private var name: String = _
+    /* For a private field, the getter and setter methods will be private, so make sure that its not private to get default getters/setters */
+    var name: String = _
   }
 
   /**
