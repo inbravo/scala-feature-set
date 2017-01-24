@@ -45,6 +45,9 @@
 #### Socket
 -  [Usage of 'ServerSocket' in Scala][NetworkService.md]
 
+#### SQL
+-  [Data base connection in Scala][JDBCTest.md]
+
 #### Concurrency
 -  [Creating a 'Thread' in Scala][ThreadTest.md]
 -  [Usage of thread pool based concurrency in Scala][NetworkService.md]
@@ -107,6 +110,7 @@
 [RequireTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/CompanionObjectTest.scala
 [OperatorsAreMethods.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/OperatorsAreMethods.scala 
 [NetworkService.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/NetworkService.scala
+[JDBCTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/jdbc/JDBCTest.scala
 [ThreadTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/ThreadTest.scala
 [CountDownLatchTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/CountDownLatchTest.scala
 [CyclicBarrierTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/CyclicBarrierTest.scala
