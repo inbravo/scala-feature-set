@@ -82,14 +82,12 @@
 -  [Program to show Kryo based serialization][KryoEncodingTest.md]
 
 ## To solve library dependencies in eclipse, in sbt console type:
-	```
     reload
     eclipse with-source=true
-    ```
+ 
 ## To build, in sbt console type:
-	```
-	package
-	```
+    package
+
 
 [ArrayBufferTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ArrayBufferTest.scala
 [VarArgsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarArgsTest.scala
