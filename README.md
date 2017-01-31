@@ -81,10 +81,10 @@
 -  [Program to show various operations on Data retrieved from File][SparkTestFileTest.md]
 -  [Program to show Kryo based serialization][KryoEncodingTest.md]
 
-## To solve library dependencies in eclipse ([sbteclipse plugin required][Using-sbteclipse.md]), in sbt console type: 
+### To solve library dependencies in eclipse ([sbteclipse plugin required][Using-sbteclipse.md]), in sbt console type: 
     eclipse with-source=true
  
-## To build, in sbt console type:
+### To build, in sbt console type:
     package
 
 
