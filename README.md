@@ -81,6 +81,7 @@
 -  [Program to show various operations on Data retrieved from File][SparkTestFileTest.md]
 -  [Program to show Kryo based serialization][KryoEncodingTest.md]
 
+## How to build and configure in Eclipse
 ### To solve library dependencies in eclipse ([sbteclipse plugin required][Using-sbteclipse.md]), in sbt console type: 
     eclipse with-source=true
  
