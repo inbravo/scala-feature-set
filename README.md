@@ -81,14 +81,14 @@
 -  [Program to show various operations on Data retrieved from File][SparkTestFileTest.md]
 -  [Program to show Kryo based serialization][KryoEncodingTest.md]
 
-## To solve library dependencies in eclipse, in sbt console type:
-    reload
+## To solve library dependencies in eclipse ([sbteclipse plugin required][Using-sbteclipse.md]), in sbt console type: 
     eclipse with-source=true
  
 ## To build, in sbt console type:
     package
 
 
+[Using-sbteclipse.md]: https://github.com/typesafehub/sbteclipse/wiki/Using-sbteclipse
 [ArrayBufferTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ArrayBufferTest.scala
 [VarArgsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarArgsTest.scala
 [ProcedureTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ProcedureTest.scala
