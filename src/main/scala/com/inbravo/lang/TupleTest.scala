@@ -13,5 +13,11 @@ object TupleTest {
 
     println("Tuple: " + t.getClass)
     println("Sum of elements: " + sum)
+    
+    TupleTest.alert
   }
+  
+  
+  def alert = println("alert")
+  println(alert)
 }

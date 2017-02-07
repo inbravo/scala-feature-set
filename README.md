@@ -17,6 +17,8 @@
 -  [Usage of keyword '++' in collections] [StringsTest.md]
 -  [Usage of 'for each' as loop] [ForEachTest.md]
 -  [Usage of 'Either' as return types] [EitherTest.md]
+-  [Difference between private and private[this]] [ObjectPrivateAccess.md]
+-  [How object-private access works] [ObjectPrivateAccess.md]
 -  [Operators are nothing just methods. Operator overloading example] [OperatorsAreMethods.md]
 -  [A function without a return type is called Procedure in Scala] [ProcedureTest.md]
 -  [Example of a function that can take a variable number of arguments] [VarArgsTest.md]
@@ -105,6 +107,7 @@
 [ObjectFactoryTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ObjectFactoryTest.scala 
 [ImportTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ImportTest.scala 
 [InstanceOfTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/InstanceOfTest.scala 
+[ObjectPrivateAccess.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ObjectPrivateAccess.scala
 [GenericsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/GenericsTest.scala 
 [StringsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/StringsTest.scala 
 [SeqOfStringsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/SeqOfStringsTest.scala 
