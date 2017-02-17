@@ -1,6 +1,6 @@
 package com.inbravo.akka.http
 
-import com.inbravo.akka.utils.Config
+import com.inbravo.config.ProjectConfig
 import com.inbravo.akka.http.routes.BasicRoutes
 import akka.actor.ActorSystem
 import akka.stream.ActorMaterializer
@@ -13,7 +13,7 @@ import spray.json._
 /**
  * amit.dixit
  */
-object CustomerRestService extends App with Config {
+object CustomerRestService extends App with ProjectConfig {
 
   /* Create new actor system */
   implicit val actorSystem = ActorSystem("rest-api")

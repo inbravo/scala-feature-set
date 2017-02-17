@@ -1,6 +1,6 @@
 package com.inbravo.akka.http
 
-import com.inbravo.akka.utils.Config
+import com.inbravo.config.ProjectConfig
 import com.inbravo.akka.http.routes.BasicRoutes
 import akka.actor.ActorSystem
 import akka.stream.ActorMaterializer
@@ -11,7 +11,7 @@ import akka.event.{ Logging, LoggingAdapter }
 /**
  * 	amit.dixit
  */
-object JsonServer extends App with Config {
+object JsonServer extends App with ProjectConfig {
 
   /* Create new actor system */
   implicit val actorSystem = ActorSystem("rest-api")
