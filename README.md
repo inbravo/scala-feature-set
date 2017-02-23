@@ -27,6 +27,7 @@
 -  [Example of a function that can take a variable number of arguments] [VarArgsTest.md]
 -  [Value '_' initializes to default value of variable] [MutatorTest.md]
 -  [How getter/setter is automatically generated in a class] [MutatorTest.md]
+-  [How Scala avoids NullPointerException using 'Option', 'Some' and 'None'] [SomeNoneOptionTest.md]
 -  [Default object factory in Scala] [ObjectFactoryTest.md]
 -  [First class functions and currying] [FirstClassFuncTest.md]
 -  [Using 'strip margin' to add new lines in string][CustomerRestService.md]
@@ -100,6 +101,7 @@
 [ProcedureTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ProcedureTest.scala
 [AnnotationTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AnnotationTest.scala
 [MutatorTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MutatorTest.scala
+[SomeNoneOptionTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/SomeNoneOptionTest.scala
 [EitherTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/EitherTest.scala  
 [LoopTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/LoopTest.scala  
 [MultipleTraitTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MultipleTraitTest.scala  
