@@ -12,6 +12,11 @@ object SparkWordCount {
 
   def countWords(args: Array[String]) = {
 
+    /* To avoid 'winutils.exe' error on windows */
+    if (System.getProperty("os.name").toLowerCase.contains("window")) {
+      System.setProperty("hadoop.home.dir", "D:/opensource/hadoop-2.7.1/winutils");
+    }
+
     /* New spark configuration object with Single threads per Core */
     var sparkConf = new SparkConf().setAppName("SparkWordCount").setMaster("local[*]")
 

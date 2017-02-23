@@ -7,13 +7,15 @@ import org.apache.spark.storage.StorageLevel
 import org.apache.spark.streaming._
 
 /**
- * 
+ *
  * amit.dixit
  */
 object KryoEncodingTest extends App {
 
-  /* To avoid 'winutils.exe' error */
-  System.setProperty("hadoop.home.dir", "D:/opensource/hadoop-2.7.1/winutils");
+  /* To avoid 'winutils.exe' error on windows */
+  if (System.getProperty("os.name").toLowerCase.contains("window")) {
+    System.setProperty("hadoop.home.dir", "D:/opensource/hadoop-2.7.1/winutils");
+  }
 
   /* Create new local spark session with Single threads per Core */
   val sparkSession = SparkSession.builder().config(new SparkConf().setAppName("RandomSpark").setMaster("local[*]"))

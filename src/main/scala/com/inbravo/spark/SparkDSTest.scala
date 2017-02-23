@@ -23,8 +23,10 @@ object SparkDSTest {
 
   def main(args: Array[String]): Unit = {
 
-    /* To avoid 'winutils.exe' error */
-    System.setProperty("hadoop.home.dir", "D:/opensource/hadoop-2.7.1/winutils");
+    /* To avoid 'winutils.exe' error on windows */
+    if (System.getProperty("os.name").toLowerCase.contains("window")) {
+      System.setProperty("hadoop.home.dir", "D:/opensource/hadoop-2.7.1/winutils");
+    }
 
     /* (local[*]) automatically identify the number of cores in system */
     val sparkSession = SparkSession.builder().config(new SparkConf().setAppName("SparkDSTest").setMaster("local[*]"))

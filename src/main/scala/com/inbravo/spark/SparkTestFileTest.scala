@@ -20,8 +20,10 @@ object SparkTestFileTest {
 
   def main(args: Array[String]): Unit = {
 
-    /* To avoid 'winutils.exe' error */
-    System.setProperty("hadoop.home.dir", "D:/opensource/hadoop-2.7.1/winutils");
+    /* To avoid 'winutils.exe' error on windows */
+    if (System.getProperty("os.name").toLowerCase.contains("window")) {
+      System.setProperty("hadoop.home.dir", "D:/opensource/hadoop-2.7.1/winutils");
+    }
 
     /* Create new local spark session with Single threads per Core */
     val sparkSession = SparkSession.builder().config(new SparkConf().setAppName("SparkTestFileTest").setMaster("local[*]"))
