@@ -11,7 +11,7 @@ import akka.event.{ Logging, LoggingAdapter }
 /**
  * 	amit.dixit
  */
-object JsonServer extends App with ProjectConfig {
+object SimpleHttpService extends App with ProjectConfig {
 
   /* Create new actor system */
   implicit val actorSystem = ActorSystem("rest-api")
