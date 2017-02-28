@@ -34,7 +34,9 @@ object LastElementInList {
     list(list.size - 1)
   }
 
-  /* Find last element recursively */
+  /**
+   *  Find last element recursively 
+   */
   def lastByRecursive[A](list: List[A]): A = list match {
 
     case h :: Nil  => h

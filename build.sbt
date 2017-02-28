@@ -42,7 +42,10 @@ libraryDependencies ++= Seq(
   	"org.scalatest" %% "scalatest" % "2.2.5" % "test",
   	
   	/* MS SQL Server JDBC driver */
-  	"com.microsoft.sqlserver" % "mssql-jdbc" % "6.1.0.jre7"
+  	"com.microsoft.sqlserver" % "mssql-jdbc" % "6.1.0.jre7",
+  	
+  	/* Finagle */
+	"com.twitter" %% "finagle-http" % "6.42.0"
 )
 
 dependencyOverrides ++= Set(

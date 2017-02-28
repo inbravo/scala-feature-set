@@ -17,10 +17,12 @@
 -  [Usage of keyword '++' in collections] [StringsTest.md]
 -  [Usage of 'for each' as loop] [ForEachTest.md]
 -  [Usage of 'Either' as return types] [EitherTest.md]
--  [Half a line of Scala is the equivalent of seven lines of Java] [PrimaryConstructorTest.md]
+-  [How Scala beans works : Half a line of Scala is the equivalent of seven lines of Java] [PrimaryConstructorTest.md]
 -  [Primary constructor] [PrimaryConstructorTest.md]
 -  [Auxiliary constructors] [AuxiliaryConstructorsTest.md]
 -  [Difference between private and private[this]] [ObjectPrivateAccess.md]
+-  [Difference between call by name and call by value] [CallByNameAndValueTest.md]
+-  [How '@inline' works] [MethodInlineTest.md]
 -  [How object-private access works] [ObjectPrivateAccess.md]
 -  [Operators are nothing just methods. Operator overloading example] [OperatorsAreMethods.md]
 -  [A function without a return type is called Procedure in Scala] [ProcedureTest.md]
@@ -118,6 +120,8 @@
 [PrimaryConstructorTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/PrimaryConstructorTest.scala
 [AuxiliaryConstructorsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AuxiliaryConstructorsTest.scala
 [ObjectPrivateAccess.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ObjectPrivateAccess.scala
+[CallByNameAndValueTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/CallByNameAndValueTest.scala
+[MethodInlineTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MethodInlineTest.scala
 [GenericsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/GenericsTest.scala 
 [StringsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/StringsTest.scala 
 [SeqOfStringsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/SeqOfStringsTest.scala 
