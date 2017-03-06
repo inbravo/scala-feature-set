@@ -6,10 +6,10 @@ package com.inbravo.lang
 object FirstClassFuncTest {
 
   /* Anonymous First-class function as a variable */
-  var increment = (x: Int) => x + 1
+  var incrementVariable = (x: Int) => x + 1
 
   /* First-class function as a definition */
-  def incrementAgain = (x: Int) => x + 1
+  def incrementFunction = (x: Int) => x + 1
 
   /* First-class function as a variable */
   var same = (x: Int) => x
@@ -23,10 +23,10 @@ object FirstClassFuncTest {
   def main(args: Array[String]): Unit = {
 
     /* Call variable as function */
-    println("increment:	" + increment(10))
+    println("increment:	" + incrementVariable(10))
 
     /* Call a definition as function */
-    println("incrementAgain:	" + incrementAgain(10))
+    println("incrementAgain:	" + incrementFunction(10))
 
     /* Sum of cube will just return a function */
     println("sum:	" + sum(cube))
