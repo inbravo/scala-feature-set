@@ -12,13 +12,13 @@ object LazyValTest {
     println("-------------------------------------------")
     println("Variable/Value initialization phase starts...")
 
-    /* A simple variable; which can change, anytime after initialization */
+    /* A simple variable; which can change, It will print 'variable' during initialization phase */
     var variable: Int = { println("variable"); 1 }
 
-    /* A simple value. It will print 'value' before initialization */
+    /* A simple value. It will print 'value' during initialization phase */
     val value: Int = { println("value"); 100 }
 
-    /* A lazy value. It will not print anything because it won't initialize untill utilized */
+    /* A lazy value. It will print 'lazyValue' during utilization phase */
     lazy val lazyValue = { println("lazyValue"); 1000 }
 
     println("Variable/Value initialization phase ends...")
