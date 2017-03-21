@@ -2,6 +2,7 @@
 
 #### Language constructs
 -  [Hello World program][HelloWorld.md]
+-  [How methdos are defined in Scala][MethodTest.md]
 -  [Equivalent of Java 'Object' Class in Scala is 'AnyRef'][VarArgsTest.md]
 -  [Equivalent of Java 'ArrayList' Class in Scala is 'ArrayBuffer'][ArrayBufferTest.md]
 -  [Equivalent of Java 'void' in Scala is 'Unit'][MathOpsTest.md]
@@ -103,6 +104,7 @@
 
 [Using-sbteclipse.md]: https://github.com/typesafehub/sbteclipse/wiki/Using-sbteclipse
 [HelloWorld.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HelloWorld.scala
+[MethodTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MethodTest.scala
 [ArrayBufferTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ArrayBufferTest.scala
 [VarArgsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarArgsTest.scala
 [ProcedureTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ProcedureTest.scala
