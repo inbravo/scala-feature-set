@@ -3,7 +3,7 @@ package com.inbravo.lang
 /**
  * A complete example to understand; how to define methods in Scala
  * Prints following 'HelloHello()Hello()111.01.01()'
- * 
+ *
  * amit.dixit
  */
 object MethodTest extends App {
@@ -23,7 +23,7 @@ object MethodTest extends App {
   /* A method which returns an Int value */
   def returnInt: Int = return 1
 
-  /* A method which returns an Int value without using 'return' keyword*/
+  /* A method which returns an Int value without using 'return' keyword */
   def returnIntWithoutTypeDefinition = 1
 
   /* A method which returns a Float value */
@@ -40,6 +40,6 @@ object MethodTest extends App {
   print(returnFloat)
   print(returnFloatWithoutTypeDefinition)
 
-  /* Watch paranthesis '()' is only required where a method parameter need to be passed */
+  /* Watch parenthesis '()' is only required where a method parameter need to be passed */
   print(printIt(1))
 }
