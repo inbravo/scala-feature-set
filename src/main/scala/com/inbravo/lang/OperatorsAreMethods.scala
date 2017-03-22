@@ -2,7 +2,7 @@ package com.inbravo.lang
 
 /**
  * The + - * / % operators do their usual job, as do the bit operators & | ^ >> <<. There
- * is just one surprising aspect: These operators are actually methods
+ * is just one surprising aspect: These operators are actually methods : Quote from 'Scala for the Impatient'
  *
  * amit.dixit
  */
