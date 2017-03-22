@@ -3,7 +3,7 @@
 #### Language constructs
 -  [Hello World program][HelloWorld.md]
 -  [Program to understand various Scala types][ValuesTest.md]
--  [How methdos are defined in Scala][MethodTest.md]
+-  [How methods are defined in Scala][MethodTest.md]
 -  [Equivalent of Java 'Object' Class in Scala is 'AnyRef'][VarArgsTest.md]
 -  [Equivalent of Java 'ArrayList' Class in Scala is 'ArrayBuffer'][ArrayBufferTest.md]
 -  [Equivalent of Java 'void' in Scala is 'Unit'][MathOpsTest.md]
