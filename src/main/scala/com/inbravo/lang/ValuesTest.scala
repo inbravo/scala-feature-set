@@ -50,4 +50,8 @@ object ValuesTest extends App {
 
   /* Method print does not ends with a new line */
   print("Double Min Value: " + minDoubleValueWithoutType)
+  
+  /* Boolean values */
+  val trueBoolean: Boolean = true
+  val falseBoolean: Boolean = false
 }
