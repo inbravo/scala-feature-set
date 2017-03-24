@@ -1,9 +1,10 @@
 ### Some useful Scala examples
 
 #### Language constructs
--  [Hello World program][HelloWorld.md]
--  [Program to understand various Scala types][ValuesTest.md]
--  [How methods are defined in Scala][MethodTest.md]
+-  [Hello World][HelloWorld.md]
+-  [Various Scala types][ValuesTest.md]
+-  [How methods or definitions are created using 'def'][MethodTest.md]
+-  [How definitions can also be created using 'var'][VarAndValTest.md]
 -  [Equivalent of Java 'Object' Class in Scala is 'AnyRef'][VarArgsTest.md]
 -  [Equivalent of Java 'ArrayList' Class in Scala is 'ArrayBuffer'][ArrayBufferTest.md]
 -  [Equivalent of Java 'void' in Scala is 'Unit'][MathOpsTest.md]
@@ -106,6 +107,7 @@
 [Using-sbteclipse.md]: https://github.com/typesafehub/sbteclipse/wiki/Using-sbteclipse
 [HelloWorld.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HelloWorld.scala
 [ValuesTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ValuesTest.scala
+[VarAndValTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarAndValTest.scala
 [MethodTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MethodTest.scala
 [ArrayBufferTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ArrayBufferTest.scala
 [VarArgsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarArgsTest.scala
