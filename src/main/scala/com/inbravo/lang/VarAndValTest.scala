@@ -21,10 +21,8 @@ object VarAndValTest extends App {
   /* With type */
   val valueWithType: Int = 10 * 5 + 2
 
-  /* A variable and a definition, doing same job (increment of integer value) */
-  /* A definition */
-  def incrementFunction = (x: Int) => x + 1
-
-  /* A variable as a definition */
-  var incrementVariable = (x: Int) => x + 1
+  /* A variable, value and definition, doing same jobs (increment of integer value) */
+  def incrementDef = (x: Int) => x + 1 /* A definition using 'def' */
+  var incrementVar = (x: Int) => x + 1 /* A definition using 'var' */
+  val incrementVal = (x: Int) => x + 1 /* A definition using 'val' */
 }

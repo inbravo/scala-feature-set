@@ -4,7 +4,7 @@
 -  [Hello World][HelloWorld.md]
 -  [Various Scala types][ValuesTest.md]
 -  [How methods or definitions are created using 'def'][MethodTest.md]
--  [How definitions can also be created using 'var'][VarAndValTest.md]
+-  [How definitions can also be created using 'var' or 'val'][VarAndValTest.md]
 -  [Equivalent of Java 'Object' Class in Scala is 'AnyRef'][VarArgsTest.md]
 -  [Equivalent of Java 'ArrayList' Class in Scala is 'ArrayBuffer'][ArrayBufferTest.md]
 -  [Equivalent of Java 'void' in Scala is 'Unit'][MathOpsTest.md]
