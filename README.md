@@ -1,7 +1,8 @@
 ### Some useful Scala examples
 
 #### Language constructs
--  [Hello World][HelloWorld.md]
+-  [Hello World with main method][HelloWorld.md]
+-  [Hello World without main method][HelloWorldWithoutMain.md]
 -  [Various Scala types][ValuesTest.md]
 -  [How methods or definitions are created using 'def'][MethodTest.md]
 -  [How definitions can also be created using 'var' or 'val'][VarAndValTest.md]
@@ -106,6 +107,7 @@
 
 [Using-sbteclipse.md]: https://github.com/typesafehub/sbteclipse/wiki/Using-sbteclipse
 [HelloWorld.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HelloWorld.scala
+[HelloWorldWithoutMain.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HelloWorldWithoutMain.scala
 [ValuesTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ValuesTest.scala
 [VarAndValTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarAndValTest.scala
 [MethodTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MethodTest.scala

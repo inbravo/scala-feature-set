@@ -1,7 +1,7 @@
 package com.inbravo.lang
 
 /**
- * First test program
+ * Hello World program using main method, like Java
  *
  * amit.dixit
  */
