@@ -32,11 +32,11 @@ class CallByNameAndValueTest {
 
 object CallByNameTestCompanionObject extends App {
 
-  val CallByNameAndValueObject: CallByNameAndValueTest = new CallByNameAndValueTest
+  val callByNameAndValueObject: CallByNameAndValueTest = new CallByNameAndValueTest
 
   println("---------------------------")
-  CallByNameAndValueObject.callByValue(CallByNameAndValueObject.time)
+  callByNameAndValueObject.callByValue(callByNameAndValueObject.time)
 
   println("---------------------------")
-  CallByNameAndValueObject.callByName(CallByNameAndValueObject.time)
+  callByNameAndValueObject.callByName(callByNameAndValueObject.time)
 }
