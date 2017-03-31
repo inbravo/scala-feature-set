@@ -1,7 +1,8 @@
 package com.inbravo.string
+
 /**
+ * A simple program to test, if two given strings are anagram
  * amit.dixit
- * First object
  */
 object Anagram {
 
@@ -32,8 +33,8 @@ object Anagram {
   private def checkIfAnagram(firstString: String, secondString: String): Boolean = {
 
     /* Sort all chars in both string */
-    var firstStringChars = firstString.toLowerCase().toCharArray();
-    var secondStringChars = secondString.toLowerCase().toCharArray();
+    var firstStringChars = firstString.toLowerCase.toCharArray;
+    var secondStringChars = secondString.toLowerCase.toCharArray;
 
     /* Apply quick sort */
     scala.util.Sorting.quickSort(firstStringChars)

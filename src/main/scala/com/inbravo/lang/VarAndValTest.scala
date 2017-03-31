@@ -25,4 +25,9 @@ object VarAndValTest extends App {
   var incrementVar = (x: Int) => x + 1 /* A definition using 'var' */
   val incrementVal = (x: Int) => x + 1 /* A definition using 'val' */
   def incrementDef = (x: Int) => x + 1 /* A definition using 'def' */
+
+  /* Everyone will print '2' */
+  println(incrementVar(1))
+  println(incrementVal(1))
+  println(incrementDef(1))
 }
