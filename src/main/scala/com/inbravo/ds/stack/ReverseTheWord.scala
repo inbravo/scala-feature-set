@@ -29,7 +29,7 @@ final object ReverseTheWord {
     for (i <- 0 to inputString.length() - 1) {
 
       /* Pop from stack */
-      var poppedValue = stack.pop().toChar
+      var poppedValue = stack.pop.toChar
 
       /* Add this char in string */
       reverse = reverse.concat("" + poppedValue)
