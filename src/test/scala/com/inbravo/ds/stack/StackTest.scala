@@ -11,10 +11,10 @@ object StackTest extends App {
   var stack = new com.inbravo.ds.stack.Stack(10)
 
   /* Check for full */
-  println("Stack is full ? " + stack.isFull())
+  println("Stack is full ? " + stack.isFull)
 
   /* Check for empty */
-  println("Stack is empty ? " + stack.isEmpty())
+  println("Stack is empty ? " + stack.isEmpty)
 
   println("Before element push : " + stack.toString())
 
@@ -24,11 +24,11 @@ object StackTest extends App {
     stack.push(i + 10)
   }
 
-  println("After element push : " + stack.toString())
+  println("After element push : " + stack.toString)
 
-  while (!stack.isEmpty()) {
-    println("Popped " + stack.pop())
+  while (!stack.isEmpty) {
+    println("Popped " + stack.pop)
   }
 
-  println("After element pop : " + stack.toString())
+  println("After element pop : " + stack.toString)
 }
