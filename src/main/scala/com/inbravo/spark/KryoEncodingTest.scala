@@ -19,7 +19,7 @@ object KryoEncodingTest extends App {
 
   /* Create new local spark session with Single threads per Core */
   val sparkSession = SparkSession.builder().config(new SparkConf().setAppName("RandomSpark").setMaster("local[*]"))
-    .getOrCreate()
+    .getOrCreate
 
   /* Change log level to avoid lots of log */
   sparkSession.sparkContext.setLogLevel("ERROR")
@@ -46,6 +46,7 @@ object KryoEncodingTest extends App {
 
   /* Untyped DataSet Operations */
   println("Schema: ")
+
   /* Example 2 : Print the schema in a tree format */
   personsDF.printSchema
   println("-----------------------------------------------------")
@@ -61,7 +62,7 @@ object KryoEncodingTest extends App {
   val teenagersDF = sparkSession.sql("SELECT name, age FROM people WHERE age BETWEEN 13 AND 19")
 
   /* The columns of a row in the result can be accessed by field index */
-  teenagersDF.map(teenager => "Name: " + teenager(0)).show()
+  teenagersDF.map(teenager => "Name: " + teenager(0)).show
 
   /* Or by field name */
   teenagersDF.map(teenager => "Name: " + teenager.getAs[String]("name")).show

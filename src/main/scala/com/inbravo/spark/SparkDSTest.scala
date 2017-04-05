@@ -29,8 +29,8 @@ object SparkDSTest {
     }
 
     /* (local[*]) automatically identify the number of cores in system */
-    val sparkSession = SparkSession.builder().config(new SparkConf().setAppName("SparkDSTest").setMaster("local[*]"))
-      .getOrCreate()
+    val sparkSession = SparkSession.builder.config(new SparkConf().setAppName("SparkDSTest").setMaster("local[*]"))
+      .getOrCreate
 
     /* Change log level to avoid lots of log */
     sparkSession.sparkContext.setLogLevel("ERROR")
@@ -47,11 +47,11 @@ object SparkDSTest {
     import sparkSession.implicits._
 
     println("Persons as data set: ")
-    persons.toDS().show()
+    persons.toDS.show
     println("-----------------------------------------------------")
 
-    val personDS = Seq(Person("Andy", 32)).toDS()
-    personDS.show()
+    val personDS = Seq(Person("Andy", 32)).toDS
+    personDS.show
     println("-----------------------------------------------------")
 
     /* DataFrames can be converted to a DataSet by providing a class. Mapping will be done by name */

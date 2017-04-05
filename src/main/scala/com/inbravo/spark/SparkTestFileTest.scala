@@ -27,7 +27,7 @@ object SparkTestFileTest {
 
     /* Create new local spark session with Single threads per Core */
     val sparkSession = SparkSession.builder().config(new SparkConf().setAppName("SparkTestFileTest").setMaster("local[*]"))
-      .getOrCreate()
+      .getOrCreate
 
     /* Change log level to avoid lots of log */
     sparkSession.sparkContext.setLogLevel("ERROR")
@@ -45,7 +45,7 @@ object SparkTestFileTest {
     import sparkSession.implicits._
 
     /* Create an RDD of Person objects from a text file, convert it to a DataFrame */
-    val personDF = sparkSession.sparkContext.textFile("src/main/resources/people.txt").map(_.split(",")).map(attributes => Person(attributes(0), attributes(1).trim.toInt)).toDF()
+    val personDF = sparkSession.sparkContext.textFile("src/main/resources/people.txt").map(_.split(",")).map(attributes => Person(attributes(0), attributes(1).trim.toInt)).toDF
 
     /* Example 1 : Print schema */
     personDF.printSchema
@@ -98,6 +98,7 @@ object SparkTestFileTest {
     val personDF = sparkSession.read.json("src/main/resources/people.json")
 
     println("Complete Data Frame: ")
+
     /* Example 1 : Displays the content of the DataFrame */
     personDF.show
     println("-----------------------------------------------------")

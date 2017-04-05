@@ -44,7 +44,7 @@ object SparkWordCount {
       println("word count process is completed...");
 
       /* Stop the spark context */
-      sc.stop()
+      sc.stop
     }
   }
 }

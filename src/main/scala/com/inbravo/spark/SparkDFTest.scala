@@ -28,8 +28,8 @@ object SparkDFTest {
     }
 
     /* Create new local spark session with Single threads per Core */
-    val sparkSession = SparkSession.builder().config(new SparkConf().setAppName("SparkDFTest").setMaster("local[*]"))
-      .getOrCreate()
+    val sparkSession = SparkSession.builder.config(new SparkConf().setAppName("SparkDFTest").setMaster("local[*]"))
+      .getOrCreate
 
     /* Change log level to avoid lots of log */
     sparkSession.sparkContext.setLogLevel("ERROR")
