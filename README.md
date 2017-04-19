@@ -3,6 +3,7 @@
 #### Language constructs
 -  [Hello World with main method][HelloWorld.md]
 -  [Hello World without main method][HelloWorldWithoutMain.md]
+-  [Purpose of trait, class and Object keywords in Scala][ClassObjectTest.md]
 -  [Java 'Object' is equivalent to Scala 'AnyRef'][VarArgsTest.md]
 -  [Various Scala types][ValuesTest.md]
 -  [How methods or definitions are created using 'def'][MethodTest.md]
@@ -111,6 +112,7 @@
 [ValuesTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ValuesTest.scala
 [VarAndValTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarAndValTest.scala
 [MethodTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MethodTest.scala
+[ClassObjectTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ClassObjectTest.scala
 [ArrayBufferTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ArrayBufferTest.scala
 [VarArgsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarArgsTest.scala
 [ProcedureTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ProcedureTest.scala
