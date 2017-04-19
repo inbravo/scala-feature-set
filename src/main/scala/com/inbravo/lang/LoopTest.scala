@@ -14,6 +14,13 @@ object LoopTest extends App {
     i += 1
   }
 
+  /* do-while loop */
+  do {
+
+    printIt(i)
+    i += 1
+  } while (i < max)
+
   /* for loop */
   for (i <- 0 until max) {
 
