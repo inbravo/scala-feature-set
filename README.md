@@ -1,3 +1,5 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/507e7b65e6794888b4a89a6682db0287)](https://www.codacy.com/app/inbravo/scala-src?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=inbravo/scala-src&amp;utm_campaign=Badge_Grade)
+
 ### Some useful Scala examples
 
 #### Language constructs
