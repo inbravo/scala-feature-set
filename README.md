@@ -2,6 +2,9 @@
 
 ### Some useful Scala examples
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/507e7b65e6794888b4a89a6682db0287)](https://www.codacy.com/app/inbravo/scala-src?utm_source=github.com&utm_medium=referral&utm_content=inbravo/scala-src&utm_campaign=badger)
+
+
 #### Language constructs
 -  [Hello World with main method][HelloWorld.md]
 -  [Hello World without main method][HelloWorldWithoutMain.md]
