@@ -1,5 +1,8 @@
 package com.inbravo.lang
-
+/**
+ * This example showcases the difference between private and private[this]
+ * amit.dixit
+ */
 object ObjectPrivateAccess extends App {
 
   class Employee {
@@ -17,8 +20,10 @@ object ObjectPrivateAccess extends App {
     /* Only accesible to 'this' */
     private[this] val privateEmployeeManagerValue = 2
 
+    println(this.privateEmployeeManagerValue)
+
     /* This line will give compilation error */
-    /* println(this.privateEmployeeManagerValue + employeeManager.privateEmployeeManagerValue) */
+    //  println(employeeManager.privateEmployeeManagerValue) 
   }
 
   /* Create new employee */
