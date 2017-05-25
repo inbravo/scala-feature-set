@@ -8,6 +8,7 @@
 -  [Purpose of trait, class and Object keywords in Scala][ClassObjectTest.md]
 -  [Java 'Object' is equivalent to Scala 'AnyRef'][VarArgsTest.md]
 -  [Various Scala types][ValuesTest.md]
+-  [never use 'return' keyword in Scala][AvoidReturnTest.md]
 -  [How methods or definitions are created using 'def'][MethodTest.md]
 -  [How definitions can also be created using 'var' or 'val'][VarAndValTest.md]
 -  [Java 'void' is equivalent to Scala 'Unit'][MathOpsTest.md]
@@ -112,6 +113,7 @@
 [HelloWorld.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HelloWorld.scala
 [HelloWorldWithoutMain.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HelloWorldWithoutMain.scala
 [ValuesTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ValuesTest.scala
+[AvoidReturnTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AvoidReturnTest.scala
 [VarAndValTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarAndValTest.scala
 [MethodTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MethodTest.scala
 [ClassObjectTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ClassObjectTest.scala
