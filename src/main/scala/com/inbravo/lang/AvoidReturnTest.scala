@@ -2,7 +2,7 @@ package com.inbravo.lang
 
 /**
  * Why not to use 'return' statement in a Scala program
- * 
+ *
  * amit.dixit
  */
 object AvoidReturnTest {
@@ -13,8 +13,8 @@ object AvoidReturnTest {
     var result: String = "Unknown Error"
 
     errorCode match {
-      case 1 => result = "Network Failure"
-      case 2 => result = "I/O Failure"
+      case 1 => result = "TCP Socket Failure"
+      case 2 => result = "UDP Failure"
       case 3 => result = "Unknown Error"
     }
     return result
@@ -23,8 +23,8 @@ object AvoidReturnTest {
   def getErrorMessageWithExplicitReturn(errorCode: Int): String = {
 
     val result = errorCode match {
-      case 1 => "Network Failure"
-      case 2 => "I/O Failure"
+      case 1 => "TCP Socket Failure"
+      case 2 => "UDP Failure"
       case 3 => "Unknown Error"
     }
     return result
@@ -34,8 +34,8 @@ object AvoidReturnTest {
 
     /* Control structure 'match' is the last statement in this method and 'match' is returning a String */
     errorCode match {
-      case 1 => "Network Failure"
-      case 2 => "I/O Failure"
+      case 1 => "TCP Socket Failure"
+      case 2 => "UDP Failure"
       case 3 => "Unknown Error"
     }
   }
