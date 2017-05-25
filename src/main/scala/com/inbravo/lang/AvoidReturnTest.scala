@@ -7,9 +7,10 @@ package com.inbravo.lang
  */
 object AvoidReturnTest {
 
-  def getErrorMessageWithReturn(errorCode: Int): String = {
+  /* Scala code below resembles Java */
+  def getErrorMessageWithReturnFirst(errorCode: Int): String = {
 
-    /* Variable initializaed the default value using uderscore '_' */
+    /* A variable ('var') type which can change after declaration */
     var result: String = "Unknown Error"
 
     errorCode match {
@@ -17,38 +18,51 @@ object AvoidReturnTest {
       case 2 => result = "UDP Failure"
       case 3 => result = "Unknown Error"
     }
+
+    /* Return the result */
     return result
   }
 
-  def getErrorMessageWithExplicitReturn(errorCode: Int): String = {
+  /* Scala code below resembles Java */
+  def getErrorMessageWithExplicitReturnSecond(errorCode: Int): String = {
 
+    /* A value ('val') type which can't change after declaration */
     val result = errorCode match {
       case 1 => "TCP Socket Failure"
       case 2 => "UDP Failure"
       case 3 => "Unknown Error"
     }
+
+    /* Return the result */
     return result
   }
 
+  /* Scala code below somewhat resembles Java */
+  def getErrorMessageWithExplicitReturnThird(errorCode: Int): String = {
+
+    /* Control structure 'match' is returning a String */
+    return errorCode match { case 1 => "TCP Socket Failure" case 2 => "UDP Failure" case 3 => "Unknown Error" }
+  }
+
+  /* Scala code below rarely resembles Java */
   def getErrorMessageWithoutReturn(errorCode: Int): String = {
 
-    /* Control structure 'match' is the last statement in this method and 'match' is returning a String */
-    errorCode match {
-      case 1 => "TCP Socket Failure"
-      case 2 => "UDP Failure"
-      case 3 => "Unknown Error"
-    }
+    /* Control structure 'match' is the last statement in this method; automatically taken as return value */
+    errorCode match { case 1 => "TCP Socket Failure" case 2 => "UDP Failure" case 3 => "Unknown Error" }
   }
 
   def main(arms: Array[String]): Unit = {
 
     /* First method */
-    println(getErrorMessageWithReturn(1))
+    println(getErrorMessageWithReturnFirst(1))
 
     /* Second method */
-    println(getErrorMessageWithExplicitReturn(1))
+    println(getErrorMessageWithExplicitReturnSecond(1))
 
-    /* THird method */
+    /* Third method */
+    println(getErrorMessageWithExplicitReturnThird(1))
+
+    /* Fourth method */
     println(getErrorMessageWithoutReturn(1))
   }
 }
