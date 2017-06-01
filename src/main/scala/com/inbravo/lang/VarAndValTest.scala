@@ -3,7 +3,7 @@ package com.inbravo.lang
  *
  * How to define variables: 'var'
  * How to define constant values: 'val'
- * How definitions or functions can be created using 'var'
+ * How definitions or functions can be created using 'var' and 'val'
  *
  * amit.dixit
  */
