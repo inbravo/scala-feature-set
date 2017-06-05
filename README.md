@@ -58,6 +58,7 @@
 -  [Usage of 'List' and 'Vector' in Scala][ListTest.md]
 -  [Usage of 'ArrayBuffer' in Scala][ArrayBufferTest.md]
 -  [Usage of WeakHashMap in Scala][WeakHashMapTest.md]
+-  [Different operations on List class][ListOperationsTest.md]
 
 #### Socket
 -  [Usage of 'ServerSocket' in Scala][NetworkService.md]
@@ -142,6 +143,7 @@
 [StringsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/StringsTest.scala 
 [SeqOfStringsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/SeqOfStringsTest.scala 
 [ListTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/SeqOfStringsTest.scala
+[ListOperationsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ListOperationsTest.scala
 [MathOpsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MathOpsTest.scala  
 [ArrayBufferTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/SeqOfStringsTest.scala 
 [CompanionObjectTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/CompanionObjectTest.scala 
