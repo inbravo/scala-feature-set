@@ -12,4 +12,13 @@ object ListOperationsTest {
     val sum = values.foldLeft(0.0) { _ + _ }
     sum / values.size.toDouble
   }
+
+  /* A sample method to understand how 'tableswitch' optimization works */
+  def unannotated(x: Int) = x match {
+
+    /* Mappings of integer values to ordinal string */
+    case 1 => "One"
+    case 2 => "Two!"
+    case z => z + "?"
+  }
 }
