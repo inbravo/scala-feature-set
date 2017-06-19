@@ -32,5 +32,11 @@ object StringsTest {
     /* Below given line will give compilation error */
     /* val mergectOperationOne = listOne + listTwo */   
     println(listOne ++ listTwo)
+    
+    val stringToBeSplit = "One,Two,Three,Four,Five" 
+    var data = stringToBeSplit.split(",")
+    println(data(0))
+    println(data(1))
+    
   }
 }
