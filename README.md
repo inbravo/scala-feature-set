@@ -8,7 +8,8 @@
 -  [Purpose of trait, class and Object keywords in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ClassObjectTest.scala)
 -  [Java 'Object' is equivalent to Scala 'AnyRef'](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarArgsTest.scala)
 -  [Scala Array that can store all object types](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AnyValTest.scala)
--  [Various Scala types][ValuesTest.md]
+-  [Various Scala types](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ValuesTest.scala)
+-  [Type aliases in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TypeAliasTest.scala)
 -  [never use 'return' keyword in Scala][AvoidReturnTest.md]
 -  [How methods or definitions are created using 'def'][MethodTest.md]
 -  [How definitions can also be created using 'var' or 'val'][VarAndValTest.md]
@@ -116,7 +117,6 @@
 
 
 [Using-sbteclipse.md]: https://github.com/typesafehub/sbteclipse/wiki/Using-sbteclipse
-[ValuesTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ValuesTest.scala
 [AvoidReturnTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AvoidReturnTest.scala
 [VarAndValTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarAndValTest.scala
 [MethodTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MethodTest.scala
