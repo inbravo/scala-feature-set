@@ -3,10 +3,11 @@
 ### Some useful Scala examples
 
 #### Language constructs
--  [Hello World with main method][HelloWorld.md]
--  [Hello World without main method][HelloWorldWithoutMain.md]
--  [Purpose of trait, class and Object keywords in Scala][ClassObjectTest.md]
--  [Java 'Object' is equivalent to Scala 'AnyRef'][VarArgsTest.md]
+-  [Hello World with main method](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HelloWorld.scala)
+-  [Hello World without main method](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HelloWorldWithoutMain.scala)
+-  [Purpose of trait, class and Object keywords in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ClassObjectTest.scala)
+-  [Java 'Object' is equivalent to Scala 'AnyRef'](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarArgsTest.scala)
+-  [Scala Array that can store all object types](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AnyValTest.scala)
 -  [Various Scala types][ValuesTest.md]
 -  [never use 'return' keyword in Scala][AvoidReturnTest.md]
 -  [How methods or definitions are created using 'def'][MethodTest.md]
@@ -35,7 +36,7 @@
 -  [How object-private access works][ObjectPrivateAccess.md]
 -  [Operators are nothing just methods. Operator overloading example][OperatorsAreMethods.md]
 -  [A function without a return type is called Procedure in Scala][ProcedureTest.md]
--  [Example of a function that can take a variable number of arguments][VarArgsTest.md]
+-  [Example of a function that can take a variable number of arguments](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarArgsTest.scala)
 -  [Value '_' initializes to default value of variable][MutatorTest.md]
 -  [How getter/setter is automatically generated in a class][MutatorTest.md]
 -  [How Scala avoids NullPointerException using 'Option', 'Some' and 'None'][SomeNoneOptionTest.md]
@@ -115,15 +116,11 @@
 
 
 [Using-sbteclipse.md]: https://github.com/typesafehub/sbteclipse/wiki/Using-sbteclipse
-[HelloWorld.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HelloWorld.scala
-[HelloWorldWithoutMain.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HelloWorldWithoutMain.scala
 [ValuesTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ValuesTest.scala
 [AvoidReturnTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AvoidReturnTest.scala
 [VarAndValTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarAndValTest.scala
 [MethodTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MethodTest.scala
-[ClassObjectTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ClassObjectTest.scala
 [ArrayBufferTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ArrayBufferTest.scala
-[VarArgsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarArgsTest.scala
 [ProcedureTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ProcedureTest.scala
 [AnnotationTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AnnotationTest.scala
 [MutatorTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MutatorTest.scala

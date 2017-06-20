@@ -12,10 +12,10 @@ object VarAndValTest extends App {
   /* Without type */
   var variable = 0
 
-  /* With type */
+  /* With type ascription (NAME:ASCRIPTION) */
   var variableWithType: Int = 10
 
-  /* Without type */
+  /* Without type ascription */
   val value = 8 * 5 + 2
 
   /* With type */
