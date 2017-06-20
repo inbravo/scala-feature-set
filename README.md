@@ -46,7 +46,7 @@
 -  [Companion objects][CompanionObjectTest.md]
 -  [Generics example][GenericsTest.md]
 -  [Enviornment variables example][EnvironmentVarTest.md]
--  [How to find object hashcode in Scala][(https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HashCodeTest.scala)
+-  [How to find object hashcode in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HashCodeTest.scala)
 
 ### Functional constructs
 -  [Type inference and ascription](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TypeAscriptionInferenceTest.md)
