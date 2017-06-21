@@ -51,7 +51,7 @@
 -  [How to find object hashcode in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HashCodeTest.scala)
 
 ### Functional constructs
--  [Type inference and ascription](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TypeAscriptionInferenceTest.md)
+-  [Type inference and ascription](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TypeAscriptionInferenceTest.scala)
 
 #### Class and Methods
 -  ["Hello"(4) is actually "Hello".apply(4)][MathOpsTest.md]
