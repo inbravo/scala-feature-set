@@ -21,4 +21,10 @@ object TypeAliasTest extends App {
   data += ("Arihant" -> 6)
 
   println(data)
+
+  /* Abstract Type Member of rigid type 'Int' */
+  type intOnlyType <: Int
+
+  /* Below given line wont compile */
+  /* var intVar:intOnlyType = "" */
 }
