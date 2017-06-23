@@ -56,7 +56,7 @@
 -  [Type inference and ascription](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TypeAscriptionInferenceTest.scala)
 
 #### Class and Methods
--  ["Hello"(4) is actually "Hello".apply(4)][MathOpsTest.md]
+-  ["Hello"(4) is actually "Hello".apply(4)][ApplyMethodTest.md]
 -  [BigInt("1234567890") is actually BigInt.apply("1234567890")][MathOpsTest.md]
 -  [Create custom annotations using 'scala.annotation.StaticAnnotation'][AnnotationTest.md]
 -  [The 'App' trait can be used to quickly turn objects into executable programs][EitherTest.md]
@@ -148,6 +148,7 @@
 [ListTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/SeqOfStringsTest.scala
 [ListOperationsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ListOperationsTest.scala
 [MathOpsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MathOpsTest.scala  
+[ApplyMethodTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ApplyMethodTest.scala
 [ArrayBufferTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/SeqOfStringsTest.scala 
 [CompanionObjectTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/CompanionObjectTest.scala 
 [MapTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MapTest.scala 
