@@ -57,6 +57,7 @@
 
 #### Class and Methods
 -  ["Hello"(4) is actually "Hello".apply(4)][ApplyMethodTest.md]
+-  [Methods 'apply' as Injector and 'unapply' as Extractor](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ObjectExtractorTest.scala)
 -  [BigInt("1234567890") is actually BigInt.apply("1234567890")][MathOpsTest.md]
 -  [Create custom annotations using 'scala.annotation.StaticAnnotation'][AnnotationTest.md]
 -  [The 'App' trait can be used to quickly turn objects into executable programs][EitherTest.md]

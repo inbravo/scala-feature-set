@@ -1,7 +1,9 @@
 package com.inbravo.lang
 
 /**
+ * How 'apply' method helps in applying sugar coats as per your needs, before pre-initialization of objects
  *
+ * amit.dixit
  */
 object ApplyMethodTest extends App {
 
