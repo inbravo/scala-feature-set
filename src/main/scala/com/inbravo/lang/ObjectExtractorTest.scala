@@ -30,7 +30,6 @@ object IPAddress {
   /* The 'apply' method takes some arguments and yields an element of a given set. This method is called an injection */
   def apply(a: String, b: String, c: String, d: String): String = a + "." + b + "." + c + "." + d
 
-  /* The 'unapply' method helps in removing any sugar coating */
   /* The 'unapply' method is called extractor because it takes an element of the same set and extracts some of its parts */
   def unapply(ip: String): Option[(String, String, String, String)] = {
 
