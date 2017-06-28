@@ -56,7 +56,7 @@
 ### Functional constructs
 -  [Type inference and ascription](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TypeAscriptionInferenceTest.scala)
 -  [First class functions and currying](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/FirstClassFuncTest.scala)
--  [High order functions and currying](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HighOrderFunctionTest.scala) 
+-  [High order functions](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HighOrderFunctionTest.scala) 
 
 #### Class and Methods
 -  ["Hello"(4) is actually "Hello".apply(4)][ApplyMethodTest.md]
