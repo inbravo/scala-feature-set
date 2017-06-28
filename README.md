@@ -44,16 +44,19 @@
 -  [How getter/setter is automatically generated in a class][MutatorTest.md]
 -  [How Scala avoids NullPointerException using 'Option', 'Some' and 'None'][SomeNoneOptionTest.md]
 -  [Default object factory in Scala][ObjectFactoryTest.md]
--  [First class functions and currying][FirstClassFuncTest.md]
 -  [Using 'strip margin' to add new lines in string][CustomerRestService.md]
 -  [Different types of looping techniques][LoopTest.md]
 -  [Companion objects][CompanionObjectTest.md]
 -  [Generics example][GenericsTest.md]
 -  [Enviornment variables example][EnvironmentVarTest.md]
 -  [How to find object hashcode in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HashCodeTest.scala)
+-  [How to view bounds works in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ViewBoundTest.scala)
+-  [How to upper and lower type bounds works in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TypeBoundTest.scala)
 
 ### Functional constructs
 -  [Type inference and ascription](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TypeAscriptionInferenceTest.scala)
+-  [First class functions and currying](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/FirstClassFuncTest.scala)
+-  [High order functions and currying](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HighOrderFunctionTest.scala) 
 
 #### Class and Methods
 -  ["Hello"(4) is actually "Hello".apply(4)][ApplyMethodTest.md]
@@ -154,7 +157,6 @@
 [CompanionObjectTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/CompanionObjectTest.scala 
 [MapTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MapTest.scala 
 [EnvironmentVarTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/EnvironmentVarTest.scala 
-[FirstClassFuncTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/FirstClassFuncTest.scala 
 [TryCatchTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TryCatchTest.scala 
 [RequireTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/CompanionObjectTest.scala
 [OperatorsAreMethods.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/OperatorsAreMethods.scala 
