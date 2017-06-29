@@ -56,7 +56,8 @@
 ### Functional constructs
 -  [Partial applied functions](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/PartialAppliedFuncTest.scala)
 -  [Type inference and ascription](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TypeAscriptionInferenceTest.scala)
--  [First class functions and currying](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/FirstClassFuncTest.scala)
+-  [First class functions](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/FirstClassFuncTest.scala)
+-  [Currying](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/CurryingTest.scala)
 -  [High order functions](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HighOrderFunctionTest.scala) 
 
 #### Class and Methods
