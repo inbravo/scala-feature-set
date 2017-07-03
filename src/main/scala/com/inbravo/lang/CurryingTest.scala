@@ -5,17 +5,29 @@ package com.inbravo.lang
  */
 object CurryingTest extends App {
 
-  /* A method using currying */
-  def curriedSum(x: Int)(y: Int) = x + y
+  /* 	A method without currying	*/
+  def sum(x: Int, y: Int) = x + y
 
-  println("curriedSum: " + curriedSum(1)(2))
+  println("Sum : " + sum(1, 2))
+  println("Sum : " + sum(1, 3))
 
-  /* This is what the 'curriedSum' function actually does. Returns function value (x: Int) Int => Int */
-  def first(x: Int) = (y: Int) => x + y
+  /* 	A method using currying	*/
+  /* 	Redefines the sum method so that it takes only a single 'Int' as a parameter and returns a 'Clozure' as a result	*/
+  /*	Then main program calls this 'Closure', and passes second parameter. This 'Clozure' computes the value and returns the final result	*/
+  def curriedSum(x: Int) = { (y: Int) => x + y }
 
-  /* Applying 1 to the first function yields the second function */
-  val second = first(1)
+  println("CurriedSum: " + curriedSum(1)(2))
+  println("CurriedSum: " + curriedSum(1)(3))
 
-  /* Applying 2 to the second function yields the final result */
-  println("second: " + second(2))
+  /* Clarification how 'Clozure', returned by 'curriedSum' works */
+  val clozure = curriedSum(1)
+
+  println("Clozure: " + clozure(2))
+  println("Clozure: " + clozure(3))
+
+  /* 	Another improved method using currying	*/
+  def anotherCurriedSum(x: Int)(y: Int) = x + y
+
+  println("anotherCurriedSum: " + anotherCurriedSum(1)(2))
+  println("anotherCurriedSum: " + anotherCurriedSum(1)(3))
 }
