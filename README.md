@@ -12,7 +12,7 @@
 -  [Scala Array that can store all object types](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AnyValTest.scala)
 -  [Various Scala types](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ValuesTest.scala)
 -  [Type aliases in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TypeAliasTest.scala)
--  [never use 'return' keyword in Scala][AvoidReturnTest.md]
+-  [Never use 'return' keyword in Scala][AvoidReturnTest.md]
 -  [How methods or definitions are created using 'def'][MethodTest.md]
 -  [How definitions can also be created using 'var' or 'val'][VarAndValTest.md]
 -  [Java 'void' is equivalent to Scala 'Unit'][MathOpsTest.md]
