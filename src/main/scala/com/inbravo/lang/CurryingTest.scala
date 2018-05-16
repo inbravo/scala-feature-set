@@ -13,7 +13,7 @@ object CurryingTest extends App {
 
   /* 	A method using currying	*/
   /* 	Redefines the sum method so that it takes only a single 'Int' as a parameter and returns a 'Clozure' as a result	*/
-  /*	Then main program calls this 'Closure', and passes second parameter. This 'Clozure' computes the value and returns the final result	*/
+  /*	Then main program calls this 'Clozure', and passes second parameter. This 'Clozure' computes the value and returns the final result	*/
   def curriedSum(x: Int) = { (y: Int) => x + y }
 
   println("CurriedSum: " + curriedSum(1)(2))

@@ -46,10 +46,13 @@ libraryDependencies ++= Seq(
   	"com.microsoft.sqlserver" % "mssql-jdbc" % "6.1.0.jre7",
   	
   	/* Finagle */
-	"com.twitter" %% "finagle-http" % "6.42.0"
+	"com.twitter" %% "finagle-http" % "6.42.0",
+	
+	/* Scalaz */
+	"org.scalaz" %% "scalaz-core" % "7.2.14"
 )
 
-dependencyOverrides ++= Set(
+dependencyOverrides ++= Seq(
 
   	/* Fasterxml */
   	"com.fasterxml.jackson.core" %% "jackson-core" % fasterxmlVersion,

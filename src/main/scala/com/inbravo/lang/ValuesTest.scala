@@ -54,4 +54,10 @@ object ValuesTest extends App {
   /* Boolean values */
   val trueBoolean: Boolean = true
   val falseBoolean: Boolean = false
+  
+  /* Automatic type inference */
+  var someString = "someString"
+  val someInt = 10
+  var someFloat = 1.1F
+  val someBoolean = true
 }

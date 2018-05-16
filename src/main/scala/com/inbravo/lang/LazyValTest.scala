@@ -19,7 +19,7 @@ object LazyValTest {
     val value: Int = { println("value"); 100 }
 
     /* A lazy value. It will print 'lazyValue' during utilization phase */
-    lazy val lazyValue = { println("lazyValue"); 1000 }
+    lazy val lazyValue : java.math.BigDecimal = { println("lazyValue"); new java.math.BigDecimal(100.12) }
 
     println("Variable/Value initialization phase ends...")
     println("-------------------------------------------")
