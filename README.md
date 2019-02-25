@@ -115,6 +115,7 @@
 -  [Program to show case DataSet operations][SparkDSTest.md]
 -  [Program to show various operations on Data retrieved from File][SparkTestFileTest.md]
 -  [Program to show Kryo based serialization][KryoEncodingTest.md]
+-  [Program to show hive connection][SparkHiveTest.md]
 
 ## How to build and configure
 ### To solve library dependencies in eclipse ([sbteclipse plugin required][Using-sbteclipse.md]), in sbt console type: 
@@ -189,3 +190,4 @@
 [SparkTestFileTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SparkTestFileTest.scala
 [SocketWordCount.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SocketWordCount.scala
 [KryoEncodingTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/KryoEncodingTest.scala
+[SparkHiveTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SparkHiveTest.scala
