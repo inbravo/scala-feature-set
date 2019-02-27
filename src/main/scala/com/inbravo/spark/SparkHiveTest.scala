@@ -20,7 +20,6 @@ object SparkHiveTest {
 
     /* Create Spark config */
     val sparkConf = new SparkConf()
-      .set("fs.default.name", "hdfs://192.168.218.154:9000")
       .set("hive.metastore.uris", "thrift://192.168.218.154:9083")
       .set("spark.sql.warehouse.dir", "/apps/hive/warehouse")
       .set("deploy-mode", "cluster")
