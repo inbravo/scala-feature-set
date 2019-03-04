@@ -1,16 +1,13 @@
 package com.inbravo.lang
 
-/**
- * amit.dixit
- * Say hello
- */
 class Greeter(val name: String) {
 
   def sayHello = "Hello " + name;
 }
 
 /**
- *
+ * An example to understand implicit functions/definitions work
+ * amit.dixit
  */
 object ImplicitFuncTest {
 
