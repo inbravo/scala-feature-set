@@ -51,6 +51,7 @@
 -  [Example of a function that can take a variable number of arguments](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarArgsTest.scala)
 -  [Difference between call by name and call by value][CallByNameAndValueTest.md]
 -  [Methods 'apply' as Injector and 'unapply' as Extractor](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ObjectExtractorTest.scala)
+-  [Operators are nothing just methods. Operator overloading example][OperatorsAreMethods.md]
 
 #### Collection
 -  [Usage of 'Seq[String]' in Scala][SeqOfStringsTest.md]
@@ -66,7 +67,6 @@
 -  [Primary constructor][PrimaryConstructorTest.md]
 -  [Auxiliary constructors][AuxiliaryConstructorsTest.md]
 -  [Difference between private and private[this]][ObjectPrivateAccess.md]
--  [Operators are nothing just methods. Operator overloading example][OperatorsAreMethods.md]
 -  [Value '_' initializes to default value of variable][MutatorTest.md]
 -  [How getter/setter is automatically generated in a class][MutatorTest.md]
 -  [How Scala avoids NullPointerException using 'Option', 'Some' and 'None'][SomeNoneOptionTest.md]
@@ -78,7 +78,7 @@
 -  [How to view bounds works in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ViewBoundTest.scala)
 -  [How to upper and lower type bounds works in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TypeBoundTest.scala)
 
-### Functional constructs
+#### Functional constructs
 -  [Companion objects][CompanionObjectTest.md]
 -  [Partial applied functions](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/PartialAppliedFuncTest.scala)
 -  [Currying](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/CurryingTest.scala)
