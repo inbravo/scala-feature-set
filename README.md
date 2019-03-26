@@ -2,25 +2,16 @@
 [![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/inbravo/scala-src/master?grs=github&t=white)
 
 
-### Some useful Scala examples
+## Some useful Scala examples
 
-#### Language constructs
+### Language constructs
+
+#### Hello World
 -  [Hello World with main method](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HelloWorld.scala)
 -  [Hello World without main method](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HelloWorldWithoutMain.scala)
--  [Purpose of trait, class and Object keywords in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ClassObjectTest.scala)
--  [Java 'Object' is equivalent to Scala 'AnyRef'](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarArgsTest.scala)
--  [Scala Array that can store all object types](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AnyValTest.scala)
--  [Various Scala types](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ValuesTest.scala)
--  [Type aliases in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TypeAliasTest.scala)
--  [Never use 'return' keyword in Scala][AvoidReturnTest.md]
--  [How methods or definitions are created using 'def'][MethodTest.md]
--  [How definitions can also be created using 'var' or 'val'][VarAndValTest.md]
--  [Java 'void' is equivalent to Scala 'Unit'][MathOpsTest.md]
--  [Values which are lazy initialised using 'lazy val'][LazyValTest.md]
--  [Scala 'import' is richer than Java][ImportTest.md]
--  [Equivalent of Java 'interface' in Scala is 'trait'][MultipleTraitTest.md]
--  [Equivalent of Java 'sealed trait' in Scala is 'enum'][SealedTraitTest.md]
--  [Equivalent of Java 'ArrayList' Class in Scala is 'ArrayBuffer'][ArrayBufferTest.md]
+
+#### Common Keywords
+-  [Usage of 'import' to import classes][ImportTest.md]
 -  [Usage of 'tuple' to build abstractions over related values][TupleTest.md]
 -  [Usage of 'yield' in extracting values during loops][YieldTest.md]
 -  [Usage of 'isInstanceOf'][InstanceOfTest.md]
@@ -28,44 +19,38 @@
 -  [Usage of 'require' to enforce restrictions before creating instance of a Scala class][RequireTest.md]
 -  [Usage of 'tailrec' during recursions in methods][FactorialTest.md]
 -  [Usage of keyword '++' in collections][StringsTest.md]
--  [Usage of 'for each' as loop][ForEachTest.md]
 -  [Usage of 'Either' as return types][EitherTest.md]
--  [How Scala beans works : Half a line of Scala is the equivalent of seven lines of Java][PrimaryConstructorTest.md]
--  [Primary constructor][PrimaryConstructorTest.md]
--  [Auxiliary constructors][AuxiliaryConstructorsTest.md]
--  [Difference between private and private[this]][ObjectPrivateAccess.md]
--  [Difference between call by name and call by value][CallByNameAndValueTest.md]
--  [How '@inline' works][MethodInlineTest.md]
--  [How object-private access works][ObjectPrivateAccess.md]
--  [Operators are nothing just methods. Operator overloading example][OperatorsAreMethods.md]
--  [A function without a return type is called Procedure in Scala][ProcedureTest.md]
--  [Example of a function that can take a variable number of arguments](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarArgsTest.scala)
--  [Value '_' initializes to default value of variable][MutatorTest.md]
--  [How getter/setter is automatically generated in a class][MutatorTest.md]
--  [How Scala avoids NullPointerException using 'Option', 'Some' and 'None'][SomeNoneOptionTest.md]
--  [Default object factory in Scala][ObjectFactoryTest.md]
--  [Using 'strip margin' to add new lines in string][CustomerRestService.md]
--  [Different types of looping techniques][LoopTest.md]
--  [Companion objects][CompanionObjectTest.md]
--  [Generics example][GenericsTest.md]
--  [Enviornment variables example][EnvironmentVarTest.md]
--  [How to find object hashcode in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HashCodeTest.scala)
--  [How to view bounds works in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ViewBoundTest.scala)
--  [How to upper and lower type bounds works in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TypeBoundTest.scala)
+-  [Usage of '@inline' as ][MethodInlineTest.md]
 
-### Functional constructs
--  [Partial applied functions](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/PartialAppliedFuncTest.scala)
--  [Type inference and ascription](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TypeAscriptionInferenceTest.scala)
--  [First class functions](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/FirstClassFuncTest.scala)
--  [Currying](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/CurryingTest.scala)
--  [High order functions](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HighOrderFunctionTest.scala) 
-
-#### Class and Methods
+#### Basic Constructs: trait, class, object, annotations
+-  [Java 'Object' is equivalent to Scala 'AnyRef'](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarArgsTest.scala)
+-  [Java 'void' is equivalent to Scala 'Unit'][MathOpsTest.md]
+-  [Java 'enum' is equivalent to Scala 'sealed trait'][SealedTraitTest.md]
+-  [Java 'interface' is equivalent to Scala 'trait'][MultipleTraitTest.md]
+-  [Purpose of trait, class and Object keywords in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ClassObjectTest.scala)
 -  ["Hello"(4) is actually "Hello".apply(4)][ApplyMethodTest.md]
--  [Methods 'apply' as Injector and 'unapply' as Extractor](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ObjectExtractorTest.scala)
--  [BigInt("1234567890") is actually BigInt.apply("1234567890")][MathOpsTest.md]
 -  [Create custom annotations using 'scala.annotation.StaticAnnotation'][AnnotationTest.md]
 -  [The 'App' trait can be used to quickly turn objects into executable programs][EitherTest.md]
+
+#### Var, Val, Int, Float, Double, BigInteger
+-  [Various Scala types](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ValuesTest.scala)
+-  [Values which are lazy initialised using 'lazy val'][LazyValTest.md]
+-  [BigInt("1234567890") is actually BigInt.apply("1234567890")][MathOpsTest.md]
+
+#### Looping
+-  [Different types of looping techniques][LoopTest.md]
+-  [Usage of 'for each' as loop][ForEachTest.md]
+
+#### Methods/Functions
+-  [How methods or definitions are created using 'def'][MethodTest.md]
+-  [How object-private access works][ObjectPrivateAccess.md]
+-  [How definitions can also be created using 'var' or 'val'][VarAndValTest.md]
+-  [Type aliases in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TypeAliasTest.scala)
+-  [Never use 'return' keyword in Scala method][AvoidReturnTest.md]
+-  [A function without a return type is called Procedure in Scala][ProcedureTest.md]
+-  [Example of a function that can take a variable number of arguments](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarArgsTest.scala)
+-  [Difference between call by name and call by value][CallByNameAndValueTest.md]
+-  [Methods 'apply' as Injector and 'unapply' as Extractor](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ObjectExtractorTest.scala)
 
 #### Collection
 -  [Usage of 'Seq[String]' in Scala][SeqOfStringsTest.md]
@@ -73,6 +58,33 @@
 -  [Usage of 'ArrayBuffer' in Scala][ArrayBufferTest.md]
 -  [Usage of WeakHashMap in Scala][WeakHashMapTest.md]
 -  [Different operations on List class][ListOperationsTest.md]
+-  [Scala Array that can store all object types](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AnyValTest.scala)
+-  [Equivalent of Java 'ArrayList' Class in Scala is 'ArrayBuffer'][ArrayBufferTest.md]
+
+#### Others
+-  [How Scala beans works : Half a line of Scala is the equivalent of seven lines of Java][PrimaryConstructorTest.md]
+-  [Primary constructor][PrimaryConstructorTest.md]
+-  [Auxiliary constructors][AuxiliaryConstructorsTest.md]
+-  [Difference between private and private[this]][ObjectPrivateAccess.md]
+-  [Operators are nothing just methods. Operator overloading example][OperatorsAreMethods.md]
+-  [Value '_' initializes to default value of variable][MutatorTest.md]
+-  [How getter/setter is automatically generated in a class][MutatorTest.md]
+-  [How Scala avoids NullPointerException using 'Option', 'Some' and 'None'][SomeNoneOptionTest.md]
+-  [Default object factory in Scala][ObjectFactoryTest.md]
+-  [Using 'strip margin' to add new lines in string][CustomerRestService.md]
+-  [Generics example][GenericsTest.md]
+-  [Enviornment variables example][EnvironmentVarTest.md]
+-  [How to find object hashcode in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HashCodeTest.scala)
+-  [How to view bounds works in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ViewBoundTest.scala)
+-  [How to upper and lower type bounds works in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TypeBoundTest.scala)
+
+### Functional constructs
+-  [Companion objects][CompanionObjectTest.md]
+-  [Partial applied functions](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/PartialAppliedFuncTest.scala)
+-  [Currying](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/CurryingTest.scala)
+-  [Type inference and ascription](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TypeAscriptionInferenceTest.scala)
+-  [First class functions](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/FirstClassFuncTest.scala)
+-  [High order functions](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HighOrderFunctionTest.scala) 
 
 #### Socket
 -  [Usage of 'ServerSocket' in Scala][NetworkService.md]

@@ -16,6 +16,8 @@ object PartialAppliedFuncTest extends App {
   /* A partial applied function */
   val partialAppliedFunc = sum(1, _: Int, _: Int)
   println(partialAppliedFunc)
+  println(partialAppliedFunc(1,2))
+  println(partialAppliedFunc)
 
   /* A partial applied function */
   val secondPartialAppliedFunc = sum(1, 2, _: Int)

@@ -8,6 +8,7 @@ package com.inbravo.lang
 object MethodTest extends App {
 
   /* Anonymous method; this does not require an explicit calls but will be automatically called */
+  /* Predef.print() can be called without explicit qualification */
   print("Hello")
 
   /* A method with a name, without any parameter passed, with curly brackets ('{}'); which prints something */
@@ -16,7 +17,7 @@ object MethodTest extends App {
   /* A method with a name, without any parameter passed, without curly brackets ('{}'); which prints something */
   def printHello = print("Hello")
 
-  /* A method with a name but without curly brackets ('{}'); which prints something */
+  /* A method with a name but without curly brackets ('{}'); which prints the passed value */
   def printIt(value: Int) = print(value)
 
   /* A method which returns an Int value */
@@ -25,7 +26,7 @@ object MethodTest extends App {
   /* A method which returns an Int value without using 'return' keyword */
   def returnIntWithoutTypeDefinition = 1
 
-  /* A method which returns a Float value */
+  /* A method which returns a Float value. Return keyword is required if method return type is provided */
   def returnFloat: Float = return 1.0F
 
   /* A method which returns a Float value without using 'return' keyword */
