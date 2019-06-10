@@ -54,11 +54,19 @@ object SparkDFTest {
     /* Example 1 : Create empty data frame using Schema only */
     val emptyDataFrame: DataFrame = sparkSession.createDataFrame(sparkSession.sparkContext.emptyRDD[Row], personSchema)
 
+    println("Empty Persons Data Frame: ")
+    emptyDataFrame.toDF.show
+    println("-----------------------------------------------------")
+
     /*  Example 2 : Create persons data frame using RDD and Schema */
     val personsDataFrame: DataFrame = sparkSession.createDataFrame(personsRDD, personSchema)
 
     println("Persons Data Frame: ")
-    personsDataFrame.toDF().show()
+    personsDataFrame.toDF.show
+    println("-----------------------------------------------------")
+
+    println("Updated Persons Data Frame: ")
+    personsDataFrame.union(personsDataFrame).toDF.show
     println("-----------------------------------------------------")
   }
 
@@ -81,7 +89,7 @@ object SparkDFTest {
     /* Untyped DataSet Operations */
     println("Schema: ")
     /* Example 2 : Print the schema in a tree format */
-    df.printSchema()
+    df.printSchema
     println("-----------------------------------------------------")
 
     println("Only column(name): ")
@@ -96,7 +104,7 @@ object SparkDFTest {
 
     println("people older than 21: ")
     /* Example 5 : Select people older than 21 */
-    df.filter($"age" > 21).show()
+    df.filter($"age" > 21).show
     println("-----------------------------------------------------")
 
     println("People with valid name and age more than 21: ")
@@ -158,9 +166,19 @@ object SparkDFTest {
 
     /* This import is needed to use the $-notation, for implicit conversions like converting RDDs to DataFrames */
     import sparkSession.implicits._
+    import org.apache.commons.io.FileUtils;
+    import org.apache.commons.io.filefilter.WildcardFileFilter;
 
     /* Create an RDD of Person objects from a text file, convert it to a DataFrame */
     val personDF = sparkSession.sparkContext.textFile("src/main/resources/people.txt").map(_.split(",")).map(attributes => Person(attributes(0), attributes(1).trim.toInt)).toDF()
+
+    try {
+      
+      /* Delete the parquet directories */
+      FileUtils.deleteDirectory(new java.io.File("people.parquet"));
+    } catch {
+      case e: Exception => println("Exception in deleting file" + e)
+    }
 
     /* DataFrames can be saved as 'PARQUET' files, maintaining the schema information */
     personDF.write.parquet("people.parquet")
