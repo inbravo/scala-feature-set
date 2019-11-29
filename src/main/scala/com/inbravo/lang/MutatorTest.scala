@@ -16,8 +16,12 @@ object MutatorTest {
     /* Calls the method employee.name() */
     println(employee.name)
 
-    /* Calls employee.name=("amit")  */
-    employee.name_=("amit")
+    /* Calls employee.name = "amit"  */
+    employee.name = "amit"
+    println(employee.name)
+    
+    /* Value must be in paranthesis ("amit_changed") That is the key difference in assigning value */
+    employee.name_=("amit_changed")
     println(employee.name)
 
     /* Calls the method cgEmployee.name() */
@@ -52,7 +56,8 @@ object MutatorTest {
     /* Accessor or Getter: the name of the method should be the name of the property */
     def name: String = internal
 
-    /* Mutator or Setter:  the name of the method should be the name of the property with "_=" appended */
-    def name_=(name: String): Unit = internal = name
+    /* Mutator or Setter: the name of the method should be the name of the property with "_=" appended */
+    /* Unit is the return type like void in java */
+    def name_=(name: String): Unit = { internal = name }
   }
 }
