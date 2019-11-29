@@ -37,16 +37,17 @@ object SparkDFTest {
     /* Print the spark version */
     println("Spark version: " + sparkSession.sparkContext.version)
 
+    /* RUn all examples */
     runSchemaBasedBasicDataFramesExample(sparkSession)
     runJSONBasedBasicDataFramesExample(sparkSession)
     runInferSchemaExample(sparkSession)
     runParquetExample(sparkSession)
   }
 
+  /**
+   * Schema based DataFrame operations
+   */
   private def runSchemaBasedBasicDataFramesExample(sparkSession: SparkSession): Unit = {
-
-    /* This import is needed to use the $-notation, for implicit conversions like converting RDDs to DataFrames */
-    import sparkSession.implicits._
 
     /* Create persons RDD */
     val personsRDD = sparkSession.sparkContext.parallelize(persons)
@@ -71,7 +72,7 @@ object SparkDFTest {
   }
 
   /**
-   * Basic DataFrame Examples
+   * JSON based DataFrame operations
    */
   private def runJSONBasedBasicDataFramesExample(sparkSession: SparkSession): Unit = {
 
@@ -173,7 +174,7 @@ object SparkDFTest {
     val personDF = sparkSession.sparkContext.textFile("src/main/resources/people.txt").map(_.split(",")).map(attributes => Person(attributes(0), attributes(1).trim.toInt)).toDF()
 
     try {
-      
+
       /* Delete the parquet directories */
       FileUtils.deleteDirectory(new java.io.File("people.parquet"));
     } catch {

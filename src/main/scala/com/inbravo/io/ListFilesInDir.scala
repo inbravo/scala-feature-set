@@ -17,7 +17,7 @@ object ListFilesInDir {
 
   def main(args: Array[String]): Unit = {
 
-    val files = recursiveListFiles(new File("D://personal//mygithub//aniket-docs//class-six//maths"));
-    println(files.foreach { x => println(x.getName) });
+    val files = recursiveListFiles(new File("D://personal//mygithub//travel//september-2019//images"));
+    println(files.foreach { x => println("![](https://github.com/inbravo/travel/raw/master/september-2019/images/" + x.getName + ")") });
   }
 }
