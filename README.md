@@ -1,5 +1,5 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/507e7b65e6794888b4a89a6682db0287)](https://www.codacy.com/app/inbravo/scala-src?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=inbravo/scala-src&amp;utm_campaign=Badge_Grade)
-[![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/inbravo/scala-src/master?grs=github&t=white)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/507e7b65e6794888b4a89a6682db0287)](https://www.codacy.com/app/inbravo/scala-feature-set?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=inbravo/scala-feature-set&amp;utm_campaign=Badge_Grade)
+[![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/inbravo/scala-feature-set/master?grs=github&t=white)
 
 
 ## Some useful Scala examples
@@ -7,8 +7,8 @@
 ### Language constructs
 
 #### Hello World
--  [Hello World with main method](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HelloWorld.scala)
--  [Hello World without main method](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HelloWorldWithoutMain.scala)
+-  [Hello World with main method](https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/HelloWorld.scala)
+-  [Hello World without main method](https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/HelloWorldWithoutMain.scala)
 
 #### Common Keywords
 -  [Usage of 'import' to import classes][ImportTest.md]
@@ -20,20 +20,20 @@
 -  [Usage of 'tailrec' during recursions in methods][FactorialTest.md]
 -  [Usage of keyword '++' in collections][StringsTest.md]
 -  [Usage of 'Either' as return types][EitherTest.md]
--  [Usage of '@inline' as ][MethodInlineTest.md]
+-  [Usage of '@inline' as performance optimizer][MethodInlineTest.md]
 
 #### Basic Constructs: trait, class, object, annotations
--  [Java 'Object' is equivalent to Scala 'AnyRef'](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarArgsTest.scala)
+-  [Java 'Object' is equivalent to Scala 'AnyRef'](https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/VarArgsTest.scala)
 -  [Java 'void' is equivalent to Scala 'Unit'][MathOpsTest.md]
 -  [Java 'enum' is equivalent to Scala 'sealed trait'][SealedTraitTest.md]
 -  [Java 'interface' is equivalent to Scala 'trait'][MultipleTraitTest.md]
--  [Purpose of trait, class and Object keywords in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ClassObjectTest.scala)
+-  [Purpose of trait, class and Object keywords in Scala](https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/ClassObjectTest.scala)
 -  ["Hello"(4) is actually "Hello".apply(4)][ApplyMethodTest.md]
 -  [Create custom annotations using 'scala.annotation.StaticAnnotation'][AnnotationTest.md]
 -  [The 'App' trait can be used to quickly turn objects into executable programs][EitherTest.md]
 
 #### Var, Val, Int, Float, Double, BigInteger
--  [Various Scala types](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ValuesTest.scala)
+-  [Various Scala types](https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/ValuesTest.scala)
 -  [Values which are lazy initialised using 'lazy val'][LazyValTest.md]
 -  [BigInt("1234567890") is actually BigInt.apply("1234567890")][MathOpsTest.md]
 
@@ -45,12 +45,12 @@
 -  [How methods or definitions are created using 'def'][MethodTest.md]
 -  [How object-private access works][ObjectPrivateAccess.md]
 -  [How definitions can also be created using 'var' or 'val'][VarAndValTest.md]
--  [Type aliases in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TypeAliasTest.scala)
+-  [Type aliases in Scala](https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/TypeAliasTest.scala)
 -  [Never use 'return' keyword in Scala method][AvoidReturnTest.md]
 -  [A function without a return type is called Procedure in Scala][ProcedureTest.md]
--  [Example of a function that can take a variable number of arguments](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarArgsTest.scala)
+-  [Example of a function that can take a variable number of arguments](https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/VarArgsTest.scala)
 -  [Difference between call by name and call by value][CallByNameAndValueTest.md]
--  [Methods 'apply' as Injector and 'unapply' as Extractor](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ObjectExtractorTest.scala)
+-  [Methods 'apply' as Injector and 'unapply' as Extractor](https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/ObjectExtractorTest.scala)
 -  [Operators are nothing just methods. Operator overloading example][OperatorsAreMethods.md]
 
 #### Collection
@@ -59,7 +59,7 @@
 -  [Usage of 'ArrayBuffer' in Scala][ArrayBufferTest.md]
 -  [Usage of WeakHashMap in Scala][WeakHashMapTest.md]
 -  [Different operations on List class][ListOperationsTest.md]
--  [Scala Array that can store all object types](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AnyValTest.scala)
+-  [Scala Array that can store all object types](https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/AnyValTest.scala)
 -  [Equivalent of Java 'ArrayList' Class in Scala is 'ArrayBuffer'][ArrayBufferTest.md]
 
 #### Others
@@ -74,17 +74,17 @@
 -  [Using 'strip margin' to add new lines in string][CustomerRestService.md]
 -  [Generics example][GenericsTest.md]
 -  [Enviornment variables example][EnvironmentVarTest.md]
--  [How to find object hashcode in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HashCodeTest.scala)
--  [How to view bounds works in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ViewBoundTest.scala)
--  [How to upper and lower type bounds works in Scala](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TypeBoundTest.scala)
+-  [How to find object hashcode in Scala](https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/HashCodeTest.scala)
+-  [How to view bounds works in Scala](https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/ViewBoundTest.scala)
+-  [How to upper and lower type bounds works in Scala](https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/TypeBoundTest.scala)
 
 #### Functional constructs
 -  [Companion objects][CompanionObjectTest.md]
--  [Partial applied functions](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/PartialAppliedFuncTest.scala)
--  [Currying](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/CurryingTest.scala)
--  [Type inference and ascription](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TypeAscriptionInferenceTest.scala)
--  [First class functions](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/FirstClassFuncTest.scala)
--  [High order functions](https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/HighOrderFunctionTest.scala) 
+-  [Partial applied functions](https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/PartialAppliedFuncTest.scala)
+-  [Currying](https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/CurryingTest.scala)
+-  [Type inference and ascription](https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/TypeAscriptionInferenceTest.scala)
+-  [First class functions](https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/FirstClassFuncTest.scala)
+-  [High order functions](https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/HighOrderFunctionTest.scala) 
 
 #### Socket
 -  [Usage of 'ServerSocket' in Scala][NetworkService.md]
@@ -138,68 +138,68 @@
 
 
 [Using-sbteclipse.md]: https://github.com/typesafehub/sbteclipse/wiki/Using-sbteclipse
-[AvoidReturnTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AvoidReturnTest.scala
-[VarAndValTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/VarAndValTest.scala
-[MethodTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MethodTest.scala
-[ArrayBufferTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ArrayBufferTest.scala
-[ProcedureTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ProcedureTest.scala
-[AnnotationTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AnnotationTest.scala
-[MutatorTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MutatorTest.scala
-[SomeNoneOptionTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/SomeNoneOptionTest.scala
-[EitherTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/EitherTest.scala  
-[LoopTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/LoopTest.scala  
-[MultipleTraitTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MultipleTraitTest.scala  
-[SealedTraitTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/SealedTraitTest.scala 
-[TupleTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TupleTest.scala 
-[ForEachTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ForEachTest.scala 
-[YieldTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ForEachTest.scala 
-[ObjectFactoryTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ObjectFactoryTest.scala 
-[ImportTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ImportTest.scala 
-[InstanceOfTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/InstanceOfTest.scala 
-[PrimaryConstructorTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/PrimaryConstructorTest.scala
-[AuxiliaryConstructorsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/AuxiliaryConstructorsTest.scala
-[ObjectPrivateAccess.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ObjectPrivateAccess.scala
-[CallByNameAndValueTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/CallByNameAndValueTest.scala
-[MethodInlineTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MethodInlineTest.scala
-[GenericsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/GenericsTest.scala 
-[StringsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/StringsTest.scala 
-[SeqOfStringsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/SeqOfStringsTest.scala 
-[ListTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/SeqOfStringsTest.scala
-[ListOperationsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ListOperationsTest.scala
-[MathOpsTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MathOpsTest.scala  
-[ApplyMethodTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ApplyMethodTest.scala
-[ArrayBufferTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/SeqOfStringsTest.scala 
-[CompanionObjectTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/CompanionObjectTest.scala 
-[MapTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/MapTest.scala 
-[EnvironmentVarTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/EnvironmentVarTest.scala 
-[TryCatchTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/TryCatchTest.scala 
-[RequireTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/CompanionObjectTest.scala
-[OperatorsAreMethods.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/OperatorsAreMethods.scala 
-[NetworkService.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/NetworkService.scala
-[JDBCTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/jdbc/JDBCTest.scala
-[ThreadTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/ThreadTest.scala
-[CountDownLatchTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/CountDownLatchTest.scala
-[CyclicBarrierTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/concurrency/CyclicBarrierTest.scala
-[FactorialTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/number/FactorialTest.scala
-[LazyValTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/LazyValTest.scala
-[Anagram.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/string/Anagram.scala
-[WordFrequency.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/string/WordFrequency.scala
-[Stack.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/ds/stack/Stack.scala
-[ReverseTheWord.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/ds/stack/ReverseTheWord.scala
-[Queue.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/ds/queue/Queue.scala
-[CircularQueue.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/ds/queue/CircularQueue.scala
-[PrimitiveVarsSizeTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/memory/PrimitiveVarsSizeTest.scala
-[HelloActor.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/akka/basic/HelloActor.scala
-[PingPongTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/akka/basic/PingPongTest.scala
-[SimpleHttpService.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/akka/http/SimpleHttpService.scala
-[FinagleHttpService.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/finagle/FinagleHttpService.scala
-[CustomerRestService.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/akka/http/CustomerRestService.scala
-[WeakHashMapTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/lang/ref/WeakHashMapTest.scala
-[SparkWordCount.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SparkWordCount.scala
-[SparkRDDTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SparkRDDTest.scala
-[SparkDFTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SparkDFTest.scala
-[SparkDSTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SparkDSTest.scala
-[SparkTestFileTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SparkTestFileTest.scala
-[SocketWordCount.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SocketWordCount.scala
-[KryoEncodingTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/KryoEncodingTest.scala
-[SparkHiveTest.md]: https://github.com/inbravo/scala-src/blob/master/src/main/scala/com/inbravo/spark/SparkHiveTest.scala
+[AvoidReturnTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/AvoidReturnTest.scala
+[VarAndValTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/VarAndValTest.scala
+[MethodTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/MethodTest.scala
+[ArrayBufferTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/ArrayBufferTest.scala
+[ProcedureTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/ProcedureTest.scala
+[AnnotationTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/AnnotationTest.scala
+[MutatorTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/MutatorTest.scala
+[SomeNoneOptionTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/SomeNoneOptionTest.scala
+[EitherTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/EitherTest.scala  
+[LoopTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/LoopTest.scala  
+[MultipleTraitTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/MultipleTraitTest.scala  
+[SealedTraitTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/SealedTraitTest.scala 
+[TupleTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/TupleTest.scala 
+[ForEachTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/ForEachTest.scala 
+[YieldTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/ForEachTest.scala 
+[ObjectFactoryTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/ObjectFactoryTest.scala 
+[ImportTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/ImportTest.scala 
+[InstanceOfTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/InstanceOfTest.scala 
+[PrimaryConstructorTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/PrimaryConstructorTest.scala
+[AuxiliaryConstructorsTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/AuxiliaryConstructorsTest.scala
+[ObjectPrivateAccess.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/ObjectPrivateAccess.scala
+[CallByNameAndValueTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/CallByNameAndValueTest.scala
+[MethodInlineTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/MethodInlineTest.scala
+[GenericsTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/GenericsTest.scala 
+[StringsTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/StringsTest.scala 
+[SeqOfStringsTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/SeqOfStringsTest.scala 
+[ListTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/SeqOfStringsTest.scala
+[ListOperationsTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/ListOperationsTest.scala
+[MathOpsTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/MathOpsTest.scala  
+[ApplyMethodTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/ApplyMethodTest.scala
+[ArrayBufferTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/SeqOfStringsTest.scala 
+[CompanionObjectTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/CompanionObjectTest.scala 
+[MapTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/MapTest.scala 
+[EnvironmentVarTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/EnvironmentVarTest.scala 
+[TryCatchTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/TryCatchTest.scala 
+[RequireTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/CompanionObjectTest.scala
+[OperatorsAreMethods.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/OperatorsAreMethods.scala 
+[NetworkService.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/concurrency/NetworkService.scala
+[JDBCTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/jdbc/JDBCTest.scala
+[ThreadTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/concurrency/ThreadTest.scala
+[CountDownLatchTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/concurrency/CountDownLatchTest.scala
+[CyclicBarrierTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/concurrency/CyclicBarrierTest.scala
+[FactorialTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/number/FactorialTest.scala
+[LazyValTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/LazyValTest.scala
+[Anagram.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/string/Anagram.scala
+[WordFrequency.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/string/WordFrequency.scala
+[Stack.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/ds/stack/Stack.scala
+[ReverseTheWord.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/ds/stack/ReverseTheWord.scala
+[Queue.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/ds/queue/Queue.scala
+[CircularQueue.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/ds/queue/CircularQueue.scala
+[PrimitiveVarsSizeTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/memory/PrimitiveVarsSizeTest.scala
+[HelloActor.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/akka/basic/HelloActor.scala
+[PingPongTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/akka/basic/PingPongTest.scala
+[SimpleHttpService.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/akka/http/SimpleHttpService.scala
+[FinagleHttpService.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/finagle/FinagleHttpService.scala
+[CustomerRestService.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/akka/http/CustomerRestService.scala
+[WeakHashMapTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/ref/WeakHashMapTest.scala
+[SparkWordCount.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/spark/SparkWordCount.scala
+[SparkRDDTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/spark/SparkRDDTest.scala
+[SparkDFTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/spark/SparkDFTest.scala
+[SparkDSTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/spark/SparkDSTest.scala
+[SparkTestFileTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/spark/SparkTestFileTest.scala
+[SocketWordCount.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/spark/SocketWordCount.scala
+[KryoEncodingTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/spark/KryoEncodingTest.scala
+[SparkHiveTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/spark/SparkHiveTest.scala
