@@ -23,17 +23,17 @@
 -  [Usage of '@inline' as performance optimizer][MethodInlineTest.md]
 
 #### Basic Constructs: trait, class, object, annotations
--  [Java 'Object' is equivalent to Scala 'AnyRef'][VarArgsTest.scala]
+-  [Java 'Object' is equivalent to Scala 'AnyRef'][VarArgsTest.md]
 -  [Java 'void' is equivalent to Scala 'Unit'][MathOpsTest.md]
 -  [Java 'enum' is equivalent to Scala 'sealed trait'][SealedTraitTest.md]
 -  [Java 'interface' is equivalent to Scala 'trait'][MultipleTraitTest.md]
--  [Purpose of trait, class and Object keywords in Scala][ClassObjectTest.scala]
+-  [Purpose of trait, class and Object keywords in Scala][ClassObjectTest.md]
 -  ["Hello"(4) is actually "Hello".apply(4)][ApplyMethodTest.md]
 -  [Create custom annotations using 'scala.annotation.StaticAnnotation'][AnnotationTest.md]
 -  [The 'App' trait can be used to quickly turn objects into executable programs][EitherTest.md]
 
 #### Var, Val, Int, Float, Double, BigInteger
--  [Various Scala types][ValuesTest.scala]
+-  [Various Scala types][ValuesTest.md]
 -  [Values which are lazy initialised using 'lazy val'][LazyValTest.md]
 -  [BigInt("1234567890") is actually BigInt.apply("1234567890")][MathOpsTest.md]
 
@@ -45,12 +45,12 @@
 -  [How methods or definitions are created using 'def'][MethodTest.md]
 -  [How object-private access works][ObjectPrivateAccess.md]
 -  [How definitions can also be created using 'var' or 'val'][VarAndValTest.md]
--  [Type aliases in Scala][TypeAliasTest.scala]
+-  [Type aliases in Scala][TypeAliasTest.md]
 -  [Never use 'return' keyword in Scala method][AvoidReturnTest.md]
 -  [A function without a return type is called Procedure in Scala][ProcedureTest.md]
--  [Example of a function that can take a variable number of arguments][VarArgsTest.scala]
+-  [Example of a function that can take a variable number of arguments][VarArgsTest.md]
 -  [Difference between call by name and call by value][CallByNameAndValueTest.md]
--  [Methods 'apply' as Injector and 'unapply' as Extractor][ObjectExtractorTest.scala]
+-  [Methods 'apply' as Injector and 'unapply' as Extractor][ObjectExtractorTest.md]
 -  [Operators are nothing just methods. Operator overloading example][OperatorsAreMethods.md]
 
 #### Collection
@@ -59,7 +59,7 @@
 -  [Usage of 'ArrayBuffer' in Scala][ArrayBufferTest.md]
 -  [Usage of WeakHashMap in Scala][WeakHashMapTest.md]
 -  [Different operations on List class][ListOperationsTest.md]
--  [Scala Array that can store all object types][AnyValTest.scala]
+-  [Scala Array that can store all object types][AnyValTest.md]
 -  [Equivalent of Java 'ArrayList' Class in Scala is 'ArrayBuffer'][ArrayBufferTest.md]
 
 #### Others
@@ -74,17 +74,17 @@
 -  [Using 'strip margin' to add new lines in string][CustomerRestService.md]
 -  [Generics example][GenericsTest.md]
 -  [Enviornment variables example][EnvironmentVarTest.md]
--  [How to find object hashcode in Scala][lang/HashCodeTest.scala]
--  [How to view bounds works in Scala][ViewBoundTest.scala]
--  [How to upper and lower type bounds works in Scala][TypeBoundTest.scala]
+-  [How to find object hashcode in Scala][lang/HashCodeTest.md]
+-  [How to view bounds works in Scala][ViewBoundTest.md]
+-  [How to upper and lower type bounds works in Scala][TypeBoundTest.md]
 
 #### Functional constructs
 -  [Companion objects][CompanionObjectTest.md]
--  [Partial applied functions][PartialAppliedFuncTest.scala]
--  [Currying][CurryingTest.scala]
--  [Type inference and ascription][TypeAscriptionInferenceTest.scala]
--  [First class functions][FirstClassFuncTest.scala]
--  [High order functions][HighOrderFunctionTest.scala] 
+-  [Partial applied functions][PartialAppliedFuncTest.md]
+-  [Currying][CurryingTest.md]
+-  [Type inference and ascription][TypeAscriptionInferenceTest.md]
+-  [First class functions][FirstClassFuncTest.md]
+-  [High order functions][HighOrderFunctionTest.md] 
 
 #### Socket
 -  [Usage of 'ServerSocket' in Scala][NetworkService.md]
@@ -157,7 +157,6 @@
 [TypeAscriptionInferenceTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/TypeAscriptionInferenceTest.scala
 [FirstClassFuncTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/FirstClassFuncTest.scala
 [HighOrderFunctionTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/HighOrderFunctionTest.scala
-
 [AvoidReturnTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/AvoidReturnTest.scala
 [VarAndValTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/VarAndValTest.scala
 [MethodTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/MethodTest.scala
