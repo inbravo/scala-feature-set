@@ -22,4 +22,9 @@ object EitherTest extends App {
     case Left(s)  => println("Answer: " + s)
     case Right(i) => println("Answer: " + i)
   }
+  
+  divide(2, 3) match {
+    case Left(s)  => println("Answer: " + s)
+    case Right(i) => println("Answer: " + i)
+  }
 }
