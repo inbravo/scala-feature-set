@@ -7,8 +7,8 @@
 ### Language constructs
 
 #### Hello World
--  [Hello World with main method][HelloWorld.scala]
--  [Hello World without main method][HelloWorldWithoutMain.scala]
+-  [Hello World with main method][HelloWorld.md]
+-  [Hello World without main method][HelloWorldWithoutMain.md]
 
 #### Common Keywords
 -  [Usage of 'import' to import classes][ImportTest.md]
