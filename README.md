@@ -100,6 +100,7 @@
 -  [Usage of 'CyclicBarrier' is in Scala][CyclicBarrierTest.md]
 
 #### Useful programs
+-  [Verify all HTTP URLs of a markdown file][MdFileLinksTest.md]
 -  [Test for Anagram String in Scala][Anagram.md]
 -  [Counter number of words per String in Scala][WordFrequency.md]
 -  [Program to give runtime size of all primitive variables][PrimitiveVarsSizeTest.md]
@@ -202,6 +203,7 @@
 [FactorialTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/number/FactorialTest.scala
 [LazyValTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/LazyValTest.scala
 [Anagram.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/string/Anagram.scala
+[MdFileLinksTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/net/MdFileLinksTest.scala
 [WordFrequency.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/string/WordFrequency.scala
 [Stack.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/ds/stack/Stack.scala
 [ReverseTheWord.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/ds/stack/ReverseTheWord.scala

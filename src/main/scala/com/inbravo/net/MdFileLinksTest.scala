@@ -7,7 +7,8 @@ import java.util.regex.Pattern
 import java.util.regex.Matcher
 
 /**
- * 
+ * Verify all HTTP URLs of a markdown file
+ * amit.dixit
  */
 object MdFileLinksTest {
 
