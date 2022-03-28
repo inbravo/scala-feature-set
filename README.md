@@ -74,7 +74,7 @@
 -  [Using 'strip margin' to add new lines in string][CustomerRestService.md]
 -  [Generics example][GenericsTest.md]
 -  [Enviornment variables example][EnvironmentVarTest.md]
--  [How to find object hashcode in Scala][lang/HashCodeTest.md]
+-  [How to find object hashcode in Scala][HashCodeTest.md]
 -  [How to view bounds works in Scala][ViewBoundTest.md]
 -  [How to upper and lower type bounds works in Scala][TypeBoundTest.md]
 
