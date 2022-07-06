@@ -2,7 +2,7 @@ package com.inbravo.lang
 
 /**
  * How keywords 'final' and 'abstract' can stay together in Scala
- * amit.dixits
+ * amit.dixit
  */
 final abstract class AbstractClass {
 

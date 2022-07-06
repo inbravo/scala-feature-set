@@ -130,7 +130,7 @@ object SparkDFTest {
     import sparkSession.implicits._
 
     /* Create an RDD of Person objects from a text file, convert it to a DataFrame */
-    val personDF = sparkSession.sparkContext.textFile("src/main/resources/people.txt").map(_.split(",")).map(attributes => Person(attributes(0), attributes(1).trim.toInt)).toDF()
+    val personDF = sparkSession.sparkContext.textFile("src/main/resources/people.txt").map(_.split(",")).map(attributes => Person(attributes(0), attributes(1).trim.toInt)).toDF
 
     /* Register the DataFrame as a temporary view */
     personDF.createOrReplaceTempView("people")

@@ -15,3 +15,7 @@ target/
 .worksheet/src/com.inbravo.ws.Addhoc.scala
 *.crc
 people.parquet/part-r-00000-cd34d6c8-ac06-446e-986f-aecbc7c44272.snappy.parquet
+.cache-main
+.cache-tests
+.cache-main
+.cache-tests

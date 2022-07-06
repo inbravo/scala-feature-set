@@ -111,12 +111,6 @@
 -  [A Queue implemented in Scala][Queue.md]
 -  [A Circular Queue implemented in Scala][CircularQueue.md]
 
-#### Akka
--  [A simple Akka Actor][HelloActor.md]
--  [A Ping Pong program using Akka Actors][PingPongTest.md]
--  [A simple HTTP service using Akka][SimpleHttpService.md]
--  [A simple REST web service using Akka][CustomerRestService.md]
-
 #### Finagle
 -  [A simple HTTP service using Finagle][FinagleHttpService.md]
 
@@ -209,11 +203,7 @@
 [Queue.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/ds/queue/Queue.scala
 [CircularQueue.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/ds/queue/CircularQueue.scala
 [PrimitiveVarsSizeTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/memory/PrimitiveVarsSizeTest.scala
-[HelloActor.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/akka/basic/HelloActor.scala
-[PingPongTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/akka/basic/PingPongTest.scala
-[SimpleHttpService.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/akka/http/SimpleHttpService.scala
 [FinagleHttpService.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/finagle/FinagleHttpService.scala
-[CustomerRestService.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/akka/http/CustomerRestService.scala
 [WeakHashMapTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/lang/ref/WeakHashMapTest.scala
 [SparkWordCount.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/spark/SparkWordCount.scala
 [SparkRDDTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/spark/SparkRDDTest.scala

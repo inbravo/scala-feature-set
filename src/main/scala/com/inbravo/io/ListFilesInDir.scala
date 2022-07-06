@@ -15,9 +15,17 @@ object ListFilesInDir {
     these ++ these.filter(_.isDirectory).flatMap(recursiveListFiles)
   }
 
-  def main(args: Array[String]): Unit = {
+  def printDirectLinks {
+    val files = recursiveListFiles(new File("D:/personal/mygithub"));
+    println(files.foreach { x => println(x.getName.toLowerCase) });
+  }
 
+  def printGitHubLinks {
     val files = recursiveListFiles(new File("D://personal//mygithub//travel//september-2019//images"));
     println(files.foreach { x => println("![](https://github.com/inbravo/travel/raw/master/september-2019/images/" + x.getName + ")") });
+  }
+
+  def main(args: Array[String]): Unit = {
+    printDirectLinks
   }
 }
