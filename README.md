@@ -124,13 +124,6 @@
 -  [Program to show Kryo based serialization][KryoEncodingTest.md]
 -  [Program to show hive connection][SparkHiveTest.md]
 
-## How to build and configure
-### To solve library dependencies in eclipse ([sbteclipse plugin required][Using-sbteclipse.md]), in sbt console type: 
-    eclipse with-source=true
- 
-### To build, in sbt console type:
-    package
-
 
 [Using-sbteclipse.md]: https://github.com/typesafehub/sbteclipse/wiki/Using-sbteclipse
 
