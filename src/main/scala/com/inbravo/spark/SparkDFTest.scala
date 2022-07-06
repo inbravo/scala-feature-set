@@ -24,7 +24,7 @@ object SparkDFTest {
 
     /* To avoid 'winutils.exe' error on windows */
     if (System.getProperty("os.name").toLowerCase.contains("window")) {
-      System.setProperty("hadoop.home.dir", "D:/opensource/hadoop-2.7.1/winutils");
+      System.setProperty("hadoop.home.dir", "D:/open-source/hadoop-3.3.0/bin/winutils/");
     }
 
     /* Create new local spark session with Single threads per Core */
@@ -37,7 +37,7 @@ object SparkDFTest {
     /* Print the spark version */
     println("Spark version: " + sparkSession.sparkContext.version)
 
-    /* RUn all examples */
+    /* Run all examples */
     runSchemaBasedBasicDataFramesExample(sparkSession)
     runJSONBasedBasicDataFramesExample(sparkSession)
     runInferSchemaExample(sparkSession)
