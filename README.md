@@ -71,7 +71,6 @@
 -  [How getter/setter is automatically generated in a class][MutatorTest.md]
 -  [How Scala avoids NullPointerException using 'Option', 'Some' and 'None'][SomeNoneOptionTest.md]
 -  [Default object factory in Scala][ObjectFactoryTest.md]
--  [Using 'strip margin' to add new lines in string][CustomerRestService.md]
 -  [Generics example][GenericsTest.md]
 -  [Enviornment variables example][EnvironmentVarTest.md]
 -  [How to find object hashcode in Scala][HashCodeTest.md]
@@ -206,3 +205,4 @@
 [SocketWordCount.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/spark/SocketWordCount.scala
 [KryoEncodingTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/spark/KryoEncodingTest.scala
 [SparkHiveTest.md]: https://github.com/inbravo/scala-feature-set/blob/master/src/main/scala/com/inbravo/spark/SparkHiveTest.scala
+
